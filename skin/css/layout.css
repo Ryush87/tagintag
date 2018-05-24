@@ -10,23 +10,20 @@
 
 #wrap {width:100%;}
 	.wWrap {margin:0 auto;width:1020px;}
-	.wWrap2 {margin:0 auto;width:800px;}
-	.wWrap3 {margin:0 auto;width:90%;}
 		.wWrapL {float:left;width:800px;}
 		.wWrapR {float:right;width:200px;}
 	#skipBox {position:absolute;top:0;left:0;z-index:1000;}
 		#skipBox a {position:absolute;top:-9999px;width:120px;}
 		#skipBox a:hover,
 		#skipBox a:focus {top:0;}
-	header {float:left;/*margin-top:40px;*/width:100%;}
-		#gnb {}
+	header {float:left;margin-top:40px;width:100%;}
+		#gnb {float:right;}
 		#headBox {float:left;width:100%;}
 		nav {position:relative;float:left;width:100%;background:#2b343a;z-index:5;}
-	#contents {float:left;width:100%;min-height:720px;}
+	#contents {float:left;width:100%;min-height:340px;}
 		.subPageGridL {float:left;margin-right:30px;width:190px;}
 		.subPageGridR {float:left;width:800px;}
 		#contents section {float:left;}
-	#popContents {float:left;width:100%;}
 	footer {float:left;width:100%;}
 
 /* media */

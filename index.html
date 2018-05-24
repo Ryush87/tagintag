@@ -1,256 +1,665 @@
+<!--
+<?
+	session_start();
+	if( strlen($_SESSION['ssTEMP']) <= 0 )
+	{
+		$_SESSION['ssTEMP'] = time();
+	}
+?>
+-->
 <? include 'include/top.php' ?>
-<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
-<!-- 상품페이지 이동 s -->
-<!--<meta http-equiv="refresh" content="0;url='<?=$root?>/goods/ing_goods_1.html'">-->
-<!-- 상품페이지 이동 e -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/main.css">
 </head>
 <body>
-	<? include 'include/goods_tag_keep.php' ?> <!-- 택보관  -->
+	<!--
+	<? 
+		if($_SESSION['ssTEMP'] >= (time()-2))
+		{
+			include 'inc_intro.html' ;
+		}
+	?>
+	-->
+	<? include 'include/inc_tag_keep.php' ?>
+	<? include 'include/inc_top_notice.php' ?>
 	<div id="wrap">
-		<? include 'include/header.php' ?> <!-- header  -->
-		<section id="mainCaruselBox" style="background:#4a2849;">
-			<div class="wWrap">
-				<div id="mCaruselWrap">
-					<div class="mCaruselItem" data-bgc="#4a2849">
-						<a href="#none"><img src="<?=$root?>/skin/images/temp/temp_main_goods_v2_10.jpg" alt="배너" /></a>
-					</div>
-					<div class="mCaruselItem" data-bgc="#2b1811">
-						<a href="#none"><img src="<?=$root?>/skin/images/temp/temp_main_goods_v2_09.jpg" alt="배너" /></a>
-					</div>
-					<div class="mCaruselItem" data-bgc="#b8cfcd">
-						<a href="<?=$root?>/goods/ing_goods.html"><img src="<?=$root?>/skin/images/temp/temp_main_goods_v2_06.jpg" alt="배너" /></a>
-					</div>
-					<div class="mCaruselItem" data-bgc="#3e434a">
-						<a href="<?=$root?>/event/event_view_detail_review.html"><img src="<?=$root?>/skin/images/temp/temp_main_goods_v2_05.jpg" alt="배너" /></a>
-					</div>
-					<div class="mCaruselItem" data-bgc="#000">
-						<a href="<?=$root?>/event/event_view_detail_luxury.html"><img src="<?=$root?>/skin/images/temp/temp_main_goods_v2_04_ing.jpg" alt="배너" /></a>
-					</div>
-					<div class="mCaruselItem" data-bgc="#92d3e5">
-						<a href="#none" onclick="callPopup('#ingGoodsListPopBox'); return false;"><img src="<?=$root?>/skin/images/temp/temp_main_goods_v2_07.jpg" alt="배너" /></a>
-					</div>
-					<div class="mCaruselItem" data-bgc="#eacb5f">
-						<a href="#none" onclick="callPopup('#freeExperiencePopBox'); return false;"><img src="<?=$root?>/skin/images/temp/temp_main_goods_v2_08.jpg" alt="배너" /></a>
-					</div>
-					<div class="mCaruselItem" data-bgc="#f2dcde">
-						<a href="#none" onclick="callPopup('#freeExperiencePopBox'); return false;"><img src="<?=$root?>/skin/images/temp/temp_main_goods_v2_03.jpg" alt="배너" /></a>
-					</div>
+		<? include 'include/header.php' ?>
+		<section id="mainGoodsBox">
+			<h2 class="blind">메인상품<?=$_COOKIE['mainCheck']?></h2>
+			<div class="mainGoodsImgBox mainGoods_01"></div>
+			<div class="takeOffBtn"><a href="#none" class="takeOff_A" onclick="callPopup('#inputNumBox'); return false;"><span class="blind">까보기</span></a></div>
+			<div class="layerPop">
+				<div class="wWrap pstR">
+					<ul class="layerPopUl">
+						<li class="layerPopTxt">밑져봐야 인터넷 최저가</li>
+						<li class="layerPopTxt">까보는 재미 택인택</li>
+						<li class="layerPopTxt">택인택 시즌1. '소소한 먹거리'편</li>
+						<li class="layerPopTxt">택 까는 소리 = 돈 버는 소리</li>
+						<li class="layerPopTxt">확률 앞에 평등하다</li>
+						<li class="layerPopTxt">특허받은 최저가</li>
+						<li class="layerPopTxt">일단 까봐</li>
+					</ul>
+					<div class="layerPopBg"></div>
 				</div>
+				<script type="text/javascript">
+					$(document).ready(function(){
+						$('.layerPopUl').innerfade({
+							animationtype: 'slide',
+							speed: 750,
+							timeout: 5000,
+							//type: 'random',
+							containerheight: '1em'
+						});
+					});
+				</script>
 			</div>
 		</section>
-		<? include 'include/top_notice_new.php' ?> <!-- topBoard  -->
 		<div id="contents">
 			<div class="wWrap">
-				<ul class="episodeBoxWrap">
-					<li>
-						<div class="epsdItem">
-							<div class="epsdLabel epsdLabel3"><span>마감</span></div>
-							<div class="epsdKindLabel epsdKindLabel3"><span>EVENT</span></div>
-							<div class="epsdImg"><img src="<?=$root?>/skin/images/temp/masterbag_100x100.jpg" alt="상품이미지" /></div>
-							<div class="epsdNum"><span>999</span>회</div>
-							<div class="epsdTitle"><span>명품백</span></div>
-							<div class="epsdDate">4일 4시 04분</div>
-							<div class="epsdDesc">22일 17:35 ~ 25일 12:39</div>
-							<div class="epsdBtns"><a href="<?=$root?>/goods/pop_win_goods_tag_info.html?uid=30" onclick="newWin(this.href,1080,805); return false;" class="btnS1 whtBtn">오픈이력</a></div>
-						</div>
-					</li>
-					<li>
-						<div class="epsdItem epsdItemPrepare">
-							<div class="epsdImg"><img src="<?=$root?>/skin/images/common/icon_preparing.png" alt="상품준비중" /></div>
-							<div class="epsdTitle">
-								다음 회차 <br>
-								상품이 준비중이오니 <br>
-								조금만 기다려주세요.
+				<section id="tagGraphBox" class="mt30">
+					<h4>Tag구성</h4>
+					<div class="tagGraphWrap">
+						<div class="gridL">
+							<div class="tagTotal">총수량<span>500</span>명</div>
+							<div class="tagGraphPreview">
+								<ul>
+									<li class="tagRating1"><div class="graphBar" bar-data="90"><span>5</span><div class="graphIcon"></div></div></li>
+									<li class="tagRating1"><div class="graphBar" bar-data="90"><span>5</span><div class="graphIcon"></div></div></li>
+									<li class="tagRating1"><div class="graphBar" bar-data="90"><span>15</span><div class="graphIcon"></div></div></li>
+									<li class="tagRating1"><div class="graphBar" bar-data="100"><span>35</span><div class="graphIcon"></div></div></li>
+									<li class="tagRating2"><div class="graphBar" bar-data="120"><span>75</span><div class="graphIcon"></div></div></li>
+									<li class="tagRating3"><div class="graphBar" bar-data="225"><span>225</span><div class="graphIcon"></div></div></li>
+									<li class="tagRating3"><div class="graphBar" bar-data="170"><span>140</span><div class="graphIcon"></div></div></li>
+								</ul>
 							</div>
-							<div class="epsdDate">&nbsp;</div>
-							<div class="epsdDesc">&nbsp;</div>
-							<div class="epsdBtns">
-								<a href="#none" class="btnS1 whtBtn">&nbsp;</a>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="epsdItem">
-							<div class="epsdLabel epsdLabel1"><span>오픈전</span></div>
-							<div class="epsdKindLabel epsdKindLabel1"><span>SALE</span></div>
-							<div class="epsdImg"><img src="<?=$root?>/skin/images/temp/goldbar1g_100x100.jpg" alt="상품이미지" /></div>
-							<div class="epsdNum"><span>32</span>회</div>
-							<div class="epsdProbability"><div class="proba1">77</div><div class="proba2">9999</div></div>
-							<div class="epsdTitle">24K골드바</div>
-							<div class="epsdDate">2017.09.26</div>
-							<div class="epsdDesc">오픈(판매)예정</div>
-							<div class="epsdBtns">
-								<a href="#none" onclick="callPopup('#smsAlarmPopBox'); return false;" class="btnS1 whtBtn">문자알림</a>
+							<div class="tagGraphLabel">
+								<ul>
+									<li><div class="tgl tgl1">할인율</div><br /><div class="tgl tgl2">구매가</div></li>
+									<li>99%↓<br />60원</li>
+									<li>95%↓<br />290원</li>
+									<li>90%↓<br />580원</li>
+									<li>80%↓<br />1,160원</li>
+									<li>75%↓<br />1,450원</li>
+									<li>65%↓<br />2,030원</li>
+									<li>50%↓<br />2,900원</li>
+								</ul>
 							</div>
 						</div>
-					</li>
-					<li>
-						<div class="epsdItem">
-							<div class="epsdLabel epsdLabel2"><span>진행중</span></div>
-							<div class="epsdKindLabel epsdKindLabel2"><span>FREE</span></div>
-							<div class="epsdImg"><img src="<?=$root?>/skin/images/temp/masterwatch_100x100.jpg" alt="상품이미지" /></div>
-							<div class="epsdNum"><span>1</span>회</div>
-							<div class="epsdTitle"><span>명품시계</span></div>
-							<div class="epsdDate">730원~</div>
-							<div class="epsdDesc">무료 오픈택 : 999개</div>
-							<div class="epsdBtns"><a href="<?=$root?>/goods/goods_detail.html?uid=31" class="btnS1 whtBtn">참여하기</a></div>
-						</div>
-					</li>
-					<li>
-						<div class="epsdItem">
-							<div class="epsdLabel epsdLabel1"><span>오픈전</span></div>
-							<div class="epsdKindLabel epsdKindLabel1"><span>SALE</span></div>
-							<div class="epsdImg"><img src="<?=$root?>/skin/images/temp/goldbar1g_100x100.jpg" alt="상품이미지" /></div>
-							<div class="epsdNum"><span>32</span>회</div>
-							<div class="epsdProbability"><div class="proba1">77</div><div class="proba2">9999</div></div>
-							<div class="epsdTitle">24K골드바</div>
-							<div class="epsdDate">2017.09.26</div>
-							<div class="epsdDesc">오픈(판매)예정</div>
-							<div class="epsdBtns">
-								<a href="#none" onclick="callPopup('#smsAlarmPopBox'); return false;" class="btnS1 whtBtn">문자알림</a>
+						<div class="gridR">
+							<div class="internetLowBox">
+								<div class="internetLowT">인터넷 최저가 <span>(12/17)</span></div>
+								<!--
+								<ul class="internetLowUl">
+									<li><div><span>100%</span></div></li>
+									<li><div><span>90%</span></div></li>
+									<li><div><span>80%</span></div></li>
+									<li><div><span>70%</span></div></li>
+									<li><div><span>60%</span></div></li>
+									<li><div><span>50%</span></div></li>
+									<li><div><span>40%</span></div></li>
+									<li class="currentP"><div><span>30%</span></div></li>
+									<li><div><span>20%</span></div></li>
+									<li><div><span>10%</span></div></li>
+								</ul>
+								-->
+								<div class="internetLowP"><div class="internetLowPT">30%↓<br /><span>4,060원</span></div></div>
+								<div class="compareP">택인택 최고가 대비<br /><span>+1,160원</span></div>
+								<div class="internetLowA"></div>
 							</div>
 						</div>
-					</li>
-					<li>
-						<div class="epsdItem">
-							<div class="epsdLabel epsdLabel2"><span>진행중</span></div>
-							<div class="epsdKindLabel epsdKindLabel2"><span>FREE</span></div>
-							<div class="epsdImg"><img src="<?=$root?>/skin/images/temp/masterwatch_100x100.jpg" alt="상품이미지" /></div>
-							<div class="epsdNum"><span>1</span>회</div>
-							<div class="epsdTitle"><span>명품시계</span></div>
-							<div class="epsdDate">730원~</div>
-							<div class="epsdDesc">무료 오픈택 : 999개</div>
-							<div class="epsdBtns"><a href="<?=$root?>/goods/goods_detail.html?uid=31" class="btnS1 whtBtn">참여하기</a></div>
-						</div>
-					</li>
-					<li>
-						<div class="epsdItem">
-							<div class="epsdLabel epsdLabel3"><span>마감</span></div>
-							<div class="epsdKindLabel epsdKindLabel2"><span>FREE</span></div>
-							<div class="epsdImg"><img src="<?=$root?>/skin/images/temp/masterbag_100x100.jpg" alt="상품이미지" /></div>
-							<div class="epsdNum"><span>999</span>회</div>
-							<div class="epsdTitle"><span>명품백</span></div>
-							<div class="epsdDate">4일 4시 04분</div>
-							<div class="epsdDesc">무료 오픈택 : 999개</div>
-							<div class="epsdBtns"><a href="/goods/pop_win_goods_tag_info.html?uid=30" onclick="newWin(this.href,1080,805); return false;" class="btnS1 whtBtn">오픈이력</a></div>
-						</div>
-					</li>
-					<li>
-						<div class="epsdItem">
-							<div class="epsdLabel epsdLabel2"><span>진행중</span></div>
-							<div class="epsdKindLabel epsdKindLabel2"><span>FREE</span></div>
-							<div class="epsdImg"><img src="<?=$root?>/skin/images/temp/masterwatch_100x100.jpg" alt="상품이미지" /></div>
-							<div class="epsdNum"><span>1</span>회</div>
-							<div class="epsdTitle"><span>명품시계</span></div>
-							<div class="epsdDate">730원~</div>
-							<div class="epsdDesc">무료 오픈택 : 999개</div>
-							<div class="epsdBtns"><a href="<?=$root?>/goods/goods_detail.html?uid=31" class="btnS1 whtBtn">참여하기</a></div>
-						</div>
-					</li>
-				</ul>
-				<!--
-				<ul class="episodeDescBoxWrap">
-					<li>
-						<div class="epsdscItem epsdscItem1">
-							<div class="epsdscTitle">진행중 회차</div>
-							<div class="epsdscCon">지금 바로 1% 가격으로도<br>구매가 가능합니다.<br><br>단1%의 가격이 적힌 할인 택을<br>차지하는 행운이 함께 하시길<br>기원합니다.</div>
-							<div class="epsdscBtns"><a href="<?=$root?>/goods/goods_list.html?section=N" class="btnS1 whtBtn">전체보기</a></div>
-						</div>
-					</li>
-					<li>
-						<div class="epsdscItem epsdscItem2">
-							<div class="epsdscTitle">마감된 회차</div>
-							<div class="epsdscCon">수 분만에 SOLD OUT 되어버린<br>택 오픈 이력들을 확인할 수 있습니다.<br><br>택인택은 정직한 운영과 공정한<br>기회제공을 위하여 택을 까본 이력을 <br>100% 오픈하고 있습니다.</div>
-							<div class="epsdscBtns"><a href="<?=$root?>/goods/goods_list.html?section=E" class="btnS1 whtBtn">전체보기</a></div>
-						</div>
-					</li>
-					<li>
-						<div class="epsdscItem epsdscItem3">
-							<div class="epsdscTitle">다가올 회차</div>
-							<div class="epsdscCon">다가올 회차에 대한 정보를 확인할 수 있습니다.<br><br>※ 문자 알림 신청시 오픈(판매개시)<br>1시간 이내에 문자메시지로<br>알려드립니다.</div>
-							<div class="epsdscBtns"><a href="<?=$root?>/goods/goods_list.html?section=I" class="btnS1 whtBtn">전체보기</a></div>
-						</div>
-					</li>
-				</ul>
-				-->
-				<ul class="episodeDescBoxWrap">
-					<li>
-						<div class="epsdscItem epsdscItem1">
-							<div class="epsdscTitle">이중할인</div>
-							<div class="epsdscCon">
-								모든 SALE 상품은<br>
-								<br>
-								인터넷최저가 또는,<br>
-								99.9%할인가로 구매가 가능합니다.<br>
-								<br>
-								밑져봐야 인터넷 최저가!!!
+					</div>
+					<script type="text/javascript">
+						var barArray=new Array();
+						var barmaxVal=0;
+						function drwaGraph(maxVal){
+							var barPer=100/maxVal;
+							var barH=0;
+							$('.tagGraphPreview li').each(function(){
+								var graphLi=$('.tagGraphPreview li');
+								var barVal=$(this).find('.graphBar').attr('bar-data');
+								barH=barPer*barVal;
+								if(barH<20){
+									//barH=20;
+								}
+								$(this).find('.graphBar').animate({height:barH+"%"},3000,'swing',function(){$(this).find('.graphIcon').fadeIn()});
+							});
+						}
+						function loadGraph(){
+							$('.tagGraphPreview li').each(function(){
+								var graphLi=$('.tagGraphPreview li');
+							var barIndex=graphLi.index($(this));
+							var barVal=$(this).find('span').html();
+								//barArray[barIndex]=parseInt(barVal);
+								barArray.push(parseInt(barVal));
+								barmaxVal=Math.max.apply(null,barArray);
+								if(barIndex==graphLi.length-1){
+									drwaGraph(barmaxVal);
+								}
+							});
+						}
+					</script>
+				</section>
+				<div class="wWrapL">
+					<section id="buyStandbyBox" class="mt30">
+						<div class="gridL">
+							<h4>즉시구매 희망자</h4>
+							<table summary="즉시구매대기자,즉시구매가,예상수익">
+								<caption>즉시구매희망자</caption>
+								<colgroup><col width="30%"/><col width="30%"/><col width="40%"/></colgroup>
+								<tr>
+									<th scope="col">즉시구매 대기자</th>
+									<th scope="col">즉시구매가</th>
+									<th scope="col">예상수익</th>
+								</tr>
+								<tr>
+									<td>ak******</td>
+									<td>4,900원</td>
+									<td>4,700원</td>
+								</tr>
+								<tr>
+									<td>sd******</td>
+									<td>4,800원</td>
+									<td>4,600원</td>
+								</tr>
+								<tr>
+									<td>ad******</td>
+									<td>4,800원</td>
+									<td>4,600원</td>
+								</tr>
+								<tr>
+									<td>es******</td>
+									<td>4,600원</td>
+									<td>4,500원</td>
+								</tr>
+								<tr>
+									<td>eg******</td>
+									<td>4,500원</td>
+									<td>4,300원</td>
+								</tr>
+								<tr>
+									<td>xa******</td>
+									<td>4,400원</td>
+									<td>4,200원</td>
+								</tr>
+									<tr>
+									<td>ad******</td>
+									<td>4,350원</td>
+									<td>4,150원</td>
+								</tr>
+								<tr>
+									<td>es******</td>
+									<td>4,200원</td>
+									<td>4,000원</td>
+								</tr>
+								<tr>
+									<td>eg******</td>
+									<td>4,150원</td>
+									<td>3,950원</td>
+								</tr>
+								<tr>
+									<td>xa******</td>
+									<td>3,900원</td>
+									<td>3,700원</td>
+								</tr>
+							</table>
+							<div class="pagingBoxWrap2">
+								<ul class="pagingBox2">
+									<li class="angleBtn abLL"><a href="#none"><img src="<?=$root?>/skin/images/common/blt_arrow_left2.png" alt="처음페이지" /></a></li>
+									<li class="angleBtn abL"><a href="#none"><img src="<?=$root?>/skin/images/common/blt_arrow_left.png" alt="이전페이지" /></a></li>
+									<li class="numBtn actOn"><a href="#none">1</a></li>
+									<li class="numBtn"><a href="#none">2</a></li>
+									<li class="numBtn"><a href="#none">3</a></li>
+									<li class="numBtn"><a href="#none">4</a></li>
+									<li class="numBtn"><a href="#none">5</a></li>
+									<li class="angleBtn abR"><a href="#none"><img src="<?=$root?>/skin/images/common/blt_arrow_right.png" alt="다음페이지" /></a></li>
+									<li class="angleBtn abRR"><a href="#none"><img src="<?=$root?>/skin/images/common/blt_arrow_right2.png" alt="끝페이지" /></a></li>
+								</ul>
 							</div>
 						</div>
-					</li>
-					<li>
-						<div class="epsdscItem epsdscItem2">
-							<div class="epsdscTitle">24시간 자동OPEN</div>
-							<div class="epsdscCon">
-								각각의 상품은<br>
-								24시간 상시 오픈 및 판매됩니다.<br>
-								<br>
-								상품별 99.9% 할인택이<br>
-								모두 판매되고 1개가 남으면<br>
-								자동마감 및 신규회차 오픈(재생성)
+						<div class="gridR">
+							<h4>즉시구매 희망자란?</h4>
+							<div class="buyStandbyDesc">
+								<ul class="brownDotLi">
+									<li>택오픈과 상관없이 본인이 즉시 구매하고자 하는 가격을 제시하고 판매자를 기다리는 회원</li>
+									<li>제시한 가격조건에 맞는 판매자가 OK하면 즉시 자동거래가 이루어집니다.</li>
+									<li>본인이 제시한 즉시구매가격이 높을수록 우측 구매대기자 리스트 상단에 노출됩니다.</li>
+								</ul>
+							</div>
+							<div class="buyStandbyDesc2">희망 구매가를 등록하시면 판매를 <br />희망하는 고객과 자동으로 연결 됩니다.</div>
+							<div class="regBuyStandbyBox"><a href="goods/transfer_request.html" class="reg_buy_standby_btn btnS1">즉시 구매 대기자 등록</a></div>
+						</div>
+						<ul class="brownDotLi mt30">
+							<li>Tag 양도수익은 99% 할인된 <span>다이아몬드 Tag</span>을 뽑은 고객이 즉시구매가에 양도할 때 얻을 수 있는 수익을 나타낸 것입니다. <br />판매대금은 택머니로 제공됩니다.</li>
+							<li>예상수익은 Tag의 할인율에 따라 다르며 재판매 수수료를 제외한 금액입니다.</li>
+							<li>즉시구매 희망자는 원하는 가격으로 구매가 가능하고, Tag 당첨자는 양도차익을 얻을 수 있습니다.</li>
+						</ul>
+					</section>
+					<section id="goodsInfoBox">
+						<ul class="pageTab">
+							<li class="actOn"><a href="#goodsInfoBox">상품정보</a></li>
+							<li><a href="#goodsQnaBox">상품문의</a></li>
+							<li><a href="#goodsDeliveryBox">배송안내</a></li>
+							<li><a href="#goodsReturnBox">교환 및 환불안내</a></li>
+						</ul>
+						<h4>상품정보</h4>
+						<div class="detailInfoBox">
+							<p><img src="<?=$root?>/skin/images/temp/main_goods_info.jpg" alt="상품이미지"/></p>
+						</div>
+					</section>
+					<section id="goodsQnaBox">
+						<ul class="pageTab">
+							<li><a href="#goodsInfoBox">상품정보</a></li>
+							<li class="actOn"><a href="#goodsQnaBox">상품문의</a></li>
+							<li><a href="#goodsDeliveryBox">배송안내</a></li>
+							<li><a href="#goodsReturnBox">교환 및 환불안내</a></li>
+						</ul>
+						<h4>상품 Q&amp;A</h4>
+						<div class="boardOption">
+							<input type="checkbox" id="chck_secret_exct"/><label for="chck_secret_exct">비밀글 제외</label>
+							<select name="" id="">
+								<option value="">문의유형(전체)</option>
+								<option value="">상품</option>
+								<option value="">배송</option>
+								<option value="">교환/변경</option>
+							</select>
+						</div>
+						<div class="slideListBox">
+							<ul class="slideListHead">
+								<li class="stl_1">문의유형</li>
+								<li class="stl_2">문의/답변</li>
+								<li class="stl_3">작성자</li>
+								<li class="stl_4">작성일</li>
+							</ul>
+							<ul class="slideListBody">
+								<li>
+									<ul class="titleLine">
+										<li class="stl_1">상품</li>
+										<li class="stl_2 ellipsis">
+											<div class="qStatus">
+												<span class="qDone">답변완료</span>
+											</div>
+											<a href="#none">평소에 100정도 입고, 키는 181정도에 몸무게는 80키로 정도 나가는데 105 입어야 맞나요?평소에 100정도 입고, 키는 181정도에 몸무게는 80키로 정도 나가는데 105 입어야 맞나요?</a>
+										</li>
+										<li class="stl_3">sil*****</li>
+										<li class="stl_3">2016-12-31</li>
+									</ul>
+									<div class="conLine">
+										<!-- 글내용 s -->
+										<div class="textBoxQ">
+											<div class="stl_1"><span class="blind">문의</span></div>
+											<div class="stl_2"><p>평소에 100정도 입고,<br /> 키는 181정도에 몸무게는 80키로 정도 나가는데 <br />105 입어야 맞나요?</p></div>
+										</div>
+										<div class="textBoxA">
+											<div class="stl_1"><span class="blind">답변</span></div>
+											<div class="stl_2"><p>105 추천해드립니다. 고객님~~</p></div>
+										</div>
+										<!-- 글내용 e -->
+									</div>
+								</li>
+								<li>
+									<ul class="titleLine">
+										<li class="stl_1">배송</li>
+										<li class="stl_2 ellipsis">
+											<div class="qStatus">
+												<span class="qIng">미완료</span>
+												<span class="qSecret"><span class="blind">비밀글</span></span>
+											</div>
+											<a href="#none">비밀글입니다.</a>
+										</li>
+										<li class="stl_3">sil*****</li>
+										<li class="stl_3">2016-12-31</li>
+									</ul>
+									<div class="conLine">
+										<!-- 글내용 s -->
+										<div class="textBoxQ">
+											<div class="stl_1"><span class="blind">문의</span></div>
+											<div class="stl_2"><p>평소에 100정도 입고,<br /> 키는 181정도에 몸무게는 80키로 정도 나가는데 <br />105 입어야 맞나요?</p></div>
+										</div>
+										<div class="textBoxA">
+											<div class="stl_1"><span class="blind">답변</span></div>
+											<div class="stl_2"><p>105 추천해드립니다. 고객님~~</p></div>
+										</div>
+										<!-- 글내용 e -->
+									</div>
+								</li>
+								<li>
+									<ul class="titleLine">
+										<li class="stl_1">교환/변경</li>
+										<li class="stl_2 ellipsis">
+											<div class="qStatus">
+												<span class="qDone">답변완료</span>
+												<span class="qSecret"><span class="blind">비밀글</span></span>
+											</div>
+											<a href="#none">비밀글입니다.</a>
+										</li>
+										<li class="stl_3">sil*****</li>
+										<li class="stl_3">2016-12-31</li>
+									</ul>
+									<div class="conLine">
+										<!-- 글내용 s -->
+										<div class="textBoxQ">
+											<div class="stl_1"><span class="blind">문의</span></div>
+											<div class="stl_2"><p>평소에 100정도 입고,<br /> 키는 181정도에 몸무게는 80키로 정도 나가는데 <br />105 입어야 맞나요?</p></div>
+										</div>
+										<div class="textBoxA">
+											<div class="stl_1"><span class="blind">답변</span></div>
+											<div class="stl_2"><p>105 추천해드립니다. 고객님~~</p></div>
+										</div>
+										<!-- 글내용 e -->
+									</div>
+								</li>
+								<li>
+									<ul class="titleLine">
+										<li class="stl_1">상품</li>
+										<li class="stl_2 ellipsis">
+											<div class="qStatus">
+												<span class="qDone">답변완료</span>
+											</div>
+											<a href="#none">95사이즈 총장 실측이 몇센치인가요?</a>
+										</li>
+										<li class="stl_3">sil*****</li>
+										<li class="stl_3">2016-12-31</li>
+									</ul>
+									<div class="conLine">
+										<!-- 글내용 s -->
+										<div class="textBoxQ">
+											<div class="stl_1"><span class="blind">문의</span></div>
+											<div class="stl_2"><p>평소에 100정도 입고,<br /> 키는 181정도에 몸무게는 80키로 정도 나가는데 <br />105 입어야 맞나요?</p></div>
+										</div>
+										<div class="textBoxA">
+											<div class="stl_1"><span class="blind">답변</span></div>
+											<div class="stl_2"><p>105 추천해드립니다. 고객님~~</p></div>
+										</div>
+										<!-- 글내용 e -->
+									</div>
+								</li>
+								<li>
+									<ul class="titleLine">
+										<li class="stl_1">교환/변경</li>
+										<li class="stl_2 ellipsis">
+											<div class="qStatus">
+												<span class="qDone">답변완료</span>
+												<span class="qSecret"><span class="blind">비밀글</span></span>
+											</div>
+											<a href="#none">비밀글입니다.</a>
+										</li>
+										<li class="stl_3">sil*****</li>
+										<li class="stl_3">2016-12-31</li>
+									</ul>
+									<div class="conLine">
+										<!-- 글내용 s -->
+										<div class="textBoxQ">
+											<div class="stl_1"><span class="blind">문의</span></div>
+											<div class="stl_2"><p>평소에 100정도 입고,<br /> 키는 181정도에 몸무게는 80키로 정도 나가는데 <br />105 입어야 맞나요?</p></div>
+										</div>
+										<div class="textBoxA">
+											<div class="stl_1"><span class="blind">답변</span></div>
+											<div class="stl_2"><p>105 추천해드립니다. 고객님~~</p></div>
+										</div>
+										<!-- 글내용 e -->
+									</div>
+								</li>
+								<li>
+									<ul class="titleLine">
+										<li class="stl_1">교환/변경</li>
+										<li class="stl_2 ellipsis">
+											<div class="qStatus">
+												<span class="qDone">답변완료</span>
+												<span class="qSecret"><span class="blind">비밀글</span></span>
+											</div>
+											<a href="#none">비밀글입니다.</a>
+										</li>
+										<li class="stl_3">sil*****</li>
+										<li class="stl_3">2016-12-31</li>
+									</ul>
+									<div class="conLine">
+										<!-- 글내용 s -->
+										<div class="textBoxQ">
+											<div class="stl_1"><span class="blind">문의</span></div>
+											<div class="stl_2"><p>평소에 100정도 입고,<br /> 키는 181정도에 몸무게는 80키로 정도 나가는데 <br />105 입어야 맞나요?</p></div>
+										</div>
+										<div class="textBoxA">
+											<div class="stl_1"><span class="blind">답변</span></div>
+											<div class="stl_2"><p>105 추천해드립니다. 고객님~~</p></div>
+										</div>
+										<!-- 글내용 e -->
+									</div>
+								</li>
+								<li>
+									<ul class="titleLine">
+										<li class="stl_1">교환/변경</li>
+										<li class="stl_2 ellipsis">
+											<div class="qStatus">
+												<span class="qDone">답변완료</span>
+												<span class="qSecret"><span class="blind">비밀글</span></span>
+											</div>
+											<a href="#none">비밀글입니다.</a>
+										</li>
+										<li class="stl_3">sil*****</li>
+										<li class="stl_3">2016-12-31</li>
+									</ul>
+									<div class="conLine">
+										<!-- 글내용 s -->
+										<div class="textBoxQ">
+											<div class="stl_1"><span class="blind">문의</span></div>
+											<div class="stl_2"><p>평소에 100정도 입고,<br /> 키는 181정도에 몸무게는 80키로 정도 나가는데 <br />105 입어야 맞나요?</p></div>
+										</div>
+										<div class="textBoxA">
+											<div class="stl_1"><span class="blind">답변</span></div>
+											<div class="stl_2"><p>105 추천해드립니다. 고객님~~</p></div>
+										</div>
+										<!-- 글내용 e -->
+									</div>
+								</li>
+								<li>
+									<ul class="titleLine">
+										<li class="stl_1">교환/변경</li>
+										<li class="stl_2 ellipsis">
+											<div class="qStatus">
+												<span class="qDone">답변완료</span>
+												<span class="qSecret"><span class="blind">비밀글</span></span>
+											</div>
+											<a href="#none">비밀글입니다.</a>
+										</li>
+										<li class="stl_3">sil*****</li>
+										<li class="stl_3">2016-12-31</li>
+									</ul>
+									<div class="conLine">
+										<!-- 글내용 s -->
+										<div class="textBoxQ">
+											<div class="stl_1"><span class="blind">문의</span></div>
+											<div class="stl_2"><p>평소에 100정도 입고,<br /> 키는 181정도에 몸무게는 80키로 정도 나가는데 <br />105 입어야 맞나요?</p></div>
+										</div>
+										<div class="textBoxA">
+											<div class="stl_1"><span class="blind">답변</span></div>
+											<div class="stl_2"><p>105 추천해드립니다. 고객님~~</p></div>
+										</div>
+										<!-- 글내용 e -->
+									</div>
+								</li>
+								<li>
+									<ul class="titleLine">
+										<li class="stl_1">교환/변경</li>
+										<li class="stl_2 ellipsis">
+											<div class="qStatus">
+												<span class="qDone">답변완료</span>
+												<span class="qSecret"><span class="blind">비밀글</span></span>
+											</div>
+											<a href="#none">비밀글입니다.</a>
+										</li>
+										<li class="stl_3">sil*****</li>
+										<li class="stl_3">2016-12-31</li>
+									</ul>
+									<div class="conLine">
+										<!-- 글내용 s -->
+										<div class="textBoxQ">
+											<div class="stl_1"><span class="blind">문의</span></div>
+											<div class="stl_2"><p>평소에 100정도 입고,<br /> 키는 181정도에 몸무게는 80키로 정도 나가는데 <br />105 입어야 맞나요?</p></div>
+										</div>
+										<div class="textBoxA">
+											<div class="stl_1"><span class="blind">답변</span></div>
+											<div class="stl_2"><p>105 추천해드립니다. 고객님~~</p></div>
+										</div>
+										<!-- 글내용 e -->
+									</div>
+								</li>
+								<li>
+									<ul class="titleLine">
+										<li class="stl_1">교환/변경</li>
+										<li class="stl_2 ellipsis">
+											<div class="qStatus">
+												<span class="qDone">답변완료</span>
+												<span class="qSecret"><span class="blind">비밀글</span></span>
+											</div>
+											<a href="#none">비밀글입니다.</a>
+										</li>
+										<li class="stl_3">sil*****</li>
+										<li class="stl_3">2016-12-31</li>
+									</ul>
+									<div class="conLine">
+										<!-- 글내용 s -->
+										<div class="textBoxQ">
+											<div class="stl_1"><span class="blind">문의</span></div>
+											<div class="stl_2"><p>평소에 100정도 입고,<br /> 키는 181정도에 몸무게는 80키로 정도 나가는데 <br />105 입어야 맞나요?</p></div>
+										</div>
+										<div class="textBoxA">
+											<div class="stl_1"><span class="blind">답변</span></div>
+											<div class="stl_2"><p>105 추천해드립니다. 고객님~~</p></div>
+										</div>
+										<!-- 글내용 e -->
+									</div>
+								</li>
+							</ul>
+							<? include 'include/paging_box.php' ?>
+						</div>
+						<h4>문의하기</h4>
+						<div class="questRegBox">
+							<div class="boardOption">
+								<input type="checkbox" id="chck_secret"/><label for="chck_secret">비밀글</label>
+								<select name="" id="">
+									<option value="">문의유형(전체)</option>
+									<option value="">상품</option>
+									<option value="">배송</option>
+									<option value="">교환/변경</option>
+								</select>
+							</div>
+							<div class="regText">
+								<textarea name="" id="" cols="30" rows="5"></textarea>
+							</div>
+							<div class="pageBtnBox taR">
+								<a href="#none" class="btnS1 blckBtn">등록</a>
 							</div>
 						</div>
-					</li>
-					<li>
-						<div class="epsdscItem epsdscItem3">
-							<div class="epsdscTitle">OPEN 방식</div>
-							<div class="epsdscCon">
-								오픈한 택은 자동으로 소멸되어 나중에<br>
-								참여를 해도 조건은 동일합니다.<br>
-								<br>
-								까볼 때 마다 99.9% 할인택이<br>
-								존재하며, 까보기에 대한 횟수제한은<br>
-								없습니다. (※ 검정색원 = 확률정보)<br>
-							</div>
-						</div>
-					</li>
-				</ul>
+					</section>
+					<section id="goodsDeliveryBox">
+						<ul class="pageTab">
+							<li><a href="#goodsInfoBox">상품정보</a></li>
+							<li><a href="#goodsQnaBox">상품문의</a></li>
+							<li class="actOn"><a href="#goodsDeliveryBox">배송안내</a></li>
+							<li><a href="#goodsReturnBox">교환 및 환불안내</a></li>
+						</ul>
+						<h4>배송안내</h4>
+						<table class="viewTable" summary="배송비,배송기간,교환/반품시">
+							<caption>배송안내</caption>
+							<colgroup><col width="20%"/><col /></colgroup>
+							<tr>
+								<th scope="row">배송비</th>
+								<td>5,000원</td>
+							</tr>
+							<tr>
+								<th scope="row">배송기간</th>
+								<td>3일 영업일 이내 (토,일, 공휴일 제외)</td>
+							</tr>
+							<tr>
+								<th scope="row">교환/반품시</th>
+								<td>교환시 5,000원 / 반품시 2,500원</td>
+							</tr>
+						</table>
+					</section>
+					<section id="goodsReturnBox">
+						<ul class="pageTab">
+							<li><a href="#goodsInfoBox">상품정보</a></li>
+							<li><a href="#goodsQnaBox">상품문의</a></li>
+							<li><a href="#goodsDeliveryBox">배송안내</a></li>
+							<li class="actOn"><a href="#goodsReturnBox">교환 및 환불안내</a></li>
+						</ul>
+						<h4>교환 및 환불안내</h4>
+						<table class="viewTable" summary="교환/반품(환불)기간,교환,교환/반품불가사유안내">
+							<caption>배송안내</caption>
+							<colgroup><col width="20%"/><col /></colgroup>
+							<tr>
+								<th scope="row">교환/반품(환불)기간</th>
+								<td>
+									<p>
+									고객님의 단순변심으로 인한 교환·반품은, 실제 상품등을 수령하신 날부터 7일이내<br />
+									단, 상품안내 페이지에 표시된 교환/반품 기간이 7일보다 긴 경우에는 그 기간 고객님이 받으신 상품 등의 내용이 표시·광고 내용과 다르거나 <br />
+									계약내용과 다르게 이행된 경우에는 상품 등을 수령한 날부터 3개월 이내, 그 사실을 안 날 또는 알 수 있었던 날부터 30일 이내<br />
+									<br />
+									택인택 상품 교환·반품 안내<br />
+									- 식품 7일 이내, 의류·보석 15일 이내, 그 밖의 일반 상품 30일 이내 교환 반품 가능
+									- 주문제작 상품 등 일부 상품은 교환·반품 기준이 상이할 수 있습니다.
+									전자상거래법에 따른 교환·반품 규정이 상품공급업체가 개별적으로 지정한 교환·반품 조건 보다 우선 합니다.
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">교환</th>
+								<td>
+									<p>
+									고객님의 단순변심으로 인하여 교환ㆍ반품을 하시는 경우에는 상품등의 반환에 필요한 비용을 고객님이 부담하셔야 합니다.<br />
+									- 예상 반품비 : 3,000원, 예상 교환비 : 3,000원 (주문 상품을 1개씩 각각 반품/교환 시 상품별로 발생하는 비용임)<br />
+									- 고객님께서 직접 택배로 발송하실 경우 택배비는 본인 부담입니다.<br />
+									- 중·대형 가전, 가구등 설치상품의 경우 상품, 지역, 설치비 등에 따라 반품·교환 비용이 상이할 수 있습니다.<br />
+									- 회원등급에 따라 반품·교환 비용이 상이할 수 있습니다.<br />
+									-  정확한 반품·교환비는 My Tag에서 반품·교환 접수 시 또는 고객센터로 문의 시 확인 가능합니다.<br />
+									<br />
+									고객님이 받으신 상품등의 내용이 표시·광고 내용과 다르거나 계약내용과 다르게 이행되어 교환·반품을 하시는 경우에는, 교환·반품 배송비는 무료입니다.<br />
+									<br />
+									교환/반품 규정 안내<br />
+									상품 정보 페이지에 협력업체가 개별적으로 게시한 “반품, 교환, 환불”(이하 “청약철회”라 합니다)에 관한 내용이 “전자상거래등에서의소비자보호에관한 법률” (이하 “전상법이라 합니다)에서 규정한 내용보다 고객님께 유리한 경우에는 개별적으로 게시한 해당 “청약철회” 내용을 우선 적용하며, “전상법”의 규정보다 불리한 경우에는 “전상법”의 규정을 우선하여 적용합니다.
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">교환/반품<br/>불가사유안내</th>
+								<td>
+									<p>
+									포장을 개봉하여 사용하거나 또는 설치가 완료되어 상품등의 가치가 훼손된 경우에는 교환/반품이 불가하오니 이 점 양해하여 주시기 바랍니다.<br />
+									단, 상품의 내용을 확인하기 위하여 포장을 개봉한 경우에는 교환/반품이 가능합니다.<br />
+									<br />
+									• 고객님의 단순변심으로 인한 교환/반품 요청이 상품을 수령한 날로부터 7일을 경과한 경우.(택인택 상품은 30일, 의류/보석 15일)<br />
+									• 고객님의 책임 있는 사유로 상품 등의 가치가 심하게 파손되거나 훼손된 경우.<br />
+									• 고객님의 사용 또는 일부 소비에 의하여 상품 등의 가치가 현저히 감소된 경우.(예: 화장품, 식품, 사용한 가전제품으로 재판매가 불가능한 경우.)<br />
+									• 시간이 경과되어 재판매가 곤란할 정도로 상품 등의 가치가 상실된 경우.(예: 계절의류, 냉난방기기 등 계절상품)<br />
+									• 배송된 상품이 하자없음을 확인한 후 설치가 완료된 상품의 경우.(예: 가전제품, 가구, 헬스기기 등)<br />
+									• 고객님의 요청에 따라 개별적으로 주문 제작되는 상품의 경우.(예: 수제화, 귀금속 등)<br />
+									• 구매하신 상품의 구성품이 누락된 경우.(예 : 화장품 세트 상품, 의류에 부착되는 액세사리, 가전제품의 부속품, 사은품 등)<br />
+									<br />
+									단, 그 구성품이 훼손없이 회수가 가능한 경우에는 교환/반품이 가능합니다.<br />
+									• 복제가 가능한 상품 등의 포장을 훼손한 경우. (예 : 도서, DVD, CD 등 복제 가능한 상품)<br />
+									<br />
+									기타, '전자상거래 등에서의 소비자보호에 관한 법률'이 정하는 청약철회 제한사유에 해당되는 경우.<br />
+									</p>
+								</td>
+							</tr>
+						</table>
+					</section>
+				</div>
+				<div class="wWrapR">
+					<? include 'inc_other_goods.html' ?>
+				</div>
 			</div>
 		</div>
-		<? include 'include/footer.php' ?> <!-- footer -->
-		<? include 'include/popup.php' ?> <!-- popup -->
-		<? include 'include/div_popup.php' ?> <!-- divPopup -->
+		<? include 'include/footer.php' ?>
+		<? include 'include/popup.php' ?>
+		<? include 'include/inc_modal_goods.php' ?>
 	</div>
 	<script type="text/javascript">
-		quickY=710;//quickMenu position
-		$(document).ready(function() {
-			$("#mCaruselWrap").slick({
-				arrows:true,
-				dots:true,
-				autoplay:true,
-				autoplaySpeed:5000,
-				infinite : true,
-				speed : 0,
-				fade:true,
-				cssEase:'linear',
-				slidesToShow:1,
-				adaptiveHeight:true
-			});
-			$("#mCaruselWrap").on('beforeChange',function(event,slick,currentSlide,nextSlide){
-				var currentE=$(slick.$slides[nextSlide]);
-				var acingItem=currentE.attr('class');
-				var bgc=currentE.attr('data-bgc');
-				/*
-				if(acingItem=='item acting slick-slide slick-current slick-active'){
-					actAnim(currentE.parents('#mainCaruselBox'),"swing");
-				}
-				*/
-				//console.log(bgc)
-				currentE.parents('#mainCaruselBox').css('background',bgc);
-				//currentE.parents('#mainCaruselBox').animate({"background-color":bgc},100);
-			});
-		});
-		//무료택안내
-		//callPopup("#freeTagOpenCouponPopBox");
+		currentLocation(0);
+		/*
+<? if($_SESSION['ssTEMP'] <= (time()-2)) { ?>
+		loadGraph();
+<? } ?>
+		*/
 	</script>
 </body>
 </html>

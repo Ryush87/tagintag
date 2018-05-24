@@ -1,66 +1,23 @@
-<? include '../include/top.php' ?> <!-- top -->
+<? include '../include/top.php' ?>
 <link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
 <link rel="stylesheet" href="<?=$root?>/skin/css/goods.css">
 </head>
 <body>
-	<? include '../include/top_notice.php' ?> <!-- topBoard  -->
+	<? include '../include/inc_top_notice.php' ?>
 	<div id="wrap">
-		<? include '../include/header.php' ?> <!-- header  -->
+		<? include '../include/header.php' ?>
 		<div id="contents" class="commingGoodsWrap">
 			<div class="wWrap"><h2 class="mt45">다가올 상품</h2></div>
 			<section id="commingGoodsBox">
 				<div class="wWrap">
-					<? include 'inc_episode_list_tab.php' ?> <!-- tab  -->
-					<ul class="episodeBoxWrap">
-						<li>
-							<div class="epsdItem">
-								<div class="epsdLabel epsdLabel1"><span>오픈전</span></div>
-								<div class="epsdImg"><img src="<?=$root?>/skin/images/temp/goldbar1g_100x100.jpg" alt="상품이미지" /></div>
-								<div class="epsdTitle">24K골드바</div>
-								<div class="epsdNum"><span>32</span>회</div>
-								<div class="epsdDate">2017.09.26</div>
-								<div class="epsdDesc">오픈(판매)예정</div>
-								<div class="epsdBtns">
-									<a href="#none" onclick="callPopup('#smsAlarmPopBox'); return false;" class="btnS1 whtBtn">문자알림</a>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="epsdItem">
-								<div class="epsdLabel epsdLabel1"><span>오픈전</span></div>
-								<div class="epsdImg"><img src="<?=$root?>/skin/images/temp/goldbar1g_100x100.jpg" alt="상품이미지" /></div>
-								<div class="epsdTitle">24K골드바</div>
-								<div class="epsdNum"><span>32</span>회</div>
-								<div class="epsdDate">2017.09.26</div>
-								<div class="epsdDesc">오픈(판매)예정</div>
-								<div class="epsdBtns">
-									<a href="#none" onclick="callPopup('#smsAlarmPopBox'); return false;" class="btnS1 whtBtn">문자알림</a>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="epsdItem">
-								<div class="epsdLabel epsdLabel1"><span>오픈전</span></div>
-								<div class="epsdImg"><img src="<?=$root?>/skin/images/temp/goldbar1g_100x100.jpg" alt="상품이미지" /></div>
-								<div class="epsdTitle">24K골드바</div>
-								<div class="epsdNum"><span>32</span>회</div>
-								<div class="epsdDate">2017.09.26</div>
-								<div class="epsdDesc">오픈(판매)예정</div>
-								<div class="epsdBtns">
-									<a href="#none" onclick="callPopup('#smsAlarmPopBox'); return false;" class="btnS1 whtBtn">문자알림</a>
-								</div>
-							</div>
-						</li>
-					</ul>
-					<? include '../include/paging_box.php' ?>
+					<img src="<?=$root?>/skin/images/temp/temp_comming_goods.jpg" alt="" />
 				</div>
 			</section>
 		</div>
-		<? include '../include/footer.php' ?> <!-- footer -->
-		<? include '../include/div_popup.php' ?> <!-- divPopup -->
+		<? include '../include/footer.php' ?>
 	</div>
 	<script type="text/javascript">
-		currentLocation(2); //현재페이지 위치
+		currentLocation(2);
 	</script>
 </body>
 </html>

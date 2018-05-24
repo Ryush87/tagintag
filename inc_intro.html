@@ -1,0 +1,106 @@
+<style type="text/css">
+	.introWrap {position:fixed;top:0;left:0;width:100%;height:100%;z-index:9999;}
+		.introBoxBg {position:relative;padding-top:380px;width:100%;height:100%;background:rgba(0,0,0,0.95);}
+			.introBox {position:relative;margin:0 auto;width:900px;text-align:center;}
+				.introBox h2 {fon}
+				.introBox .italicTitle {font:italic 400 48px / 90px "BMDoHyeon";color:#fff;transform:rotate(-5deg) !important;text-shadow:1px 2px 5px #000;}
+					.introBox .italicTitle span {font-style:italic;font-size:60px;}
+				.introBox .introTitleBg {position:absolute;top:10px;left:50%;margin-left:-456px;width:100%;}
+				.introBtnBox {margin-top:100px;}
+					.introBox .introBtn {display:inline-block;width:160px;height:110px;background:url(skin/images/temp/temp_intro_btn_bg.png) no-repeat;}
+					.introBox .introBtn:hover {background-position:0 -110px;}
+	.introWrap.startDemo {
+							-webkit-animation-name:startDemo;
+							-webkit-animation-duration:2s;
+							-webkit-animation-timing-function:ease;
+							-webkit-animation-delay:1s;
+							-webkit-animation-iteration-count:1;
+							-webkit-animation-direction: alternate;
+							-webkit-animation-play-state:running;
+							-webkit-animation-fill-mode:forwards;
+							
+							-moz-animation-name:startDemo;
+							-moz-animation-duration:2s;
+							-moz-animation-timing-function:ease;
+							-moz-animation-delay:1s;
+							-moz-animation-iteration-count:1;
+							-moz-animation-direction: alternate;
+							-moz-animation-play-state:running;
+							-moz-animation-fill-mode:forwards;
+							
+							-o-animation-name:startDemo;
+							-o-animation-duration:2s;
+							-o-animation-timing-function:ease;
+							-o-animation-delay:1s;
+							-o-animation-iteration-count:1;
+							-o-animation-direction: alternate;
+							-o-animation-play-state:running;
+							-o-animation-fill-mode:forwards;
+							
+							-ms-animation-name:startDemo;
+							-ms-animation-duration:2s;
+							-ms-animation-timing-function:ease;
+							-ms-animation-delay:1s;
+							-ms-animation-iteration-count:1;
+							-ms-animation-direction: alternate;
+							-ms-animation-play-state:running;
+							-ms-animation-fill-mode:forwards;
+							
+							animation-name:startDemo;
+							animation-duration:2s;
+							animation-timing-function:ease;
+							animation-delay:1s;
+							animation-iteration-count:1;
+							animation-direction: alternate;
+							animation-play-state:running;
+							animation-fill-mode:forwards;
+						}
+	
+	@-webkit-keyframes startDemo {
+		from{transform:translate3d(0,0,0);}
+		5%{transform:translate3d(0,20px,0);}
+		to{transform:translate3d(0,-1000px,0);}
+	}
+	@-moz-keyframes startDemo {
+		from{transform:translate3d(0,0,0);}
+		5%{transform:translate3d(0,20px,0);}
+		to{transform:translate3d(0,-1000px,0);}
+	}
+	@-o-keyframes startDemo {
+		from{transform:translate3d(0,0,0);}
+		5%{transform:translate3d(0,20px,0);}
+		to{transform:translate3d(0,-1000px,0);}
+	}
+	@-ms-keyframes startDemo {
+		from{transform:translate3d(0,0,0);}
+		5%{transform:translate3d(0,20px,0);}
+		to{transform:translate3d(0,-1000px,0);}
+	}
+	@keyframes startDemo {
+		from{transform:translate3d(0,0,0);}
+		5%{transform:translate3d(0,20px,0);}
+		to{transform:translate3d(0,-1000px,0);}
+	}
+	
+</style>
+<div class="introWrap">
+	<div class="introBoxBg">
+		<div class="introBox fadeEff slide-lt">
+			<div class="introTitleBg fadeEff slide-rt e1"><img src="<?=$root?>/skin/images/temp/temp_intro_text_bg.png" alt="밑줄"/></div>
+			<h2 class="italicTitle">택인택 시즌1. '<span>소소한 먹거리</span>'편</h2>
+			<div class="introBtnBox fadeEff slide-up e4">
+				<a href="#none" class="introBtn"><span class="blind">Go</span></a>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	$('body').addClass('actPop');
+	$('.introWrap .fadeEff').addClass('in-view');
+	$('.introWrap .introBtn').click(function(){
+		$('.introWrap').addClass('startDemo');
+		setTimeout('$("body").removeClass("actPop")',2000);
+		setTimeout('$(".introWrap").css("display","none")',4000);
+		setTimeout('loadGraph()',3000);
+	});
+</script>
