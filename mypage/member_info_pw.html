@@ -1,0 +1,34 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+<link rel="stylesheet" href="<?=$root?>/skin/css/goods.css">
+</head>
+<body>
+	<? include '../include/top_notice.php' ?> <!-- topBoard  -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header  -->
+		<div id="contents" class="myMemberInfoPwWrap">
+			<? include '../include/location_box.php' ?> <!-- location  -->
+			<div class="wWrap">
+				<div class="subPageGridL">
+					<? include '../include/snb_mypage.php' ?> <!-- snb  -->
+				</div>
+				<div class="subPageGridR">
+					<section id="myMemberInfoPwBox">
+						<h2>회원정보수정</h2>
+						<div class="borderBox_ddd3px">
+							<h5 class="subtitle_red">비밀번호 확인</h5>
+							<div class="txtBox mb50">고객님의 개인정보보호와 보다 안전한 서비스를 위하여 비밀번호를 확인합니다.</div>
+							<input type="password" id="pwConfilm" style="width:300px;" />
+							<a href="member_info.html" class="btnS2 blckBtn">확인</a>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+	</div>
+	<script type="text/javascript">
+		currentLocation(99,7) //현재페이지 위치
+	</script>
+</body>
+</html>

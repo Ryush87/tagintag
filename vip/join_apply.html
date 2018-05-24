@@ -1,0 +1,129 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+<link rel="stylesheet" href="<?=$root?>/skin/css/vip.css">
+</head>
+<body>
+	<? include '../include/top_notice.php' ?> <!-- topBoard  -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header  -->
+		<div id="contents" class="vipJoinApplyWrap">
+			<div class="wWrap"><h2 class="mt45">VIP회원</h2></div>
+			<section id="vipJoinApplyBox">
+				<div class="wWrap">
+					<div class="vjaTitle">
+						<div class="vipEventDesc">이번 달에 가입하면, 다음달 1일부터 <span>순금 50돈</span>씩 팍팍!</div>
+					</div>
+				</div>
+				<div class="wWrap2">
+					<div class="balanceBox mt50">
+						<div class="totalBalanceBox">
+							<div class="balanceTit">고객님의 택머니 잔액</div>
+							<div class="balanceNum"><span>8,935,708</span>원</div>
+						</div>
+					</div>
+					<div class="pageBtnBox taR">
+						<div class="txtBox fL">※ 택머니가 부족 할 경우 택머니 충전 후 다시 시도해 주시기 바랍니다.</div>
+						<a href="../mypage/charge_money.html" class="btnS1 ylwBtn">택머니 충전</a>
+					</div>
+					
+					<h5 class="mt20">VIP회원 가입기간 선택(일반형)</h5>
+					<table class="listTable mt10">
+						<caption>VIP회원 가입기간 선택(일반형)</caption>
+						<colgroup><col width="60px"/><col width="80px"/><col width="100px"/><col /></colgroup>
+						<tr>
+							<th scope="col">선택</th>
+							<th scope="col">가입기간</th>
+							<th scope="col">택머니</th>
+							<th scope="col">보너스 혜택 + (택포인트 충전)</th>
+						</tr>
+						<tr>
+							<td><input type="radio" id="chargeTerm1" name="chargeTerm"/></td>
+							<td><label for="chargeTerm1">1개월</label></td>
+							<td>30,000 원</td>
+							<td class="taL">※ 결제일 기준 익월 1일부터 1개월 사용가능</td>
+						</tr>
+						<tr>
+							<td><input type="radio" id="chargeTerm2" name="chargeTerm"/></td>
+							<td><label for="chargeTerm2">3개월</label></td>
+							<td>90,000 원</td>
+							<td class="taL">※ 결제일 기준 익월 1일부터 3개월 사용가능 + 보너스 혜택(택포인트 5,000P 추가적립)</td>
+						</tr>
+						<tr>
+							<td><input type="radio" id="chargeTerm3" name="chargeTerm"/></td>
+							<td><label for="chargeTerm3">12개월</label></td>
+							<td>360,000 원</td>
+							<td class="taL">※ 결제일 기준 익월 1일부터 1년 사용가능 +보너스 혜택(택포인트 25,000P 추가적립) </td>
+						</tr>
+					</table>
+					<ul class="brownDotLi fL mt20">
+						<li>결제하신 가입기간동안 VIP회원으로써 모든 이용이 가능합니다.</li>
+						<li>판매일별 까보기(택오픈) 횟수는 일일 1회입니다.(월 20일 판매)</li>
+						<li>VIP회원의 이용은 결제월 기준 익월 1일부터 가입기간동안 이용이 가능합니다.[예 : 7월 15일(3개월 가입) → 8월 1일 ~ 10월 31일(3개월) 이용가능]</li>
+						<li>추가로 제공되는 무료택포인트는 택오픈(Tag open)시 사용되는 포인트로 환불이 불가능합니다.</li>
+						<li>월별 부여받은 택 오픈 유효기간은 익월 말일까지이며, 익월 말일이후 소멸되오니 착오 없으시길 바랍니다.</li>
+					</ul>
+					<div class="pageBtnBox taC pt20 dotLineTop">
+						<a href="#none" class="btnS1 blckBtn" onclick="callPopup('#vipJoinPayPopBox'); return false;">일반형 결제</a>
+					</div>
+
+					<h5 class="mt20">VIP회원 가입기간 선택(멀티형)</h5>
+					<table class="listTable mt10">
+						<caption>VIP회원 가입기간 선택(일반형)</caption>
+						<colgroup><col width="60px"/><col width="120px"/><col width="60px"/><col width="100px"/><col width="100px"/><col width="100px"/><col /></colgroup>
+						<tr>
+							<th scope="col">선택1</th>
+							<th scope="col">일별 까보기 횟수</th>
+							<th scope="col">선택2</th>
+							<th scope="col">가입기간</th>
+							<th scope="col">택머니</th>
+							<th scope="col">보너스<br>(택포인트)</th>
+							<th scope="col">비고</th>
+						</tr>
+						<tr>
+							<td><input type="radio" id="chargeTerm_v2_1" name="chargeTerm_v2"/></td>
+							<td><label for="chargeTerm_v2_1">2회</label></td>
+							<td><input type="radio" id="chargeTerm_v3_1" name="chargeTerm_v3"/></td>
+							<td><label for="chargeTerm_v3_1">1개월</label></td>
+							<td rowspan="3"><span class="fwB pointC1">270,000 원</span></td>
+							<td rowspan="3"><span class="fwB pointC1">+ 16,200</span></td>
+							<td rowspan="3" class="taL">※ 결제일 기준 익월 1일부터 가입기간 동안 선택하신일별 까보기 횟수만큼 택오픈 가능(일반형 VIP회원의 경우 일별 까보기 횟수 = 1회)</td>
+						</tr>
+						<tr>
+							<td><input type="radio" id="chargeTerm_v2_2" name="chargeTerm_v2"/></td>
+							<td><label for="chargeTerm_v2_2">3회</label></td>
+							<td><input type="radio" id="chargeTerm_v3_2" name="chargeTerm_v3"/></td>
+							<td><label for="chargeTerm_v3_2">3개월</label></td>
+						</tr>
+						<tr>
+							<td><input type="radio" id="chargeTerm_v2_3" name="chargeTerm_v2"/></td>
+							<td><label for="chargeTerm_v2_3">5회</label></td>
+							<td><input type="radio" id="chargeTerm_v3_3" name="chargeTerm_v3"/></td>
+							<td><label for="chargeTerm_v3_3">12개월</label></td>
+						</tr>
+					</table>
+					<ul class="brownDotLi fL mt20">
+						<li>선택 1.과 선택 2.를 모두 체크하시면 결제하실 택머니가 계산됩니다.</li>
+						<li>선택하신 일별 까보기(택오픈) 횟수만큼 판매일별 까보기(택오픈)가 가능합니다.(월 20일 판매)</li>
+						<li>결제하신 가입기간동안 VIP회원으로써 모든 이용이 가능합니다.</li>
+						<li>VIP회원의 이용은 결제월 기준 익월 1일부터 가입기간동안 이용이 가능합니다.[예 : 7월 15일(3개월 가입) → 8월 1일 ~ 10월 31일(3개월) 이용가능]</li>
+						<li>추가로 제공되는 무료택포인트는 택오픈(Tag open)시 사용되는 포인트로 환불이 불가능합니다.</li>
+						<li>월별 부여받은 택 오픈 유효기간은 익월 말일까지이며, 익월 말일이후 소멸되오니 착오 없으시길 바랍니다.</li>
+					</ul>
+					<div class="pageBtnBox taC pt20 dotLineTop">
+						<a href="#none" class="btnS1 blckBtn" onclick="callPopup('#vipJoinPayLackPopBox'); return false;">멀티형 결제</a>
+					</div>
+					<h5 class="mt20">택머니란?</h5>
+					<div class="moneyInfoDesc"><p>택머니(Tag Money)는 택인택 내에서 상품의 구매 또는 VIP회원 가입 등 결제시 사용할 수 있는 사이버 머니입니다. 빠르게 재고가 소진되는 택인택 서비스의 특성상 결제과정에서의 불필요한 시간 지체, 오류 발생 등의 불이익을 막기 위해 미리 충전해두셨다가 사용하시면 더욱 편리하게 서비스를 이용 하실 수 있습니다. 택머니는 상품구매 대금, 재판매 거래대금, VIP회원 가입비 등으로 사용이 가능하며 신용/체크카드 또는 실시간 계좌이체로 충전이 가능합니다. <br/><span class="pointC5">※ 택머니는 수수료 공제 후 환불이 가능합니다.</span></p></div>
+					<h5 class="mt20">택포인트란?</h5>
+					<div class="pointInfoDesc mb0"><p>택포인트(Tag point)는 상품의 구매전 할인율을 미리 보기 위한 포인트로, 택오픈(Tag open)시 사용되는 비용의 단위입니다. 즉, “까보기”때 필요한 포인트로 택오픈 용도로만 사용이 가능하며 무료포인트 충전, 신용/체크카드, 실시간 계좌이체 등으로 충전이 가능합니다. <br/><span class="pointC5">※ 택포인트는 환불이 불가능합니다.</span></p></div>
+				</div>
+			</section>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+		<? include '../include/div_popup.php' ?> <!-- divPopup -->
+	</div>
+	<script type="text/javascript">
+		//currentLocation(2); //현재페이지 위치
+	</script>
+</body>
+</html>

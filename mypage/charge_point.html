@@ -1,0 +1,171 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+</head>
+<body>
+	<? include '../include/top_notice.php' ?> <!-- topBoard  -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header  -->
+		<div id="contents" class="myChargeWrap">
+			<? include '../include/location_box.php' ?> <!-- location  -->
+			<div class="wWrap">
+				<div class="subPageGridL">
+					<? include '../include/snb_mypage.php' ?> <!-- snb  -->
+				</div>
+				<div class="subPageGridR">
+					<section id="myPointChargeBox">
+						<h2>충전하기</h2>
+						<ul class="pageTab mt0">
+							<li class="actOn"><a href="charge_point.html">택포인트 충전</a></li>
+							<li><a href="charge_money.html">택머니 충전</a></li>
+						</ul>
+						<h5>택포인트란?</h5>
+						<div class="pointInfoDesc"><p>택포인트(Tag point)는 상품의 구매전 할인율을 미리 보기 위한 포인트로, 택오픈(Tag open)시 사용되는 비용의 단위입니다. 즉, “까보기”때 필요한 포인트로 택오픈 용도로만 사용이 가능하며 무료포인트 충전, 신용/체크카드, 실시간 계좌이체 등으로 충전이 가능합니다.<br/><span class="pointC5">※ 택포인트는 수수료(10%) 공제 후 환불이 가능합니다.</span><br/><span class="pointC5">※ 직접결제(카드결제/계좌이체 등)외 회원가입, 리워드 등 무료로 적립된 포인트는 환불되지 않습니다.</span></p></div>
+						<!-- 20170406 s -->
+						<!--
+						<div class="grid100 mt20 pt20">
+							<div class="radioBoxWrap">
+								<input type="radio" id="chargeKind2" name="chargeKind"/><label for="chargeKind2">금액선택</label>
+								<select name="" id="" data-custom-id="chargePrice_1" data-custom-class="chargePriceSlt">
+									<option value="">금액선택</option>
+									<option value="">20,000</option>
+									<option value="">15,000</option>
+								</select>
+							</div>
+						</div>
+						-->
+						<!-- 20170406 e -->
+						<div class="grid100">
+							<ul class="costSummaryBox">
+								<li class="balaceP">보유 택포인트<span class="pointC3">20,000원</span></li>
+							</ul>
+							<table class="listTable mt10">
+								<caption>충전금액 선택</caption>
+								<colgroup><col /></colgroup>
+								<tr>
+									<th scope="col">충전금액 선택</th>
+								</tr>
+								<tr>
+									<td>
+										<div class="radioBoxWrap">
+											<input type="radio" id="chargePrice1" name="chargePrice"/><label for="chargePrice1">5,000원</label>
+											<input type="radio" id="chargePrice2" name="chargePrice"/><label for="chargePrice2">10,000원</label>
+											<input type="radio" id="chargePrice3" name="chargePrice"/><label for="chargePrice3">50,000원</label>
+											<input type="radio" id="chargePrice4" name="chargePrice"/><label for="chargePrice4">100,000원</label>
+											<input type="radio" id="chargePrice5" name="chargePrice"/><label for="chargePrice5">1,000,000원</label>
+											<input type="radio" id="chargePrice6" name="chargePrice"/><label for="chargePrice6">2,000,000원</label>
+										</div>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="paymentInputBox mt30">
+							<div class="totalPriceBox">
+								<div class="priceTit">최종 결제금액</div>
+								<div class="priceNum"><span>5,500</span>원</div>
+							</div>
+							<!-- 20170406 s -->
+							<!--
+							<ul class="payKindUlBox">
+								<li class="payKindLi_1">
+									<ul>
+										<li>
+											<div class="radioBoxWrap payKindChoice">
+												<input type="radio" id="pay_kind_2" name="pay_kind" />
+												<label for="pay_kind_2">신용/체크카드 결제</label>
+											</div>
+										</li>
+										<li>
+											<div class="grid50">
+												<label for="payKind_1" class="fwB">카드선택</label>
+												<select name="" id="" data-custom-id="payKind_1" data-custom-class="payKindSlt">
+													<option value="">카드사선택</option>
+													<option value="">국민</option>
+													<option value="">삼성</option>
+												</select>
+											</div>
+											<div class="grid50">
+												<label for="payKind_2" class="fwB">할부선택</label>
+												<select name="" id="payKind_2" data-custom-id="payKind_2" data-custom-class="payKindSlt">
+													<option value="">결제기간 선택</option>
+													<option value="">12개월</option>
+													<option value="">11개월</option>
+												</select>
+											</div>
+										</li>
+										<li>- 법인/기업 가드는 무이자 할부 적용이 되지 않습니다.</li>
+										<li><a href="#none" class="smBtn">카드사별 무이자 할부안내</a></li>
+									</ul>
+								</li>
+								<li class="payKindLi_2">
+									<ul>
+										<li>
+											<div class="radioBoxWrap payKindChoice">
+												<input type="radio" id="pay_kind_1" name="pay_kind" />
+												<label for="pay_kind_1">실시간 계좌이체</label>
+											</div>
+										</li>
+										<li>
+											<label for="" class="fwB">현금영수증신청</label>
+											<div class="radioBoxWrap">
+												<input type="radio" id="cash_receipt_1" name="cash_receipt" />
+												<label for="cash_receipt_1">발급</label>
+												<input type="radio" id="cash_receipt_2" name="cash_receipt" />
+												<label for="cash_receipt_2">미발급</label>
+											</div>
+										</li>
+										<li class="deductionBox">
+											<div class="radioBoxWrap">
+												<input type="radio" id="deduction_1" name="cash_receipt" />
+												<label for="deduction_1">소득공제용(일반개인용)</label>
+											</div>
+											<select name="" id="" data-custom-id="payKind_3" data-custom-class="payKindSlt mt10">
+												<option value="">휴대폰번호</option>
+												<option value="">집전화</option>
+											</select>
+											<label for="telNum" class="blind">연락처</label>
+											<input type="text" id="telNum"/>
+										</li>
+										<li>
+											<div class="radioBoxWrap mt10">
+												<input type="radio" id="spending_1" name="cash_receipt" />
+												<label for="spending_1">지출증빙용(사업자용)</label>
+											</div>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							-->
+							<!-- 20170406 e -->
+							<ul class="payKindUlBox">
+								<li class="payKindLi_1">
+									<ul>
+										<li>
+											<div class="radioBoxWrap payKindChoice">
+												<input type="radio" id="pay_kind_1" name="pay_kind" />
+												<label for="pay_kind_1">신용/체크카드 결제</label>
+												<input type="radio" id="pay_kind_2" name="pay_kind" />
+												<label for="pay_kind_2">실시간 계좌이체</label>
+											</div>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="pageBtnBox taR">
+							<div class="checkBoxWrap">
+								<input type="checkbox" id="chck_policy"/><label for="chck_policy">결제하실 금액, 유의사항 등을 확인하였으며, 구매에 동의합니다.</label>
+							</div>
+							<a href="#none" class="btnS1 blckBtn" onclick="callPopup('#tPointChargeDonePopBox'); return false;">결제</a>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+		<? include '../include/div_popup.php' ?> <!-- divPopup -->
+	</div>
+	<script type="text/javascript">
+		currentLocation(99,5,2) //현재페이지 위치
+	</script>
+</body>
+</html>

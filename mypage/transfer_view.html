@@ -1,0 +1,132 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+<link rel="stylesheet" href="<?=$root?>/skin/css/goods.css">
+</head>
+<body>
+	<? include '../include/top_notice.php' ?> <!-- topBoard  -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header  -->
+		<div id="contents" class="myTransferViewWrap">
+			<? include '../include/location_box.php' ?> <!-- location  -->
+			<div class="wWrap">
+				<div class="subPageGridL">
+					<? include '../include/snb_mypage.php' ?> <!-- snb  -->
+				</div>
+				<div class="subPageGridR">
+					<section id="myTransferViewBox">
+						<h2>양도내역</h2>
+						<section id="mytransferViewDetailBox" >
+							<h5>등록정보</h5>
+							<table class="viewTable">
+								<caption>등록정보</caption>
+								<colgroup><col width="150px"/><col width="250px"/><col width="150px"/><col width="250px"/></colgroup>
+								<tr>
+									<th scope="row">양도일</th>
+									<td>2017-05-31</td>
+									<th scope="row">양도상태</th>
+									<td><span class="fwB pointC1">적립대기중</span></td>
+								</tr>
+							</table>
+
+							<table class="viewTable mt50">
+								<caption>등록정보</caption>
+								<colgroup><col width="150px"/><col width="250px"/><col width="150px"/><col width="250px"/></colgroup>
+								<tr>
+									<th scope="row">양도일</th>
+									<td>2017-05-31</td>
+									<th scope="row">양도상태</th>
+									<td><span class="fwB pointC2">적립완료</span>(2017-05-31)</td>
+								</tr>
+							</table>
+							<div class="pageBtnBox taR">
+								<a href="money_status_list.html" class="btnS2 gryBtn2">적립내역</a>
+							</div>
+
+							<table class="viewTable mt50">
+								<caption>등록정보</caption>
+								<colgroup><col width="150px"/><col width="250px"/><col width="150px"/><col width="250px"/></colgroup>
+								<tr>
+									<th scope="row">양도일</th>
+									<td>2017-05-31</td>
+									<th scope="row">양도상태</th>
+									<td><span class="fwB">적립취소</span>(2017-05-31)</td>
+								</tr>
+							</table>
+							<div class="pageBtnBox taR">
+								<a href="#none" class="btnS2 gryBtn2" onclick="callPopup('#saveCancelRaesonPopBox'); return false;">사유확인</a>
+							</div>
+
+						</section>
+
+						<section id="goodsInfoConfilmBox" class="mt50">
+							<h5>상품확인</h5>
+							<table class="viewTable">
+								<caption>상품확인</caption>
+								<colgroup><col /></colgroup>
+								<tr>
+									<th scope="col">품명</th>
+									<th scope="col">할인률</th>
+									<th scope="col">배송비</th>
+									<th scope="col">정가</th>
+									<!-- <th scope="col">시작가</th> -->
+									<th scope="col">택인택가</th>
+								</tr>
+								<tr>
+									<td class="ttaL">
+										<div class="imgbox"><img src="https://goo.gl/BGajfY" alt="상품이미지" /></div>
+										<div class="goodsName">버거킹 와퍼<a href="#none" class="smBtn gvBtn">상품보기</a></div>
+									</td>
+									<td>-97%</td>
+									<td>0</td>
+									<td>5,800</td>
+									<!-- <td>60</td> -->
+									<td><span class="fwB pointC1">150</span></td>
+								</tr>
+							</table>
+						</section>
+						<section id="tTakeOverListBox">
+							<h5>즉시구매 대기자 확인</h5>
+							<div class="takoverListBox">
+								<table>
+									<colgroup>
+										<col width="5%"/>
+										<col width="20%"/>
+										<col width="15%"/>
+										<col width="20%"/>
+										<col width="20%"/>
+										<col width="20%"/>
+									</colgroup>
+									<tr>
+										<th scope="col"></th>
+										<th scope="col">구매자</th>
+										<th scope="col">제시가</th>
+										<th scope="col">양도수수료</th>
+										<th scope="col">예상수익</th>
+										<th scope="col">구매취소 횟수</th>
+									</tr>
+									<tr>
+										<td><img src="<?=$root?>/skin/images/sub_goods/icon_profile1.png" alt="프로필사진" /></td>
+										<td>asd****</td>
+										<td>4,900 원</td>
+										<td>50원(제시가 1%)</td>
+										<td><span class="pointC1 fwB">4,700원</span></td>
+										<td><span class="fwB">12회</span></td>
+									</tr>
+								</table>
+							</div>
+						</section>
+						<div class="pageBtnBox taC mt40">
+							<a href="transfer_list.html" class="btnS1 gryBtn">목록</a>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+		<? include '../include/div_popup.php' ?> <!-- divPopup -->
+	</div>
+	<script type="text/javascript">
+		currentLocation(99,3) //현재페이지 위치
+	</script>
+</body>
+</html>

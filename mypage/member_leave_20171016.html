@@ -1,0 +1,80 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+</head>
+<body>
+	<? include '../include/top_notice.php' ?> <!-- topBoard  -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header  -->
+		<div id="contents" class="myMemberLeaveWrap">
+			<? include '../include/location_box.php' ?> <!-- location  -->
+			<div class="wWrap">
+				<div class="subPageGridL">
+					<? include '../include/snb_mypage.php' ?> <!-- snb  -->
+				</div>
+				<div class="subPageGridR">
+					<section id="myMemberLeaveBox">
+						<h2>회원 탈퇴</h2>
+						<div class="leaveInfoDesc"><p>택인택 회원 탈퇴 시 아래의 안내를 주의깊게 읽은 뒤 절차에 따라 탈퇴 신청 바랍니다.</p></div>
+						<h5>회원 탈퇴 시 유의사항</h5>
+						<div class="sentenceBox mb40">
+							회원탈퇴란, 택인택사이트에 대한 이용해지와 거래 중단을 의미합니다. <br />
+							택인택에서에서 발송하는 광고성 이메일의 경우 회원탈퇴 요청 접수 후 24시간 이내에 발송이 중지됩니다. <br />
+							다만, 드물게 데이터 처리사정상 일부 지연될 수 있으니 혹 회원탈퇴 요청 후 48시간이 지난 후에 광고성 이메일/SMS를 접수하시는 경우 당사에 연락하여 주시기 바랍니다.
+						</div>
+						<h5>회원 탈퇴 처리 조건</h5>
+						<div class="grid100 mb15 txtBox fwB pointC3">회원탈퇴를 위해선 아래 3가지 조건 확인이 필요합니다.</div>
+						<ul class="brownDotLi dotLineTop mb40">
+							<li>구매 또는 재판매가 진행중인 상품이 없어야 합니다.</li>
+							<li>사용가능한 택머니가 없어야 합니다. (잔여액수가 환불 가능 금액보다 아래일 경우 잔액은 자동으로 소멸 처리 됩니다.)</li>
+							<li>사용가능한 택포인트가 없어야 합니다. (잔여액수가 환불 가능 금액보다 아래일 경우 잔액은 자동으로 소멸 처리 됩니다.)<a href="<?=$root?>/mypage/refund.html" class="smBtn pt0 pb0 ml5">환불하기</a></li>
+							<li class="noDotLi fwB pointC1">- 회원탈퇴 시 보유하고 계신 포인트, 별(★)포인트는 모두 소멸됩니다. </li>
+							<li class="noDotLi fwB pointC1">- 이는 동일한 아이디로 실명인증후 재가입하더라도 복구되지 않습니다.</li>
+						</ul>
+						<h5>회원님의 현재 보유 택포인트, 택머니 현황</h5>
+						<table class="listTable mb40">
+							<caption>보유택포인트,택머니현황</caption>
+							<colgroup><col /></colgroup>
+							<tr>
+								<th scope="col">구분</th>
+								<th scope="col">보유</th>
+								<th scope="col">환불 가능 금액 (수수료 공제후)</th>
+							</tr>
+							<tr>
+								<td>택포인트</td>
+								<td>30</td>
+								<td>환불 가능금액이 없습니다.</td>
+							</tr>
+							<tr>
+								<td>택머니</td>
+								<td>1500</td>
+								<td>1,000원</td>
+							</tr>
+						</table>
+						<h5>탈퇴회원의 개인정보 보존기간</h5>
+						<div class="grid100 mb15 txtBox fwB pointC3">회원탈퇴가 완료되더라도 판/구매자의 권익을 보호하기 위해 다음과 같이 회원정보가 일정기간 보존됨을 알려드립니다.</div>
+						<ul class="brownDotLi dotLineTop">
+							<li>계약 및 청약철회 등에 관한 기록 : 5년</li>
+							<li>대금결제 및 재화등의 공급에 관한 기록 : 5년</li>
+							<li>소비자의 불만 또는 분쟁처리에 관한 기록 : 3년</li>
+							<li>부정이용 등에 관한 기록 : 1년</li>
+							<li class="noDotLi fwB pointC1">- 관계 법령에 의거하여 보존이 필요한 경우에 한하여 보존됩니다.</li>
+						</ul>
+						<div class="pageBtnBox taR">
+							<div class="checkBoxWrap">
+								<input type="checkbox" id="chck_policy"/><label for="chck_policy">위의 유의 사항 안내를 모두 읽고 숙지 하였으므로 탈퇴 신청 하겠습니다.</label>
+							</div>
+							<!-- <a href="member_leave_complet.html" class="btnS1 blckBtn">회원탈퇴 신청</a> -->
+							<a href="#none" class="btnS1 blckBtn" onClick="callPopup('#memberLeaveApplyPopBox'); return false;">회원탈퇴 신청</a>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+		<? include '../include/div_popup.php' ?> <!-- divPopup -->
+	</div>
+	<script type="text/javascript">
+		currentLocation(99,8) //현재페이지 위치
+	</script>
+</body>
+</html>

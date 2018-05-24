@@ -1,0 +1,40 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+</head>
+<body>
+	<? include '../include/top_notice.php' ?> <!-- topBoard  -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header  -->
+		<div id="contents" class="findIdPwWrap">
+			<section id="locationBox">
+				<div class="wWrap">
+					<ul>
+						<li><a href="<?=$root?>/">택인택홈</a></li>
+						<li><a href="#none">비밀번호찾기</a></li>
+					</ul>
+				</div>
+			</section>
+			<div class="wWrap2">
+				<section id="findIdPwBox">
+					<h2>비밀번호 찾기</h2>
+					<h4 class="borderBtm_ddd3px">비밀번호 재설정</h4>
+					<div class="resetPwBox">
+						<div class="grayBgBox">
+							<ul>
+								<li><input type="password" placeholder="비밀번호"/></li>
+								<li><input type="password" placeholder="비밀번호 확인"/></li>
+								<li><span class="pointC5">※ 8~20자의 영문/숫자를 사용해주세요.</span></li>
+							</ul>
+						</div>
+						<div class="pageBtnBox taC">
+							<a href="<?=$root?>/login/reset_pw_result.html" class="btnS1 blckBtn">확인</a>
+							<!-- <a href="#none" class="btnS1 gryBtn">취소</a> -->
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+	</div>
+</body>
+</html>

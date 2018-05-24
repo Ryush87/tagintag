@@ -1,0 +1,256 @@
+<? include 'include/top.php' ?>
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+<!-- 상품페이지 이동 s -->
+<!--<meta http-equiv="refresh" content="0;url='<?=$root?>/goods/ing_goods_1.html'">-->
+<!-- 상품페이지 이동 e -->
+</head>
+<body>
+	<? include 'include/goods_tag_keep.php' ?> <!-- 택보관  -->
+	<div id="wrap">
+		<? include 'include/header.php' ?> <!-- header  -->
+		<section id="mainCaruselBox" style="background:#4a2849;">
+			<div class="wWrap">
+				<div id="mCaruselWrap">
+					<div class="mCaruselItem" data-bgc="#4a2849">
+						<a href="#none"><img src="<?=$root?>/skin/images/temp/temp_main_goods_v2_10.jpg" alt="배너" /></a>
+					</div>
+					<div class="mCaruselItem" data-bgc="#2b1811">
+						<a href="#none"><img src="<?=$root?>/skin/images/temp/temp_main_goods_v2_09.jpg" alt="배너" /></a>
+					</div>
+					<div class="mCaruselItem" data-bgc="#b8cfcd">
+						<a href="<?=$root?>/goods/ing_goods.html"><img src="<?=$root?>/skin/images/temp/temp_main_goods_v2_06.jpg" alt="배너" /></a>
+					</div>
+					<div class="mCaruselItem" data-bgc="#3e434a">
+						<a href="<?=$root?>/event/event_view_detail_review.html"><img src="<?=$root?>/skin/images/temp/temp_main_goods_v2_05.jpg" alt="배너" /></a>
+					</div>
+					<div class="mCaruselItem" data-bgc="#000">
+						<a href="<?=$root?>/event/event_view_detail_luxury.html"><img src="<?=$root?>/skin/images/temp/temp_main_goods_v2_04_ing.jpg" alt="배너" /></a>
+					</div>
+					<div class="mCaruselItem" data-bgc="#92d3e5">
+						<a href="#none" onclick="callPopup('#ingGoodsListPopBox'); return false;"><img src="<?=$root?>/skin/images/temp/temp_main_goods_v2_07.jpg" alt="배너" /></a>
+					</div>
+					<div class="mCaruselItem" data-bgc="#eacb5f">
+						<a href="#none" onclick="callPopup('#freeExperiencePopBox'); return false;"><img src="<?=$root?>/skin/images/temp/temp_main_goods_v2_08.jpg" alt="배너" /></a>
+					</div>
+					<div class="mCaruselItem" data-bgc="#f2dcde">
+						<a href="#none" onclick="callPopup('#freeExperiencePopBox'); return false;"><img src="<?=$root?>/skin/images/temp/temp_main_goods_v2_03.jpg" alt="배너" /></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<? include 'include/top_notice_new.php' ?> <!-- topBoard  -->
+		<div id="contents">
+			<div class="wWrap">
+				<ul class="episodeBoxWrap">
+					<li>
+						<div class="epsdItem">
+							<div class="epsdLabel epsdLabel3"><span>마감</span></div>
+							<div class="epsdKindLabel epsdKindLabel3"><span>EVENT</span></div>
+							<div class="epsdImg"><img src="<?=$root?>/skin/images/temp/masterbag_100x100.jpg" alt="상품이미지" /></div>
+							<div class="epsdNum"><span>999</span>회</div>
+							<div class="epsdTitle"><span>명품백</span></div>
+							<div class="epsdDate">4일 4시 04분</div>
+							<div class="epsdDesc">22일 17:35 ~ 25일 12:39</div>
+							<div class="epsdBtns"><a href="<?=$root?>/goods/pop_win_goods_tag_info.html?uid=30" onclick="newWin(this.href,1080,805); return false;" class="btnS1 whtBtn">오픈이력</a></div>
+						</div>
+					</li>
+					<li>
+						<div class="epsdItem epsdItemPrepare">
+							<div class="epsdImg"><img src="<?=$root?>/skin/images/common/icon_preparing.png" alt="상품준비중" /></div>
+							<div class="epsdTitle">
+								다음 회차 <br>
+								상품이 준비중이오니 <br>
+								조금만 기다려주세요.
+							</div>
+							<div class="epsdDate">&nbsp;</div>
+							<div class="epsdDesc">&nbsp;</div>
+							<div class="epsdBtns">
+								<a href="#none" class="btnS1 whtBtn">&nbsp;</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="epsdItem">
+							<div class="epsdLabel epsdLabel1"><span>오픈전</span></div>
+							<div class="epsdKindLabel epsdKindLabel1"><span>SALE</span></div>
+							<div class="epsdImg"><img src="<?=$root?>/skin/images/temp/goldbar1g_100x100.jpg" alt="상품이미지" /></div>
+							<div class="epsdNum"><span>32</span>회</div>
+							<div class="epsdProbability"><div class="proba1">77</div><div class="proba2">9999</div></div>
+							<div class="epsdTitle">24K골드바</div>
+							<div class="epsdDate">2017.09.26</div>
+							<div class="epsdDesc">오픈(판매)예정</div>
+							<div class="epsdBtns">
+								<a href="#none" onclick="callPopup('#smsAlarmPopBox'); return false;" class="btnS1 whtBtn">문자알림</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="epsdItem">
+							<div class="epsdLabel epsdLabel2"><span>진행중</span></div>
+							<div class="epsdKindLabel epsdKindLabel2"><span>FREE</span></div>
+							<div class="epsdImg"><img src="<?=$root?>/skin/images/temp/masterwatch_100x100.jpg" alt="상품이미지" /></div>
+							<div class="epsdNum"><span>1</span>회</div>
+							<div class="epsdTitle"><span>명품시계</span></div>
+							<div class="epsdDate">730원~</div>
+							<div class="epsdDesc">무료 오픈택 : 999개</div>
+							<div class="epsdBtns"><a href="<?=$root?>/goods/goods_detail.html?uid=31" class="btnS1 whtBtn">참여하기</a></div>
+						</div>
+					</li>
+					<li>
+						<div class="epsdItem">
+							<div class="epsdLabel epsdLabel1"><span>오픈전</span></div>
+							<div class="epsdKindLabel epsdKindLabel1"><span>SALE</span></div>
+							<div class="epsdImg"><img src="<?=$root?>/skin/images/temp/goldbar1g_100x100.jpg" alt="상품이미지" /></div>
+							<div class="epsdNum"><span>32</span>회</div>
+							<div class="epsdProbability"><div class="proba1">77</div><div class="proba2">9999</div></div>
+							<div class="epsdTitle">24K골드바</div>
+							<div class="epsdDate">2017.09.26</div>
+							<div class="epsdDesc">오픈(판매)예정</div>
+							<div class="epsdBtns">
+								<a href="#none" onclick="callPopup('#smsAlarmPopBox'); return false;" class="btnS1 whtBtn">문자알림</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="epsdItem">
+							<div class="epsdLabel epsdLabel2"><span>진행중</span></div>
+							<div class="epsdKindLabel epsdKindLabel2"><span>FREE</span></div>
+							<div class="epsdImg"><img src="<?=$root?>/skin/images/temp/masterwatch_100x100.jpg" alt="상품이미지" /></div>
+							<div class="epsdNum"><span>1</span>회</div>
+							<div class="epsdTitle"><span>명품시계</span></div>
+							<div class="epsdDate">730원~</div>
+							<div class="epsdDesc">무료 오픈택 : 999개</div>
+							<div class="epsdBtns"><a href="<?=$root?>/goods/goods_detail.html?uid=31" class="btnS1 whtBtn">참여하기</a></div>
+						</div>
+					</li>
+					<li>
+						<div class="epsdItem">
+							<div class="epsdLabel epsdLabel3"><span>마감</span></div>
+							<div class="epsdKindLabel epsdKindLabel2"><span>FREE</span></div>
+							<div class="epsdImg"><img src="<?=$root?>/skin/images/temp/masterbag_100x100.jpg" alt="상품이미지" /></div>
+							<div class="epsdNum"><span>999</span>회</div>
+							<div class="epsdTitle"><span>명품백</span></div>
+							<div class="epsdDate">4일 4시 04분</div>
+							<div class="epsdDesc">무료 오픈택 : 999개</div>
+							<div class="epsdBtns"><a href="/goods/pop_win_goods_tag_info.html?uid=30" onclick="newWin(this.href,1080,805); return false;" class="btnS1 whtBtn">오픈이력</a></div>
+						</div>
+					</li>
+					<li>
+						<div class="epsdItem">
+							<div class="epsdLabel epsdLabel2"><span>진행중</span></div>
+							<div class="epsdKindLabel epsdKindLabel2"><span>FREE</span></div>
+							<div class="epsdImg"><img src="<?=$root?>/skin/images/temp/masterwatch_100x100.jpg" alt="상품이미지" /></div>
+							<div class="epsdNum"><span>1</span>회</div>
+							<div class="epsdTitle"><span>명품시계</span></div>
+							<div class="epsdDate">730원~</div>
+							<div class="epsdDesc">무료 오픈택 : 999개</div>
+							<div class="epsdBtns"><a href="<?=$root?>/goods/goods_detail.html?uid=31" class="btnS1 whtBtn">참여하기</a></div>
+						</div>
+					</li>
+				</ul>
+				<!--
+				<ul class="episodeDescBoxWrap">
+					<li>
+						<div class="epsdscItem epsdscItem1">
+							<div class="epsdscTitle">진행중 회차</div>
+							<div class="epsdscCon">지금 바로 1% 가격으로도<br>구매가 가능합니다.<br><br>단1%의 가격이 적힌 할인 택을<br>차지하는 행운이 함께 하시길<br>기원합니다.</div>
+							<div class="epsdscBtns"><a href="<?=$root?>/goods/goods_list.html?section=N" class="btnS1 whtBtn">전체보기</a></div>
+						</div>
+					</li>
+					<li>
+						<div class="epsdscItem epsdscItem2">
+							<div class="epsdscTitle">마감된 회차</div>
+							<div class="epsdscCon">수 분만에 SOLD OUT 되어버린<br>택 오픈 이력들을 확인할 수 있습니다.<br><br>택인택은 정직한 운영과 공정한<br>기회제공을 위하여 택을 까본 이력을 <br>100% 오픈하고 있습니다.</div>
+							<div class="epsdscBtns"><a href="<?=$root?>/goods/goods_list.html?section=E" class="btnS1 whtBtn">전체보기</a></div>
+						</div>
+					</li>
+					<li>
+						<div class="epsdscItem epsdscItem3">
+							<div class="epsdscTitle">다가올 회차</div>
+							<div class="epsdscCon">다가올 회차에 대한 정보를 확인할 수 있습니다.<br><br>※ 문자 알림 신청시 오픈(판매개시)<br>1시간 이내에 문자메시지로<br>알려드립니다.</div>
+							<div class="epsdscBtns"><a href="<?=$root?>/goods/goods_list.html?section=I" class="btnS1 whtBtn">전체보기</a></div>
+						</div>
+					</li>
+				</ul>
+				-->
+				<ul class="episodeDescBoxWrap">
+					<li>
+						<div class="epsdscItem epsdscItem1">
+							<div class="epsdscTitle">이중할인</div>
+							<div class="epsdscCon">
+								모든 SALE 상품은<br>
+								<br>
+								인터넷최저가 또는,<br>
+								99.9%할인가로 구매가 가능합니다.<br>
+								<br>
+								밑져봐야 인터넷 최저가!!!
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="epsdscItem epsdscItem2">
+							<div class="epsdscTitle">24시간 자동OPEN</div>
+							<div class="epsdscCon">
+								각각의 상품은<br>
+								24시간 상시 오픈 및 판매됩니다.<br>
+								<br>
+								상품별 99.9% 할인택이<br>
+								모두 판매되고 1개가 남으면<br>
+								자동마감 및 신규회차 오픈(재생성)
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="epsdscItem epsdscItem3">
+							<div class="epsdscTitle">OPEN 방식</div>
+							<div class="epsdscCon">
+								오픈한 택은 자동으로 소멸되어 나중에<br>
+								참여를 해도 조건은 동일합니다.<br>
+								<br>
+								까볼 때 마다 99.9% 할인택이<br>
+								존재하며, 까보기에 대한 횟수제한은<br>
+								없습니다. (※ 검정색원 = 확률정보)<br>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<? include 'include/footer.php' ?> <!-- footer -->
+		<? include 'include/popup.php' ?> <!-- popup -->
+		<? include 'include/div_popup.php' ?> <!-- divPopup -->
+	</div>
+	<script type="text/javascript">
+		quickY=710;//quickMenu position
+		$(document).ready(function() {
+			$("#mCaruselWrap").slick({
+				arrows:true,
+				dots:true,
+				autoplay:true,
+				autoplaySpeed:5000,
+				infinite : true,
+				speed : 0,
+				fade:true,
+				cssEase:'linear',
+				slidesToShow:1,
+				adaptiveHeight:true
+			});
+			$("#mCaruselWrap").on('beforeChange',function(event,slick,currentSlide,nextSlide){
+				var currentE=$(slick.$slides[nextSlide]);
+				var acingItem=currentE.attr('class');
+				var bgc=currentE.attr('data-bgc');
+				/*
+				if(acingItem=='item acting slick-slide slick-current slick-active'){
+					actAnim(currentE.parents('#mainCaruselBox'),"swing");
+				}
+				*/
+				//console.log(bgc)
+				currentE.parents('#mainCaruselBox').css('background',bgc);
+				//currentE.parents('#mainCaruselBox').animate({"background-color":bgc},100);
+			});
+		});
+		//무료택안내
+		//callPopup("#freeTagOpenCouponPopBox");
+	</script>
+</body>
+</html>

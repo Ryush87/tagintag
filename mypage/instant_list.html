@@ -1,0 +1,100 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+<link rel="stylesheet" href="<?=$root?>/skin/css/goods.css">
+</head>
+<body>
+	<? include '../include/top_notice.php' ?> <!-- topBoard  -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header  -->
+		<div id="contents" class="myInstantBuyListWrap">
+			<? include '../include/location_box.php' ?> <!-- location  -->
+			<div class="wWrap">
+				<div class="subPageGridL">
+					<? include '../include/snb_mypage.php' ?> <!-- snb  -->
+				</div>
+				<div class="subPageGridR">
+					<section id="myInstantBuyListBox">
+						<h2>즉시구매내역</h2>
+						<div class="grayBgBox">즉시구매예치금 <span class="pointC1">254,555</span><span class="clr33"> P</span> </div>
+						<div class="borderBox_ddd3px listSearchBox mb30">
+							<select name="" id="listSearchSlt" class="listSearchSlt" data-custom-id="listSearchSlt" data-custom-class="listSearchSlt">
+								<option value="">선택</option>
+								<option value="">제목</option>
+								<option value="">내용</option>
+							</select>
+							<input type="text" id="searchWord" class="fL" style="width:580px;" />
+							<a href="#none" class="btnS2 blckBtn">검색</a>
+						</div>
+						<table class="listTable2">
+							<caption>즉시구매내역</caption>
+							<colgroup>
+								<col width="80px"/>
+								<col width="60px"/>
+								<col width="120px"/>
+								<col width="100px"/>
+								<col width="100px"/>
+								<col width="120px"/>
+								<col/>
+							</colgroup>
+							<tr>
+								<!--th scope="col">번호</th-->
+								<th scope="col">등록일시</th>
+								<th scope="col">&nbsp;</th>
+								<th scope="col">상품명</th>
+								<th scope="col">정가</th>
+								<th scope="col">제시가격</th>
+								<th scope="col">결과(상태)</th>
+								<th scope="col">배송정보</th>
+							</tr>
+							<tr>
+								<!--td>1</td-->
+								<td class="">2017/09/18<br>14:07:12</td>
+								<td><div class="mthGoodsImg"><img src="<?=$root?>/skin/images/temp/bug_480_330.jpg" alt="상품이미지" /></div></td>
+								<td>
+									<div class="mthGoodsName">
+										택인택 24K 골드바 1g - 24회차<br><a href="/goods/goods_detail.html?uid=26" class="smBtn">상품보기</a>
+									</div>
+								</td>
+								<td><span class="clr33">73,000</span></td>
+								<td>
+									<span class="fwB clr33">46,000</span><br><span class="">(-37%)</span>
+								</td>
+								<td><span class="fwB tStts1">체결</span><br>(17/09/18)</td>
+								<td class="taL">
+									<span class="fwB">유승현</span><br>
+									(10551) 경기 고양시 덕양구 도래울3로 33 401-504<br>
+									010-8618-8737 									</td>
+							</tr>
+							<tr>
+								<!--td>2</td-->
+								<td class="">2017/09/18<br>14:06:48</td>
+								<td><div class="mthGoodsImg"><img src="<?=$root?>/skin/images/temp/bug_480_330.jpg" alt="상품이미지" /></div></td>
+								<td>
+									<div class="mthGoodsName">
+										택인택 24K 골드바 1g - 24회차<br><a href="/goods/goods_detail.html?uid=26" class="smBtn">상품보기</a>
+									</div>
+								</td>
+								<td><span class="clr33">73,000</span></td>
+								<td>
+									<span class="fwB clr33">35,500</span><br><span class="">(-51.4%)</span>
+								</td>
+								<td><span class="fwB tStts2">대기중</span><br><a href="#none" class="smBtn">등록취소</a></td>
+								<td class="taL">
+									<span class="fwB">유승현</span><br>
+									(10551) 경기 고양시 덕양구 도래울3로 33 401-504<br>
+									010-8618-8737 									</td>
+							</tr>
+						</table>
+						<? include '../include/paging_box.php' ?>
+					</section>
+				</div>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+		<? include '../include/div_popup.php' ?> <!-- divPopup -->
+	</div>
+	<script type="text/javascript">
+		currentLocation(99,3) //현재페이지 위치
+	</script>
+</body>
+</html>

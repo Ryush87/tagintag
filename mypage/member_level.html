@@ -1,0 +1,90 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+</head>
+<body>
+	<? include '../include/top_notice.php' ?> <!-- topBoard  -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header  -->
+		<div id="contents" class="myMemberLevelWrap">
+			<? include '../include/location_box.php' ?> <!-- location  -->
+			<div class="wWrap">
+				<div class="subPageGridL">
+					<? include '../include/snb_mypage.php' ?> <!-- snb  -->
+				</div>
+				<div class="subPageGridR">
+					<section id="myMemberLevelBox">
+						<h2>회원등급</h2>
+						<div class="myMemberLevelGuide borderBox_ddd3px">
+							<div class="mmblStar">
+								<div class="mmblStarBox">5</div>
+								<div class="mmblStarTitle">
+									<div class="mmblStarTxt subtitle_red"><span class="mmblName">홍길동</span> 님의 <span class="pointC2">12월</span> 회원등급은 <span class="pointC2">5등급</span>입니다.</div>
+									<div class="mmblStarDesc">별개수 : <span class="pointC1 fwB">3개</span></div>
+								</div>
+							</div>
+							<table class="viewTable mmblGuideTable">
+								<caption>등급안내</caption>
+								<colgroup><col width="20%"/><col width="16%"/><col width="16%"/><col width="16%"/><col width="16%"/><col width="16%"/></colgroup>
+								<tr>
+									<th scope="col">등급</th>
+									<th scope="col">1등급</th>
+									<th scope="col">2등급</th>
+									<th scope="col">3등급</th>
+									<th scope="col">4등급</th>
+									<th scope="col">5등급</th>
+								</tr>
+								<tr>
+									<td>★보유</td>
+									<td>0 ~ 5</td>
+									<td>6 ~ 12</td>
+									<td>13 ~ 19</td>
+									<td>20 ~ 29</td>
+									<td>30 ~</td>
+								</tr>
+								<tr>
+									<td>혜택포인트<br />추가적립</td>
+									<td>5%</td>
+									<td>10%</td>
+									<td>15%</td>
+									<td>20%</td>
+									<td>25%</td>
+								</tr>
+							</table>
+							<ul class="brownDotLi">
+								<li>보유한 ★의 개수에 따라 회원 등급이 산정됩니다.</li>
+								<li>각 단계별 ★의 보유수는 현재시점의 보유수를 기준으로 합니다.</li>
+								<li>등급에 따라 추가적립되는 포인트는 포인트 충전시 적용됩니다.</li>
+								<li>각 ★의 유효기간은 획득일로부터 3개월 입니다.</li>
+							</ul>
+						</div>
+						<h5>1개월 이내 소멸예정인 고객님의 ★</h5>
+						<table class="viewTable mb30 myMemberStarHistory">
+							<caption>별정보</caption>
+							<colgroup><col /><col width="560px"/><col /></colgroup>
+							<tr>
+								<th scope="col">획득일</th>
+								<th scope="col">획득 활동</th>
+								<th scope="col">소멸일</th>
+							</tr>
+							<tr>
+								<td>2016-09-02</td>
+								<td class="taL">가입축하 웰컴 포인트</td>
+								<td>2016-12-31</td>
+							</tr>
+							<tr>
+								<td>2016-09-02</td>
+								<td class="taL">첫번째 택오픈 감사 포인트</td>
+								<td>2016-12-31</td>
+							</tr>
+						</table>
+					</section>
+				</div>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+	</div>
+	<script type="text/javascript">
+		currentLocation(99,8) //현재페이지 위치
+	</script>
+</body>
+</html>

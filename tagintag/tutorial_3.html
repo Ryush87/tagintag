@@ -1,0 +1,74 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+<link rel="stylesheet" href="<?=$root?>/skin/css/tutorial.css">
+<script type="text/javascript" src="<?=$root?>/skin/plugin/fireworks/fireworks.js"></script> <!--  by jang -->
+</head>
+<body>
+	<div id="wrap">
+		<div id="contents" class="tutorialWrap">
+			<div class="wWrap">
+				<section id="tutorialBox" class="ttrStep3">
+					<? include 'inc_ttrhead_box.php' ?> <!-- ttrHeadBox -->
+					<div class="ttrDescBox">
+						<ul class="brownDotLi">
+							<li>최종적으로 내가 받은 Tag 번호가 공개되며, Tag을 클릭하면 할인율과 구매가격을 확인할 수 있습니다.</li>
+						</ul>
+						<a href="#none" class="ttrHomeBtn"><img src="<?=$root?>/skin/images/sub_tagintag/btn_tutorial_home.png" alt="처음으로" /></a>
+					</div>
+					<div class="ttrContents">
+						<div class="ttrContentsBorder"></div>
+						<!-- motionBox s -->
+						<img src="<?=$root?>/skin/images/sub_tagintag/tutorial_s3_img_1.png" alt="배경" />
+						<div id="bigTagOpenBox" class="divPopupBox fadeEff slide-rt">
+							<div class="divPopWrap">
+								<div class="ttrHelpWrap">
+									<div class="ttrHelpBox ttrHB1">Tag을 클릭하면 Tag속에 숨겨진 할인율과 <br />구매가격이 오픈됩니다.<div class="ttrHelpSpire ttrhsRR"></div></div>
+								</div>
+								<div id="bigTagWrap">
+									<div class="bigTagFront" style="user-select:none;">
+										<div class="btfPrice">
+											<span class="btfPriceNum">298</span>번 <br />Tag을 받으셨습니다. <br />
+											<!-- <div class="btfPoint">(50포인트 사용)</div> -->
+										</div>
+										<div class="hoverHand hoverEff2"><img src="<?=$root?>/skin/images/divpop/big_tag_front_hand.png" style="user-select:none; user-drag: none;" alt="클릭" /></div>
+										<div class="hoverClick"><img src="<?=$root?>/skin/images/divpop/big_tag_front_click.png" style="user-select:none; user-drag: none;" alt="클릭" /></div>
+									</div>
+
+									<div class="bigTagBack bigTagBack1">
+										<div class="btbSale">97%↓SALE</div>
+										<div class="btbPrice"><span class="btbPriceNum">150</span> 원</div>
+									</div>
+									<div class="bigTagBack_after">
+										<div class="celebrationBox actBefore"><span>축하</span>합니다!</div>
+										<div class="btbaDescTxt actBefore">고객님은 본 상품의 <span>97% 할인</span> Tag를 받았습니다.</div>
+									</div>
+									<!-- 폭죽 -->
+									<div class="celebrationBg" style="z-index:1;">
+										<div class="celebrationBg2">
+											<!-- by jang  -->
+											<div id="canvas-container" style="width:1020px; height:798px;"></div>
+										</div>
+									</div>
+									<!-- v2 e -->
+								</div>
+							</div>
+						</div>
+						<!-- motionBox e -->
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="<?=$root?>/skin/js/tutorial.js"></script>
+	<script type="text/javascript">
+		var tagNumSelect=getParams();
+		if(tagNumSelect.tagNumSelect!=undefined){
+			$('.btfPriceNum').html(tagNumSelect.tagNumSelect);
+		}else{
+			$('.btfPriceNum').html(901);
+		}
+		currentTutorialStep(3); //현재 튜토리얼 스텝
+		callTutorialStep('#bigTagOpenBox'); //택까기-결과1
+	</script>
+</body>
+</html>

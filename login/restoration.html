@@ -1,0 +1,40 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+<style type="text/css">
+	header {margin-top:0;margin-bottom:60px;border-bottom:1px solid #000;}
+	#gnb,
+	nav,
+	#quickMenuBox {display:none;}
+</style>
+</head>
+<body>
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header  -->
+		<div id="contents" class="loginWrap">
+			<div class="wWrap2">
+				<section id="loginBox">
+					<h2>휴면 및 임시 비활성화 계정 복구</h2>
+					<div class="restorationWrap borderBox_ddd3px">
+						<div class="restorationBox dotLineBottom">고객님의 계정은 장기 휴면 (6개월 이상) 계정이거나 임시로 비활성화 조치된 계정입니다.</div>
+						<div class="restorationBox2">
+							<div class="gridL">
+								택인택에서는 6개월 이상 로그인 한 기록이 없는 계정을 대상으로<br/>휴면 ID로 지정하여 이용자 피해예방 활동을 하고 있습니다.<br/>계정을 활성화 하려면 본인인증을 거치셔야 합니다.
+							</div>
+							<div class="gridR">
+								<div class="findKind_phon">
+									<ul>
+										<li><a href="#none" class="btnS1 blckBtn" onclick="callPopup('#certiCompletePopBox'); return false;">휴대폰 본인인증</a></li>
+										<li><a href="#none" class="btnS1 blckBtn mt5" onclick="callPopup('#certiFailPopBox'); return false;">본인인증 실패</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+		<? include '../include/div_popup.php' ?> <!-- divPopup -->
+	</div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+</head>
+<body>
+	<? include '../include/top_notice.php' ?> <!-- topBoard  -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header  -->
+		<div id="contents" class="myChargeWrap">
+			<? include '../include/location_box.php' ?> <!-- location  -->
+			<div class="wWrap">
+				<div class="subPageGridL">
+					<? include '../include/snb_mypage.php' ?> <!-- snb  -->
+				</div>
+				<div class="subPageGridR">
+					<section id="myMoneyChargeBox">
+						<h2>충전하기</h2>
+						<ul class="pageTab mt0">
+							<li><a href="charge_point.html">택포인트 충전</a></li>
+							<li class="actOn"><a href="charge_money.html">택머니 충전</a></li>
+						</ul>
+						<h5>택머니란?</h5>
+						<div class="moneyInfoDesc"><p>택머니(Tag Money)는 택인택 내에서 상품의 구매 또는 VIP회원 가입 등 결제시 사용할 수 있는 사이버 머니입니다. 빠르게 재고가 소진되는 택인택 서비스의 특성상 결제과정에서의 불필요한 시간 지체, 오류 발생 등의 불이익을 막기 위해 미리 충전해두셨다가 사용하시면 더욱 편리하게 서비스를 이용 하실 수 있습니다. 택머니는 상품구매 대금, 재판매 거래대금, VIP회원 가입비 등으로 사용이 가능하며 신용/체크카드 또는 실시간 계좌이체로 충전이 가능합니다. <br/><span class="pointC5">※ 택머니는 수수료(10%) 공제 후 환불이 가능합니다.</span></p></div>
+						<div class="grid100">
+							<ul class="costSummaryBox">
+								<li class="balaceM">보유 택머니<span class="pointC3">20,000원</span></li>
+							</ul>
+							<table class="listTable mt10">
+								<caption>충전금액 선택</caption>
+								<colgroup><col /></colgroup>
+								<tr>
+									<th scope="col">충전금액 선택</th>
+								</tr>
+								<tr>
+									<td>
+										<div class="radioBoxWrap">
+											<label for="chargePrice1"><input type="radio" id="chargePrice1" name="chargePrice"/>5,000원</label>
+											<label for="chargePrice2"><input type="radio" id="chargePrice2" name="chargePrice"/>10,000원</label>
+											<label for="chargePrice3"><input type="radio" id="chargePrice3" name="chargePrice"/>50,000원</label>
+											<label for="chargePrice4"><input type="radio" id="chargePrice4" name="chargePrice"/>100,000원</label>
+											<label for="chargePrice5"><input type="radio" id="chargePrice5" name="chargePrice"/>1,000,000원</label>
+											<label for="chargePrice6"><input type="radio" id="chargePrice6" name="chargePrice"/>2,000,000원</label>
+											<label for="chargePrice7"><input type="radio" id="chargePrice7" name="chargePrice"/>2,000,000원</label>
+											<label for="chargePrice8"><input type="radio" id="chargePrice8" name="chargePrice"/>2,000,000원</label>
+											<label for="chargePrice9"><input type="radio" id="chargePrice9" name="chargePrice"/>2,000,000원</label>
+											<label for="chargePrice10"><input type="radio" id="chargePrice10" name="chargePrice"/>2,000,000원</label>
+											<label for="chargePrice11"><input type="radio" id="chargePrice11" name="chargePrice"/>2,000,000원</label>
+										</div>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="paymentInputBox mt30">
+							<div class="totalPriceBox">
+								<div class="priceTit">최종 결제금액</div>
+								<div class="priceNum"><span>5,500</span>원</div>
+							</div>
+							<!--
+							<div class="virtualAccountBox">
+								<span class="sltLabel">가상계좌</span>
+								<select name="" id="" data-custom-id="payAccount_1" data-custom-class="payAccountSlt">
+									<option value="">은행선택</option>
+									<option value="">국민</option>
+									<option value="">신한</option>
+								</select>
+								<a href="#none" class="ml5 smBtn">가상계좌 생성 신청</a>
+							</div>
+							<div class="payGuideTxt dotLineTop">- 안내 드린 계좌로 <span class="pointC1 fwB">5,500</span> 원을 입금 후 <span class="fwB">[홈 > 마이페이지 > 택포인트/택머니]</span> 메뉴에서 충전현황을 조회하세요.</div>
+							-->
+							<ul class="payKindUlBox">
+								<li class="payKindLi_1">
+									<ul>
+										<li>
+											<div class="radioBoxWrap payKindChoice">
+												<input type="radio" id="pay_kind_1" name="pay_kind" />
+												<label for="pay_kind_1">신용/체크카드 결제</label>
+												<input type="radio" id="pay_kind_2" name="pay_kind" />
+												<label for="pay_kind_2">실시간 계좌이체</label>
+											</div>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="pageBtnBox taR">
+							<div class="checkBoxWrap">
+								<input type="checkbox" id="chck_policy"/><label for="chck_policy">결제하실 금액, 유의사항 등을 확인하였으며, 구매에 동의합니다.</label>
+							</div>
+							<a href="#none" class="btnS1 blckBtn" onclick="callPopup('#tMoneyChargeDonePopBox'); return false;">결제</a>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+		<? include '../include/div_popup.php' ?> <!-- divPopup -->
+	</div>
+	<script type="text/javascript">
+		currentLocation(99,5,3) //현재페이지 위치
+	</script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+</head>
+<body>
+	<? include '../include/top_notice.php' ?> <!-- topBoard  -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header  -->
+		<div id="contents" class="myOrderListWrap">
+			<? include '../include/location_box.php' ?> <!-- location  -->
+			<div class="wWrap">
+				<div class="subPageGridL">
+					<? include '../include/snb_mypage.php' ?> <!-- snb  -->
+				</div>
+				<div class="subPageGridR">
+					<section id="myOrderListBox">
+						<h2>주문 내역</h2>
+						<h5>상품 주문 상태</h5>
+						<table class="viewTable" summary="주문완료,배송대기,배송중,구매확인">
+							<caption>상품주문상태</caption>
+							<colgroup><col /></colgroup>
+							<tr>
+								<th scope="col">주문완료</th>
+								<th scope="col">배송대기</th>
+								<th scope="col">배송중</th>
+								<th scope="col">구매확인</th>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>1</td>
+								<td>1</td>
+								<td>16</td>
+							</tr>
+						</table>
+						<ul class="termListSearchBox mt20">
+							<li>
+								<div class="lsTitle">기간</div>
+								<div class="termCon">
+									<a href="#none" class="miniBtn actOn">오늘</a>
+									<a href="#none" class="miniBtn">어제</a>
+									<a href="#none" class="miniBtn">1주일</a>
+									<a href="#none" class="miniBtn">1개월</a>
+									<a href="#none" class="miniBtn">3개월</a>
+									<a href="#none" class="miniBtn mr20">6개월</a>
+									<div class="calendarBox">
+										<input type="text" id="lsStartDate" class="lsStartDate" name="lsStartDate" style="width:100px;"/>
+										<div class="blt_calendar"><img src="<?=$root?>/skin/images/common/blt_cal.png" alt="달력아이콘" /></div>
+									</div>
+									<span class="mr5">~</span>
+									<div class="calendarBox">
+										<input type="text" id="lsEndDate" class="lsEndDate" name="lsEndDate" style="width:100px;"/>
+										<div class="blt_calendar"><img src="<?=$root?>/skin/images/common/blt_cal.png" alt="달력아이콘" /></div>
+									</div>
+									<script type="text/javascript">setDatePick("lsStartDate");setDatePick("lsEndDate");</script>
+								</div>
+							</li>
+							<li>
+								<div class="lsTitle"><label for="lsGoodsName">상품명</label></div>
+								<input type="text" id="lsGoodsName" class="lsGoodsName" style="width:650px;"/>
+							</li>
+							<li>
+								<div class="lsTitle">상태</div>
+									<ul class="radioBoxWrap">
+										<li><input type="radio" id="lsStatus1" name="lsStatus"/><label for="lsStatus1">전체</label></li>
+										<li><input type="radio" id="lsStatus2" name="lsStatus"/><label for="lsStatus2">주문완료</label></li>
+										<li><input type="radio" id="lsStatus3" name="lsStatus"/><label for="lsStatus3">배송대기</label></li>
+										<li><input type="radio" id="lsStatus4" name="lsStatus"/><label for="lsStatus4">배송출발</label></li>
+										<li><input type="radio" id="lsStatus5" name="lsStatus"/><label for="lsStatus5">배송완료</label></li>
+										<li><input type="radio" id="lsStatus6" name="lsStatus"/><label for="lsStatus6">구매확인</label></li>
+										<li style="margin-left:42.4px;"><input type="radio" id="lsStatus7" name="lsStatus"/><label for="lsStatus7">환불요청</label></li>
+										<li><input type="radio" id="lsStatus8" name="lsStatus"/><label for="lsStatus8">교환요청</label></li>
+										<li><input type="radio" id="lsStatus9" name="lsStatus"/><label for="lsStatus9">환불완료</label></li>
+										<li><input type="radio" id="lsStatus10" name="lsStatus"/><label for="lsStatus10">교환완료</label></li>
+										<li><input type="radio" id="lsStatus11" name="lsStatus"/><label for="lsStatus11">주문취소</label></li>
+									</ul>
+								<a href="#none" class="btnS1 blckBtn">조회</a>
+							</li>
+						</ul>
+						<table class="listTable2 mt30" summary="주문일/주문번호,주문상품정보,오픈택,실결제금액,주문상태,거래구분">
+							<caption>주문내역</caption>
+							<colgroup>
+								<col width="100px"/>
+								<col width="380px"/>
+								<col width="90px"/>
+								<col width="90px"/>
+								<col width="70px"/>
+								<col width="70px"/>
+							</colgroup>
+							<tr>
+								<th scope="col">주문일/주문번호</th>
+								<th scope="col">주문상품정보</th>
+								<th scope="col">오픈택<br/>(결제금액)</th>
+								<th scope="col">실결제금액<br/>(수량)</th>
+								<th scope="col">주문상태</th>
+								<th scope="col">거래구분</th>
+							</tr>
+							<tr>
+								<td>2016-11-30<br/><a href="order_view.html" class="ogdOrderNum">26979931</a></td>
+								<td colspan="5">
+									<ul class="ogdItemUl">
+										<li class="ogdItem1">
+											<a href="#none" class="listSubject">
+												<div class="ogoodsImg"><img src="<?=$root?>/skin/images/temp/bug_480_330.jpg" alt="상품이미지" /></div>
+												<div class="ogoodsName">[센시] HD LED 40in FULL 스탠드형 CL-40LNF10 무결점 TV</div>
+												<div class="ogoodsOption">블랙헤일로5</div>
+											</a>
+										</li>
+										<li class="ogdItem2"><span class="fwB">-70%</span><br />(3,500)</li>
+										<li class="ogdItem3"><span class="fwB">3,500</span><br />(1개)</li>
+										<li class="ogdItem4">
+											배송완료<br />
+											<a href="return_change.html" class="smBtn">반품/교환</a>
+											<a href="#none" class="smBtn" onclick="callPopup('#buyFixPopBox'); return false;">구매확인</a>
+										</li>
+										<li class="ogdItem5">구매</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td>2016-11-30<br/><a href="order_view.html" class="ogdOrderNum">26979931</a></td>
+								<td colspan="5">
+									<ul class="ogdItemUl">
+										<li class="ogdItem1">
+											<a href="#none" class="listSubject">
+												<div class="ogoodsImg"><img src="https://goo.gl/QXN8Gk" alt="상품이미지" /></div>
+												<div class="ogoodsName">[센시] HD LED 40in FULL 스탠드형 CL-40LNF10 무결점 TV</div>
+												<div class="ogoodsOption">블랙헤일로5</div>
+											</a>
+										</li>
+										<li class="ogdItem2"><span class="fwB">-70%</span><br />(3,500)</li>
+										<li class="ogdItem3"><span class="fwB">3,500</span><br />(1개)</li>
+										<li class="ogdItem4">주문완료<br /><a href="#none" class="smBtn" onclick="callPopup('#orderCancelPopBox'); return false;">주문취소</a></li>
+										<li class="ogdItem5">구매</li>
+									</ul>
+									<ul class="ogdItemUl">
+										<li class="ogdItem1">
+											<a href="#none" class="listSubject">
+												<div class="ogoodsImg"><img src="https://goo.gl/lMrGKy" alt="상품이미지" /></div>
+												<div class="ogoodsName">[센시] HD LED 40in FULL 스탠드형 CL-40LNF10 무결점 TV</div>
+												<div class="ogoodsOption">블랙헤일로5</div>
+											</a>
+										</li>
+										<li class="ogdItem2"><span class="fwB">-70%</span><br />(3,500)</li>
+										<li class="ogdItem3"><span class="fwB">3,500</span><br />(1개)</li>
+										<li class="ogdItem4">배송완료<br /><a href="#none" class="smBtn">배송조회</a></li>
+										<li class="ogdItem5">양수</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td>2016-11-30<br/><a href="order_view.html" class="ogdOrderNum">26979931</a></td>
+								<td colspan="5">
+									<ul class="ogdItemUl">
+										<li class="ogdItem1">
+											<a href="#none" class="listSubject">
+												<div class="ogoodsImg"><img src="https://goo.gl/QXN8Gk" alt="상품이미지" /></div>
+												<div class="ogoodsName">[센시] HD LED 40in FULL 스탠드형 CL-40LNF10 무결점 TV</div>
+												<div class="ogoodsOption">블랙헤일로5</div>
+											</a>
+										</li>
+										<li class="ogdItem2"><span class="fwB">-70%</span><br />(3,500)</li>
+										<li class="ogdItem3"><span class="fwB">3,500</span><br />(1개)</li>
+										<li class="ogdItem4">
+											배송완료<br />
+											<a href="#none" class="smBtn" onclick="callPopup('#buyFixPopBox'); return false;">구매확인</a>
+										</li>
+										<li class="ogdItem5">구매</li>
+									</ul>
+									<ul class="ogdItemUl">
+										<li class="ogdItem1">
+											<a href="#none" class="listSubject">
+												<div class="ogoodsImg"><img src="https://goo.gl/lMrGKy" alt="상품이미지" /></div>
+												<div class="ogoodsName">[센시] HD LED 40in FULL 스탠드형 CL-40LNF10 무결점 TV</div>
+												<div class="ogoodsOption">블랙헤일로5</div>
+											</a>
+										</li>
+										<li class="ogdItem2"><span class="fwB">-70%</span><br />(3,500)</li>
+										<li class="ogdItem3"><span class="fwB">3,500</span><br />(1개)</li>
+										<li class="ogdItem4">배송중<br /><a href="#none" class="smBtn">배송조회</a></li>
+										<li class="ogdItem5">구매</li>
+									</ul>
+								</td>
+							</tr>
+						</table>
+						<? include '../include/paging_box.php' ?>
+					</section>
+				</div>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+		<? include '../include/div_popup.php' ?> <!-- divPopup -->
+	</div>
+	<script type="text/javascript">
+		currentLocation(99,1) //현재페이지 위치
+	</script>
+</body>
+</html>

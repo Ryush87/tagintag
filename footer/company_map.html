@@ -1,0 +1,50 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+</head>
+<body>
+	<? include '../include/top_notice.php' ?> <!-- topBoard  -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header  -->
+		<div id="contents" class="ftcMapWrap">
+			<? include '../include/location_box.php' ?> <!-- location  -->
+			<div class="wWrap">
+				<div class="subPageGridL">
+					<? include '../include/snb_company.php' ?> <!-- snb  -->
+				</div>
+				<div class="subPageGridR">
+					<section id="ftcMapBox">
+						<h2>오시는 길</h2>
+						<div class="cmpnMapInfo borderBox_ddd3px">
+							<div class="cmpnName">택인택 주식회사</div>
+							<ul class="cmpnInfo">
+								<li class="cmpnInfoLi1"><span class="pointC3">대표전화</span>02-313-3310</li>
+								<li class="cmpnInfoLi2"><span class="pointC3">팩스</span>02-2088-3340</li>
+								<li class="cmpnInfoLi3"><span class="pointC3">메일</span>info@tagintag.com</li>
+								<li class="cmpnInfoLi4"><span class="pointC3">주소</span>서울시 서대문구 신촌로 157 화영빌딩 4층</li>
+							</ul>
+						</div>
+						<div id="cmpnMapBox">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.9223465047426!2d126.94140791580986!3d37.55689327979967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c989a0b0b967f%3A0xb952481e7d5b62c5!2z7ISc7Jq47Yq567OE7IucIOyEnOuMgOusuOq1rCDsi6DstIzroZwgMTU3!5e0!3m2!1sko!2skr!4v1485244102508" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
+						<div class="cmpnTransInfo borderBox_ddd3px">
+							<div class="gridL">
+								<span class="pointC3">지하철</span>
+								<div class="cmpnTransKind cmpnTransKind1">지하철 2호선 이대역 1번출구</div>
+							</div>
+							<div class="gridR">
+								<span class="pointC3">버스</span>
+								<div class="cmpnTransKind cmpnTransKind2">7011, 7017, 7611</div>
+								<div class="cmpnTransKind cmpnTransKind3">163, 171, 172, 2701 271, 273, 472, 602, 603, 721, N26, N62</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+	</div>
+	<script type="text/javascript">
+		currentLocation(99,1) //현재페이지 위치
+	</script>
+</body>
+</html>

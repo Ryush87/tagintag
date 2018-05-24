@@ -1,0 +1,33 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+</head>
+<body>
+	<? include '../include/top_notice.php' ?> <!-- topBoard  -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header  -->
+		<div id="contents" class="eventViewDetailWrap">
+			<div class="wWrap">
+				<section id="eventViewDetailBox">
+					<h2 class="mt45">이벤트</h2>
+					<div class="evvdImgBox">
+						<img src="<?=$root?>/skin/images/temp/event_img_detail_20171020.jpg" alt="명품이벤트" usemap="#imgmap20171020164618"/>
+						<map id="imgmap20171020164618" name="imgmap20171020164618">
+							<area shape="circle" alt="참여하기" title="참여하기" coords="795,817,101" href="#none" target="" onClick="callPopup('#openBefoeEventPopBox'); return false;"/>
+							<area shape="circle" alt="친구초대" title="친구초대" coords="471,1895,84" href="#none" target="" onClick="callPopup('#invitePhoneNumPopBox'); return false;"/>
+							<area shape="rect" alt="초대확인" title="초대확인" coords="582,1957,680,1997" href="pop_win_invite_confilm_list.html" target="" onClick="newWin(this.href,450,450); return false;"/>
+						</map>
+					</div>
+					<div class="pageBtnBox taR">
+						<a href="event_list.html" class="btnS1 blckBtn">목록</a>
+					</div>
+				</section>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+		<? include '../include/div_popup.php' ?> <!-- divPopup -->
+	</div>
+	<script type="text/javascript">
+		currentLocation(3); //현재페이지 위치
+	</script>
+</body>
+</html>

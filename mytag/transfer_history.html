@@ -1,0 +1,89 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+<link rel="stylesheet" href="<?=$root?>/skin/css/goods.css">
+</head>
+<body>
+	<? include '../include/top_notice.php' ?> <!-- topBoard  -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header  -->
+		<div id="contents" class="mytTransferHistoryWrap">
+			<? include '../include/location_box.php' ?> <!-- location  -->
+			<div class="wWrap">
+				<div class="subPageGridL">
+					<? include '../include/snb_mytag.php' ?> <!-- snb  -->
+				</div>
+				<div class="subPageGridR">
+					<section id="mytTransferHistoryBox">
+						<h2>택 양도/즉시구매 이력</h2>
+						<h5>택 양도/즉시구매 이력</h5>
+						<table class="listTable2" summary="번호,구분,일시,상품명,정가,오픈택,수수료,거래대금,실입출금액">
+							<caption>택 양도/즉시구매 이력</caption>
+							<colgroup>
+								<col width="40px"/>
+								<col width="40px"/>
+								<col width="90px"/>
+								<col width="270px"/>
+								<col width="80px"/>
+								<col width="60px"/>
+								<col width="60px"/>
+								<col width="80px"/>
+								<col width="90px"/>
+							</colgroup>
+							<tr>
+								<th scope="col">번호</th>
+								<th scope="col">구분</th>
+								<th scope="col">일시</th>
+								<th scope="col">상품명(상품코드)</th>
+								<th scope="col">정가(￦)</th>
+								<th scope="col">오픈택</th>
+								<th scope="col">수수료</th>
+								<th scope="col">거래대금</th>
+								<th scope="col">실입출금액</th>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>양도</td>
+								<td>2016-11-30<br />13:20</td>
+								<td>
+									<a href="#none" class="listSubject">
+										<div class="mthGoodsImg"><img src="<?=$root?>/skin/images/temp/bug_480_330.jpg" alt="상품이미지" /></div>
+										<div class="mthGoodsName">[센시] HD LED 40in FULL 스탠드형 CL-40LNF10 무결점 TV</div>
+										<div class="mthGoodsOption">블랙헤일로5</div>
+									</a>
+								</td>
+								<td><span class="clr33">8,400</span></td>
+								<td><span class="fwB clr33">-70%</span><br />(3,500)</td>
+								<td>1,500</td>
+								<td>35,680</td>
+								<td>(입)<span class="fwB clr33">34,180</span></td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>양도</td>
+								<td>2016-11-30<br />13:20</td>
+								<td>
+									<a href="#none" class="listSubject">
+										<div class="mthGoodsImg"><img src="https://goo.gl/5o4gBn" alt="상품이미지" /></div>
+										<div class="mthGoodsName">[센시] HD LED 40in FULL 스탠드형 CL-40LNF10 무결점 TV</div>
+										<div class="mthGoodsOption">블랙헤일로5</div>
+									</a>
+								</td>
+								<td><span class="clr33">8,400</span></td>
+								<td><span class="fwB clr33">-70%</span><br />(3,500)</td>
+								<td>1,500</td>
+								<td>35,680</td>
+								<td>(입)<span class="fwB clr33">34,180</span></td>
+							</tr>
+						</table>
+						<? include '../include/paging_box.php' ?>
+					</section>
+				</div>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?>  <!-- footer -->
+	</div>
+	<script type="text/javascript">
+		currentLocation(99,1) //현재페이지 위치
+	</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+<link rel="stylesheet" href="<?=$root?>/skin/css/tutorial.css">
+<script type="text/javascript" src="<?=$root?>/skin/plugin/fireworks/fireworks.js"></script> <!--  by jang -->
+</head>
+<body>
+	<div id="wrap">
+		<div id="contents" class="tutorialWrap">
+			<div class="wWrap">
+				<section id="tutorialBox" class="ttrStep0">
+					<? include 'inc_ttrhead_box.php' ?> <!-- ttrHeadBox -->
+					<div class="ttrDescBox">
+						<ul class="brownDotLi">
+							<li>원하는 상품을 고른 다음 '까보기'를 클릭하면 택 오픈이 시작됩니다.</li>
+						</ul>
+						<a href="#none" class="ttrHomeBtn"><img src="<?=$root?>/skin/images/sub_tagintag/btn_tutorial_home.png" alt="처음으로" /></a>
+					</div>
+					<div class="ttrContents">
+						<div class="ttrContentsBorder"></div>
+						<img src="<?=$root?>/skin/images/sub_tagintag/tutorial_s0_img_1.png" alt="까보기 선택 설명이미지" />
+						<div class="ttrHelpWrap">
+							<div class="ttrHelpClick ttrHC1"><a href="tutorial_1.html"><img src="<?=$root?>/skin/images/sub_tagintag/btn_tutorial_click.png" alt="클릭" /></a></div>
+							<div class="ttrHelpBox ttrHB1"><span class="tBlink">클릭</span><div class="ttrHelpSpire ttrhsRR"></div></div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="<?=$root?>/skin/js/tutorial.js"></script>
+	<script type="text/javascript">
+		currentTutorialStep(0);
+	</script>
+</body>
+</html>

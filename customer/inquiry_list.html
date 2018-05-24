@@ -1,0 +1,116 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+</head>
+<body>
+	<? include '../include/top_notice.php' ?> <!-- topBoard  -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header  -->
+		<div id="contents" class="csInquiryWrap">
+			<? include '../include/location_box.php' ?> <!-- location  -->
+			<div class="wWrap">
+				<div class="subPageGridL">
+					<? include '../include/snb_customer.php' ?> <!-- snb  -->
+				</div>
+				<div class="subPageGridR">
+					<section id="csInquiryListBox">
+						<h2>1:1문의</h2>
+						<h5>나의 문의내역</h5>
+						<ul class="boardListSearchBox">
+							<li>
+								<div class="blsTitle">기간</div>
+								<div class="blsCon">
+									<a href="#none" class="miniBtn actOn">오늘</a>
+									<a href="#none" class="miniBtn">어제</a>
+									<a href="#none" class="miniBtn">1주일</a>
+									<a href="#none" class="miniBtn">1개월</a>
+									<a href="#none" class="miniBtn">3개월</a>
+									<a href="#none" class="miniBtn mr20">6개월</a>
+									<div class="calendarBox">
+										<input type="text" id="lsStartDate" class="lsStartDate" name="lsStartDate" style="width:100px;"/>
+										<div class="blt_calendar"><img src="<?=$root?>/skin/images/common/blt_cal.png" alt="달력아이콘" /></div>
+									</div>
+									<span class="mr5">~</span>
+									<div class="calendarBox">
+										<input type="text" id="lsEndDate" class="lsEndDate" name="lsEndDate" style="width:100px;"/>
+										<div class="blt_calendar"><img src="<?=$root?>/skin/images/common/blt_cal.png" alt="달력아이콘" /></div>
+									</div>
+									<script type="text/javascript">setDatePick("lsStartDate");setDatePick("lsEndDate");</script>
+								</div>
+							</li>
+							<li>
+								<div class="blsTitle pl0">
+									<select name="" id="">
+										<option value="">제목</option>
+										<option value="">내용</option>
+									</select>
+								</div>
+								<div class="blsCon">
+									<input type="text" id="blsWord" class="lsGoodsName" style="width:570px;"/>
+									<a href="#none" class="btnS1 blckBtn">검색</a>
+								</div>
+							</li>
+						</ul>
+						<ul class="listTableDesc">
+							<li class="liBrownDot sentenceBox">
+								총 <span class="pointC3 fwB">99</span>건이 검색되었습니다.
+								<select name="" id="" data-custom-class="ltdSlct">
+									<option value="">제목</option>
+									<option value="">내용</option>
+								</select>
+							</li>
+						</ul>
+						<table class="listTable" summary="번호,제목,작성일,답변일">
+							<caption>1대1상담내역</caption>
+							<colgroup><col /><col width="530px"/><col /><col /></colgroup>
+							<tr>
+								<th scope="col">번호</th>
+								<th scope="col">제목</th>
+								<th scope="col">작성일</th>
+								<th scope="col">답변일</th>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td class="listSubject"><a href="inquiry_view.html">배송문의드립니다.</a></td>
+								<td>2016-11-26</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td class="listSubject"><a href="inquiry_view.html">배송문의드립니다.</a></td>
+								<td>2016-11-26</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td class="listSubject"><a href="inquiry_view.html">배송문의드립니다.</a></td>
+								<td>2016-11-26</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td class="listSubject"><a href="inquiry_view.html">배송문의드립니다.</a></td>
+								<td>2016-11-26</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td class="listSubject"><a href="inquiry_view.html">배송문의드립니다.</a></td>
+								<td>2016-11-26</td>
+								<td>-</td>
+							</tr>
+						</table>
+						<? include '../include/paging_box.php' ?>
+						<div class="pageBtnBox taR">
+							<a href="inquiry_write.html" class="btnS1 blckBtn">1:1문의 작성하기</a>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+	</div>
+	<script type="text/javascript">
+		currentLocation(99,3) //현재페이지 위치
+	</script>
+</body>
+</html>

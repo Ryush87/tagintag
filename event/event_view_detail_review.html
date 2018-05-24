@@ -1,0 +1,32 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+</head>
+<body>
+	<? include '../include/top_notice.php' ?> <!-- topBoard  -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header  -->
+		<div id="contents" class="eventViewDetailWrap">
+			<div class="wWrap">
+				<section id="eventViewDetailBox">
+					<h2 class="mt45">이벤트</h2>
+					<div class="evvdImgBox">
+						<img src="<?=$root?>/skin/images/temp/event_img_detail_20171027_1.jpg" alt="체험후기이벤트"/>
+						<a href="#none">
+							<img src="<?=$root?>/skin/images/temp/event_img_detail_20171027_2.jpg" alt="체험후기이벤트"/>
+						</a>
+						<img src="<?=$root?>/skin/images/temp/event_img_detail_20171027_3.jpg" alt="체험후기이벤트"/>
+					</div>
+					<div class="pageBtnBox taR">
+						<a href="event_list.html" class="btnS1 blckBtn">목록</a>
+					</div>
+				</section>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+		<? include '../include/div_popup.php' ?> <!-- divPopup -->
+	</div>
+	<script type="text/javascript">
+		currentLocation(3); //현재페이지 위치
+	</script>
+</body>
+</html>

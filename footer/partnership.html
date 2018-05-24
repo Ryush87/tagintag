@@ -1,0 +1,96 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+</head>
+<body>
+	<? include '../include/top_notice.php' ?> <!-- topBoard  -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header  -->
+		<div id="contents" class="ftPartnershipWrap">
+			<section id="locationBox">
+				<div class="wWrap">
+					<ul>
+						<li><a href="<?=$root?>/">택인택홈</a></li>
+						<li><a href="#none">입점/제휴문의</a></li>
+					</ul>
+				</div>
+			</section>
+			<div class="wWrap2">
+				<section id="ftPartnershipBox">
+					<h2>입점/제휴문의</h2>
+					<div class="ftPrtnDesc"><p>택인택(주)의 든든한 파트너가 되어주세요.<br />택인택을 통해 상품의 판매부터 업무/서비스 제휴까지 다양한 마케팅 활동을 하실 수 있습니다.</p></div>
+					<table class="writeTable2" summary="구분,업체명,담당자명,연락처,이메일,제목,내용,첨부파일">
+						<caption>입점/제휴문의</caption>
+						<colgroup><col width="160px"/><col /></colgroup>
+						<tr>
+							<th scope="row">구분</th>
+							<td>
+								<select name="" id="ftCateSlt1" data-custom-id="ftCateSlt1" data-custom-class="ftCateSlt">
+									<option value="">상품판매</option>
+									<option value="">입점문의</option>
+									<option value="">결제</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="ftCompanyName">업체명</label></th>
+							<td><input type="text" id="ftCompanyName" style="width:100%;"/></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="ftManagerName">담당자명</label></th>
+							<td><input type="text" id="ftManagerName" style="width:230px;"/></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="ftPhone">연락처</label></th>
+							<td><input type="text" id="ftPhone" style="width:230px;"/></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="ftEmail">이메일</label></th>
+							<td><input type="text" id="ftEmail" style="width:230px;"/></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="ftSubject">제목</label></th>
+							<td><input type="text" id="ftSubject" style="width:100%;"/></td>
+						</tr>
+						<tr>
+							<th scope="row">내용</th>
+							<td><div id="webEditorBox">웹에디터영역</div></td>
+						</tr>
+						<tr>
+							<th scope="row">첨부파일</th>
+							<td>
+								<ul class="attachBox">
+									<li>
+										<input type="text" id="write_attach" class="fileInputType" readonly="readonly" title="첨부된 파일경로" value="선택된 파일 없음"/>
+										<div class="uploadFile">찾아보기<input type="file" name="attach1" onchange="javascript:document.getElementById('write_attach').value=this.value"/></div>
+									</li>
+									<li>
+										<input type="text" id="write_attach" class="fileInputType" readonly="readonly" title="첨부된 파일경로" value="선택된 파일 없음"/>
+										<div class="uploadFile">찾아보기<input type="file" name="attach1" onchange="javascript:document.getElementById('write_attach').value=this.value"/></div>
+									</li>
+									<li>
+										<input type="text" id="write_attach" class="fileInputType" readonly="readonly" title="첨부된 파일경로" value="선택된 파일 없음"/>
+										<div class="uploadFile">찾아보기<input type="file" name="attach1" onchange="javascript:document.getElementById('write_attach').value=this.value"/></div>
+									</li>
+									<li>
+										<input type="text" id="write_attach" class="fileInputType" readonly="readonly" title="첨부된 파일경로" value="선택된 파일 없음"/>
+										<div class="uploadFile">찾아보기<input type="file" name="attach1" onchange="javascript:document.getElementById('write_attach').value=this.value"/></div>
+									</li>
+									<li>
+										<input type="text" id="write_attach" class="fileInputType" readonly="readonly" title="첨부된 파일경로" value="선택된 파일 없음"/>
+										<div class="uploadFile">찾아보기<input type="file" name="attach1" onchange="javascript:document.getElementById('write_attach').value=this.value"/></div>
+									</li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+					<div class="pageBtnBox taC">
+						<a href="#none" class="btnS1 blckBtn">저장</a>
+						<a href="inquiry_list.html" class="btnS1 gryBtn">취소</a>
+					</div>
+				</section>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+	</div>
+</body>
+</html>
