@@ -1,0 +1,33 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/goods.css">
+<script type="text/javascript" src="<?=$root?>/skin/plugin/fireworks/fireworks.js"></script> <!--  by jang -->
+<script type="text/javascript" src="<?=$root?>/skin/js/goods_v2.js"></script>
+</head>
+<body>
+	<div class="divPopupBg"></div>
+
+	<div id="slotMachineBox" class="divPopupBox fadeEff slide-up">
+		<div class="divPopWrap">
+			<div class="sltmTitle fadeEff slide-rt">
+				<div class="sltmTitleBg"><img src="<?=$root?>/skin/images/divpop/slotmachin_title_bg.png" alt="밑줄"/></div>
+				<div class="sltmMsg"></div>
+			</div>
+			<div id="slotM">
+				<div class="sltmReelWrap">
+					<div class="sltmReel"></div>
+				</div>
+				<div class="sltmReelShadow"></div>
+				<div class="sltmReelCount"><p class="countN">999</p></div>
+				<a href="#none" class="sltmSkipBtn"><span class="blind">Skip</span></a>
+			</div>
+			<div class="sltmGuide">
+				<img src="<?=$root?>/skin/images/divpop/slotmachin_guide_txt.png" alt="밑줄"/>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		callPopup('#slotMachineBox'); //택까기-슬롯머신
+		setTimeout( SlotMachineClass.start(),1000) //택까기-슬롯머신 시작
+	</script>
+</body>
+</html>

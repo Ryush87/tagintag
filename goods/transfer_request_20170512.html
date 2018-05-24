@@ -1,0 +1,208 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+<link rel="stylesheet" href="<?=$root?>/skin/css/goods.css">
+</head>
+<body>
+	<? include '../include/top_notice.php' ?> <!-- topBoard  -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header  -->
+		<div id="contents" class="transferRequestWrap">
+			<div class="wWrap"><h2 class="mt45">즉시구매 대기자 등록</h2></div>
+			<section id="goodsInfoConfilmBox">
+				<div class="wWrap">
+					<h5>상품확인</h5>
+					<table class="viewTable">
+						<caption>상품확인</caption>
+						<colgroup><col /></colgroup>
+						<tr>
+							<th scope="col">품명</th>
+							<th scope="col">배송비</th>
+							<th scope="col">정가</th>
+							<!-- <th scope="col">시작가</th> -->
+						</tr>
+						<tr>
+							<td class="ttaL">
+								<div class="imgbox"><img src="https://goo.gl/BGajfY" alt="상품이미지" /></div>
+								<div class="goodsName">버거킹 와퍼</div>
+							</td>
+							<td>0</td>
+							<td>5,800</td>
+							<!-- <td>60</td> -->
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section id="trGoodsOptionBox">
+				<div class="wWrap">
+					<h5>옵션확인</h5>
+					<div class="goodsOptionWrap">
+						<div class="cautionBox dotLineBottom pointC4">
+							<span class="iCaution mr5"></span><span>주의 : 이 옵션의 상품은 재고가 5개 이하입니다. 주문시점에 재고가 없을 수 있으니 참고바랍니다.</span>
+						</div>
+						<ul class="gridL grid35">
+							<li class="mb10">
+								<label for="gdsOtion_1">옵션명1</label>
+								<select name="" id="gdsOtion_1" class="gdsOtionSlt" data-custom-id="gdsOtion_1" data-custom-class="gdsOtionSlt">
+									<option value="">단품1</option>
+									<option value="">단품2</option>
+								</select>
+								<span class="iCaution mt5 ml5"></span>
+							</li>
+							<li>
+								<label for="gdsOtion_2">옵션명2</label>
+								<select name="" id="gdsOtion_2" class="gdsOtionSlt" data-custom-id="gdsOtion_2" data-custom-class="gdsOtionSlt">
+									<option value="">세트1</option>
+									<option value="">세트2</option>
+								</select>
+							</li>
+						</ul>
+						<ul class="gridR grid65">
+							<li>
+								<div class="radioBoxWrap">
+									<input type="radio" id="gdsOtion1"/><label for="gdsOtion1">옵션이 반드시 일치</label>
+									<input type="radio" id="gdsOtion2"/><label for="gdsOtion2">꼭 일치하지 않아도 상관없음 (지정한 옵션이 우선순위를 갖음)</label>
+								</div>
+							</li>
+							<li>옵션에 따라 해당상품의 재고가 다를 수 있으며 판매자와 매칭되는 확률도 달라집니다. <br />꼭 일치하지 않아도 상관없음을 선택하시면 지정된 옵션을 우선 검색한 다음 제시가에 따라 판매자와 매칭 됩니다.</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section id="deliveryInfoBox">
+				<div class="wWrap">
+					<h5>배송지정보</h5>
+					<table class="viewTable">
+						<caption>배송지정보</caption>
+						<colgroup><col /></colgroup>
+						<tr>
+							<th scope="row">배송지 선택</th>
+							<td>
+								<div class="radioBoxWrap">
+									<input type="radio" id="dlvrAdrs1" name="dlvrAdrs"/><label for="dlvrAdrs1">마지막 배송지</label>
+									<input type="radio" id="dlvrAdrs2" name="dlvrAdrs"/><label for="dlvrAdrs2">배송지1</label>
+									<input type="radio" id="dlvrAdrs3" name="dlvrAdrs"/><label for="dlvrAdrs3">배송지2</label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="dlvrName">받으시는 분</label></th>
+							<td><input type="text" value="홍길동" id="dlvrName"/></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="dlvrAddress">배송지 주소</label></th>
+							<td>
+								<ul>
+									<li class="mb10"><input type="text" value="12345" id="dlvrPost"/><label for="dlvrPost"><a href="#none" class="ml10 smBtn">주소찾기</a></label></li>
+									<li>
+										<input type="text" value="서울특별시 서대문구" id="dlvrAddress"/>
+										<input type="text" value="4층" id="dlvrAddress2"/><label for="dlvrAddress2" class="blind">상세주소</label>
+									</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">연락처 정보</th>
+							<td>
+								<ul id="dlvrTelBox">
+									<li class="mb10">
+										<label for="dlvrTel1">휴대폰</label>
+										<input type="text" value="010-2233-5533" id="dlvrTel1"/>
+									</li>
+									<li>
+										<label for="dlvrTel2">일반전화</label>
+										<input type="text" value="02-2233-5533" id="dlvrTel2"/>
+									</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="dlvrMsg2">배송메세지</label></th>
+							<td>
+								<ul>
+									<li class="mt10 pointC1">상품명 : 버거킹 와퍼</li>
+									<li id="dlvrMsgBox" class="mt10 mb10">
+										<label for="dlvrMsg1" class="blind">배송메세지종류</label>
+										<select name="" id="dlvrMsg_1" class="dlvrMsgSlt" data-custom-id="dlvrMsg_1" data-custom-class="dlvrMsgSlt">
+											<option value="">직접입력</option>
+											<option value="">직접입력</option>
+										</select>
+										<input type="text" id="dlvrMsg2" class="ml10"/>
+										<span>15/80자</span>
+									</li>
+									<li class="mb10">
+										- 부재시 연락가능한 전화번호 또는 상품수령이 가능한 장소를 남겨주세요. <br />
+										- 배송일 지정은 별도로 상담하셔야 합니다.
+									</li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section id="trPriceInfoBox">
+				<div class="wWrap">
+					<h5>가격제시</h5>
+					<div class="priceInfoDesc"><p>선택한 상품의 정가와 시작가, 최저가를 확인 후 제시가를 입력해주세요. 제시가는 시작가 ~ 최저가 안에서 설정이 가능합니다. <br />제시된 가격은 양도를 희망하는 고객과의 자동 매칭 기준이 됩니다.</p></div>
+					<ul class="mt20 brownDotLi">
+						<li>빠르고 안전한 구매를 위하여 양도/양수는 택머니를 통해서만 이루어집니다.</li>
+						<li class="tagMoneyLi">
+							<div class="tagMoneyBox">
+								<div class="grid60">고객님의 택머니 잔액<span class="pointC1"><span class="num">502,500</span>원</span><a href="#none" class=" ml10 smBtn">택머니 충전</a></div>
+								<div class="grid40 pl40"><label for="suggestPrice">제시가</label><input type="text" id="suggestPrice"/>원</div>
+							</div>
+						</li>
+						<li>상기 제시가로 확정하시면 제시가에 해당되는 택머니가 고객님의 계정에서 예치금으로 전환 됩니다.</li>
+						<li>거래가 이루어지면 예치금은 판매자에게 수수료를 공제한 금액만큼 이체됩니다.</li>
+						<li>거래가 성사되지 않은 상태에서는 언제든지 본 양도/양수 대기를 해제할 수 있습니다.</li>
+						<li>거래가 완료된후에는 취소수수료가 부가되오니 주의 바랍니다. (약관 참조)</li>
+						<li>재고 소진 등의 사유로 상품의 판매가 종료될 때까지 판매자가 매칭되지 않아 거래가 이루어지지 않을 경우 예치금은 자동적으로 고객님의 계정에 반환됩니다.</li>
+					</ul>
+					<ul class="brownDotLi transferPolicyUl">
+						<li>아래 이용약관을 확인하시고 확정 버튼을 눌러주세요.</li>
+						<li>
+							<div class="grid75">
+								<div id="transferPolicyBox">
+									<div class="textScrollBox">
+										<p>제 1 조 (목적)</p>
+
+										<p>이 약관은 (주)택인택 주식회사 ("회사" 또는 "(주)택인택")가 제공하는 (주)택인택 및 (주)택인택 관련 제반 서비스의 이용과 관련하여 회사와 회원과의 권리, 의무 및 책임사항, 기타 필요한 사항을 규정함을 목적으로 합니다.</p>
+										<p>제 2 조 (정의)
+
+										<p>이 약관에서 사용하는 용어의 정의는 다음과 같습니다.</p>
+										<p>①"서비스"라 함은 구현되는 단말기(PC, TV, 휴대형단말기 등의 각종 유무선 장치를 포함)와 상관없이 "회원"이 이용할 수 있는 (주)택인택 및 (주)택인택 관련 제반 서비스를 의미합니다.</p>
+										<p>②"회원"이라 함은 회사의 "서비스"에 접속하여 이 약관에 따라 "회사"와 이용계약을 체결하고 "회사"가 제공하는 "서비스"를 이용하는 고객을 말합니다.</p>
+										<p>③"아이디(ID)"라 함은 "회원"의 식별과 "서비스" 이용을 위하여 "회원"이 정하고 "회사"가 승인하는 문자와 숫자의 조합을 의미합니다.</p>
+										<p>④"비밀번호"라 함은 "회원"이 부여 받은 "아이디와 일치되는 "회원"임을 확인하고 비밀보호를 위해 "회원" 자신이 정한 문자 또는 숫자의 조합을 의미합니다.</p>
+										<p>⑤"유료서비스"라 함은 "회사"가 유료로 제공하는 각종 온라인디지털콘텐츠(각종 정보콘텐츠, VOD, 아이템 기타 유료콘텐츠를 포함) 및 제반 서비스를 의미합니다.</p>
+										<p>⑥"포인트"라 함은 서비스의 효율적 이용을 위해 회사가 임의로 책정 또는 지급, 조정할 수 있는 재산적 가치가 없는 "서비스" 상의 가상 데이터를 의미합니다.</p>
+										<p>⑦"게시물"이라 함은 "회원"이 "서비스"를 이용함에 있어 "서비스상"에 게시한 부호ㆍ문자ㆍ음성ㆍ음향ㆍ화상ㆍ동영상 등의 정보 형태의 글, 사진, 동영상 및 각종 파일과 링크 등을 의미합니다.</p>
+										<p>제 3 조 (약관의 게시와 개정)</p>
+
+										<p>①"회사"는 이 약관의 내용을 "회원"이 쉽게 알 수 있도록 서비스 초기 화면에 게시합니다.</p>
+										<p>②"회사"는 "약관의규제에관한법률", "정보통신망이용촉진및정보보호등에관한법률(이하 "정보통신망법")" 등 관련법을 위배하지 않는 범위에서 이 약관을 개정할 수 있습니다.</p>
+										<p>③"회사"가 약관을 개정할 경우에는 적용일자 및 개정사유를 명시하여 현행약관과 함께 제1항의 방식에 따라 그 개정약관의 적용일자 30일 전부터 적용일자 전일까지 공지합니다. 다만, 회원에게 불리한 약관의 개정의 경우에는 공지 외에 일정기간 서비스내 전자우편, 전자쪽지, 로그인시 동의창 등의 전자적 수단을 통해 따로 명확히 통지하도록 합니다.</p>
+										<p>④회사가 전항에 따라 개정약관을 공지 또는 통지하면서 회원에게 30일 기간 내에 의사표시를 하지 않으면 의사표시가 표명된 것으로 본다는 뜻을 명확하게 공지 또는 통지하였음에도 회원이 명시적으로 거부의 의사표시를 하지 아니한 경우 회원이 개정약관에 동의한 것으로 봅니다.</p>
+										<p>⑤회원이 개정약관의 적용에 동의하지 않는 경우 회사는 개정 약관의 내용을 적용할 수 없으며, 이 경우 회원은 이용계약을 해지할 수 있습니다. 다만, 기존 약관을 적용할 수 없는 특별한 사정이 있는 경우에는 회사는 이용계약을 해지할 수 있습니다.</p>
+									</div>
+								</div>
+							</div>
+							<div class="grid25">
+								<input type="checkbox" id="chck_policy"/><label for="chck_policy">이용약관에 동의합니다.</label>
+								<div class="pageBtnBox taL">
+									<a href="#none" class="btnS1 blckBtn" onclick="callPopup('#transferRegPopBox'); return false;">확정</a>
+									<a href="#none" class="btnS1 gryBtn">취소</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+		<? include '../include/div_popup.php' ?> <!-- divPopup -->
+	</div>
+	<script type="text/javascript">
+		currentLocation(0); //현재페이지 위치
+	</script>
+</body>
+</html>

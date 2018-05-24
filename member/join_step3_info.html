@@ -11,7 +11,7 @@
 					<ul>
 						<li><a href="<?=$root?>/">택인택홈</a></li>
 						<li><a href="#none">회원가입</a></li>
-						<li><a href="#none">본인확인 및 개인정보입력</a></li>
+						<li><a href="#none">개인정보입력</a></li>
 					</ul>
 				</div>
 			</section>
@@ -19,7 +19,7 @@
 				<section id="mbJoinBox">
 					<h2>회원가입</h2>
 					<? include 'inc_join_step.php' ?> <!-- tab  -->
-					<h4 class="borderBtm_ddd3px">본인확인 및 개인정보 입력</h4>
+					<h4 class="borderBtm_ddd3px">개인정보 입력</h4>
 					<div class="mbInfoInputBox">
 						<h5>기본정보</h5>
 						<div class="txtBox fR mt10"><span class="star">★</span> 필수입력</div>
@@ -27,71 +27,67 @@
 							<caption>기본정보</caption>
 							<colgroup><col width="160px"/><col /></colgroup>
 							<tr>
+								<th scope="row">이름<span class="star">★</span></th>
+								<td>홍길동</td>
+							</tr>
+							<tr>
 								<th scope="row"><label for="mId">아이디</label><span class="star">★</span></th>
 								<td>
-									<input type="text" placeholder="영문/숫자 6 ~ 20자" id="mId" style="width:350px;"/>
-									<div class="inputGuideBox pointC1">이미 사용중인 아이디입니다.</div>
-									<div class="inputGuideBox pointC3">사용가능한 아이디입니다.</div>
+									<input type="text" value="띄어쓰기 없이 영문/숫자 6 ~ 20자" id="mId" style="width:350px;"/>
+									<div class="inputGuideBox pointC1">사용불가능한 아이디입니다</div>
+									<div class="inputGuideBox pointC3">사용가능합니다.</div>
 								</td>
 							</tr>
 							<tr>
 								<th scope="row"><label for="mPw1">비밀번호</label><span class="star">★</span></th>
 								<td>
-									<input type="password" placeholder="영문/숫자 혼합 8 ~ 20자" id="mPw1" style="width:350px;"/>
-									<div class="inputGuideBox pointC1">8 ~ 20자의 영문/숫자를 사용해주세요.</div>
+									<input type="text" value="띄어쓰기 없이 영문 대소문자/숫자/특수문자 혼합 8 ~ 20자" id="mPw1" style="width:350px;"/>
+									<div class="inputGuideBox pointC1">비밀번호가 일치합니다.</div>
 									<div class="inputGuideBox pointC3">사용가능합니다.</div>
-								</td>
+								</td> 
 							</tr>
 							<tr>
-								<th scope="row"><label for="mPw2">비밀번호 재입력</label><span class="star">★</span></th>
-								<td>
-									<input type="password" placeholder="영문/숫자 혼합 8 ~ 20자" id="mPw2" style="width:350px;"/>
-								</td>
-							</tr>
-							<tr>
-								<th scope="row">이름<span class="star">★</span></th>
-								<td>
-									<input type="text" placeholder="" id="mName" style="width:350px;"/>
-									<div class="inputGuideBox pointC1">이름은 최대 15자 이내로 한글/영문만 가능합니다.</div>
-								</td>
+								<th scope="row"><label for="mPw2">비밀번호 확인</label><span class="star">★</span></th>
+								<td><input type="text" value="띄어쓰기 없이 영문 대소문자/숫자/특수문자 혼합 8 ~ 20자" id="mPw2" style="width:350px;"/></td>
 							</tr>
 							<tr>
 								<th scope="row"><label for="mEmail">이메일</label><span class="star">★</span></th>
 								<td>
 									<div class="inputMailBox">
-										<input type="text" id="mEmail" placeholder="아이디/비밀번호 찾기용 이메일" style="width:350px;"/>
-										<div class="inputGuideBox pointC1">이메일 주소를 다시 확인해주세요.</div>
+										<input type="text" id="mEmail"/>
+										<span class="divi">@</span>
+										<input type="text" id="mDomain1"/><label for="mDomain1" class="blind">메일도메인</label>
+										<select name="" id="mDomain2" class="mDomainSlt" data-custom-id="mDomain2" data-custom-class="mDomainSlt">
+											<option value="">직접입력</option>
+											<option value="">naver.com</option>
+										</select>
+										<label for="mDomain2" class="blind">메일도메인선택</label>
 									</div>
 								</td>
 							</tr>
 							<tr>
-								<th scope="row"><label for="mPhon">휴대폰번호</label><span class="star">★</span></th>
-								<td>
-									<input type="text" id="" placeholder="휴대폰번호" class="fL"style="width:200px;"/>
-									<a href="#none" class="btnS2 whtBtn fs12x">인증번호발송</a>
-									<div class="inputGuideBox pointC1">휴대폰번호를 정확히 입력해주세요.</div>
-								</td>
+								<th scope="row"><label for="mPhon">휴대전화</label><span class="star">★</span></th>
+								<td>010-5468-4654</td>
 							</tr>
 							<tr>
-								<th scope="row"><label for="mPhon">인증번호</label><span class="star">★</span></th>
+								<th scope="row"><label for="mTel">일반전화</label></th>
 								<td>
-									<input type="text" id="" placeholder="5분이내에 입력해주세요" class="fL" style="width:200px;"/>
-									<a href="#none" class="btnS2 whtBtn fs12x">확인</a>
-									<div class="inputGuideBox pointC1">인증번호를 입력해주세요.</div>
-								</td>
-							</tr>
-							<tr>
-								<th scope="row"><label for="mRecommendID">추천인</label></th>
-								<td>
-									<input type="text" id="mRecommendID" placeholder="입력하시고 추가 포인트를 받아보세요" style="width:350px;"/>
-									<div class="inputGuideBox pointC1">추천인 아이디가 확인되지 않습니다.</div>
-									<div class="inputGuideBox pointC3">추천인 아이디 확인! 회원가입시 1,500 포인트가 적립됩니다.</div>
+									<div class="inputTelBox">
+										<select name="" id="mTel" class="mTelSlt"data-custom-id="mTel" data-custom-class="mTelSlt">
+											<option value="">02</option>
+											<option value="">031</option>
+											<option value="">032</option>
+										</select>
+										<span class="divi">-</span>
+										<input type="text" id="mTel2"/><label for="mTel2" class="blind">중간번호</label>
+										<span class="divi">-</span>
+										<input type="text" id="mTel3"/><label for="mTel3" class="blind">마지막번호</label>
+									</div>
 								</td>
 							</tr>
 						</table>
-						<!--
 						<h5>마케팅 정보</h5>
-						<div class="txtBox fR mt10">- 마케팅 정보를 입력하여 주시면 회원의 등급이 상향되어 더 높은 포인트 보상을 받으실 수 있습니다.</div>
+						<!--<div class="txtBox fR mt10">- 마케팅 정보를 입력하여 주시면 회원의 등급이 상향되어 더 높은 포인트 보상을 받으실 수 있습니다.</div>-->
 						<table class="writeTable2">
 							<caption>마케팅정보</caption>
 							<colgroup><col width="160px"/><col /></colgroup>
@@ -102,11 +98,13 @@
 										<option value="">제주특별자치도</option>
 										<option value="">서울특별시</option>
 									</select>
+									<!--
 									<div class="sltDesc">배송지에서 선택</div>
 									<select name="" id="mDeli" data-custom-id="mDeli" data-custom-class="mMarketingSlt">
 										<option value="">배송지 1 - 우리집</option>
 										<option value="">배송지 2 - 회사</option>
 									</select>
+									-->
 								</td>
 							</tr>
 							<tr>
@@ -140,10 +138,9 @@
 								</td>
 							</tr>
 						</table>
-						-->
 						<div class="pageBtnBox taC">
-							<!-- <a href="join_step1_policy.html" class="btnS1 gryBtn">처음으로</a> -->
-							<a href="join_step4_complete.html" class="btnS1 blckBtn">가입완료</a>
+							<a href="join_step4_complete.html" class="btnS1 blckBtn">회원가입</a>
+							<a href="join_step1_policy.html" class="btnS1 gryBtn">처음으로</a>
 						</div>
 					</div>
 				</section>
@@ -152,7 +149,7 @@
 		<? include '../include/footer.php' ?> <!-- footer -->
 	</div>
 	<script type="text/javascript">
-		currnetJoinStep(1); //tab 활성화
+		currnetJoinStep(2); //tab 활성화
 	</script>
 </body>
 </html>

@@ -1,6 +1,7 @@
 <? include '../include/top.php' ?> <!-- top -->
 <link rel="stylesheet" href="<?=$root?>/skin/css/goods.css">
-<script type="text/javascript" src="<?=$root?>/skin/js/goods.js"></script>
+<script type="text/javascript" src="<?=$root?>/skin/plugin/fireworks/fireworks.js"></script> <!--  by jang -->
+<script type="text/javascript" src="<?=$root?>/skin/js/goods_v2.js"></script>
 </head>
 <body>
 	<? include '../include/goods_tag_keep.php' ?> <!-- 택보관  -->
@@ -10,7 +11,7 @@
 		<section id="mainGoodsBox">
 			<h2 class="blind">메인상품</h2>
 			<div class="mainGoodsImgBox mainGoods_02"></div>
-			<div class="takeOffBtn"><a href="#none" class="takeOff_A" onclick="callPopup('#inputNumBox'); return false;"><span class="blind">까보기</span></a></div>
+			<div class="takeOffBtn"><a href="tag_open_motion_1.html" class="takeOff_A"><span class="blind">까보기</span></a></div>
 			<? include 'inc_slogan.php' ?> <!-- slogan  -->
 		</section>
 		<div id="contents">
@@ -497,7 +498,6 @@
 		<? include '../include/footer.php' ?> <!-- footer -->
 		<? include '../include/popup.php' ?> <!-- popup -->
 		<? include '../include/div_popup.php' ?> <!-- divPopup -->
-		<? include 'inc_goods_modal.php' ?> <!-- tagMotion -->
 	</div>
 	<script type="text/javascript">
 		currentLocation(0); //현재페이지 위치

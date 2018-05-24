@@ -1,0 +1,44 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/goods.css">
+<script type="text/javascript" src="<?=$root?>/skin/plugin/fireworks/fireworks.js"></script> <!--  by jang -->
+<script type="text/javascript" src="<?=$root?>/skin/js/goods_v2.js"></script>
+</head>
+<body>
+	<div class="divPopupBg"></div>
+
+	<div id="tagResultBox" class="divPopupBox fadeEff slide-up">
+		<div class="divPopWrap">
+			<div class="trTagBox trTagBox4 fadeEff slide-rt e2">
+				<div class="trSale">97%↓SALE</div>
+				<div class="trPrice"><span class="trPriceNum">150</span> 원</div>
+			</div>
+			<div id="tagResultWrap">
+				<div class="trTitle fadeEff slide-rt e4">
+					<div class="trTitleBg"><img src="<?=$root?>/skin/images/divpop/tag_result_title_bg.png" alt="밑줄"/></div>
+					<div class="italicTitle"><span>Tag</span>을 <span>사용</span>하시겠습니까?</div>
+				</div>
+				<ul class="trTagBtns">
+					<li class="fadeEff slide-rt e6">
+						<a href="<?=$root?>/goods/order.html" class="trTagBtn trTagBtn1"><span class="blind">주문</span></a>
+						<div class="trBtnDesc">제가 사용할 상품이므로 <span>주문</span> 하겠습니다.</div>
+					</li>
+					<li class="fadeEff slide-rt e7">
+						<a href="<?=$root?>/goods/transfer.html" class="trTagBtn trTagBtn2"><span class="blind">양도</span></a>
+						<div class="trBtnDesc">즉시구매가를 제시한 다른 회원에게 <span>판매</span> 하겠습니다.</div>
+					</li>
+					<li class="fadeEff slide-rt e8">
+						<a href="tag_open_motion_1.html" class="trTagBtn trTagBtn3"><span class="blind">한번더</span></a>
+						<div class="trBtnDesc">
+							더 높은 할인율에 <span>도전</span> 합니다.
+							<div class="point">※ 현재 택과 새로 뽑을 택 중 할인율이 높은 택 1개만 사용가능하며 나머지 택은 자동으로 소멸됩니다.</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		callPopup('#tagResultBox'); //택까기 결과2
+	</script>
+</body>
+</html>

@@ -1,56 +1,4 @@
 <section id="sideGoodsBox" class="mt30">
-	<ul class="episodeBoxWrap">
-		<li>
-			<div class="goodsOtherEpisode"><span>진행중인 상품</span></div>
-		</li>
-		<li>
-			<div class="epsdItem">
-				<div class="epsdKindLabel epsdKindLabel1"><span>SALE</span></div>
-				<div class="epsdImg"><img src="<?=$root?>/skin/images/temp/masterwatch_500x500.jpg" alt="상품이미지" /></div>
-				<div class="epsdTitle"><span>밀레피오리 방향제</span></div>
-				<div class="epsdNum"><span>1</span>회</div>
-				<div class="epsdProbability"><div class="proba1">77</div><div class="proba2">9999</div></div>
-				<div class="epsdDate">730원~</div>
-				<div class="epsdDesc">1일 경과</div>
-				<div class="epsdBtns"><a href="<?=$root?>/goods/goods_detail.html" class="btnS1 whtBtn">참여하기</a></div>
-			</div>
-		</li>
-		<li>
-			<div class="epsdItem">
-				<div class="epsdKindLabel epsdKindLabel2"><span>FREE</span></div>
-				<div class="epsdImg"><img src="<?=$root?>/skin/images/temp/masterwatch_500x500.jpg" alt="상품이미지" /></div>
-				<div class="epsdTitle"><span>명품시계</span></div>
-				<div class="epsdNum"><span>1</span>회</div>
-				<div class="epsdDate">730원~</div>
-				<div class="epsdDesc">무료 오픈택 : 999개</div>
-				<div class="epsdBtns"><a href="<?=$root?>/goods/goods_detail.html" class="btnS1 whtBtn">참여하기</a></div>
-			</div>
-		</li>
-		<li>
-			<div class="epsdItem">
-				<div class="epsdKindLabel epsdKindLabel2"><span>FREE</span></div>
-				<div class="epsdImg"><img src="<?=$root?>/skin/images/temp/masterwatch_500x500.jpg" alt="상품이미지" /></div>
-				<div class="epsdTitle"><span>명품시계</span></div>
-				<div class="epsdNum"><span>1</span>회</div>
-				<div class="epsdDate">730원~</div>
-				<div class="epsdDesc">무료 오픈택 : 999개</div>
-				<div class="epsdBtns"><a href="<?=$root?>/goods/goods_detail.html" class="btnS1 whtBtn">참여하기</a></div>
-			</div>
-		</li>
-		<li>
-			<div class="epsdItem">
-				<div class="epsdKindLabel epsdKindLabel1"><span>SALE</span></div>
-				<div class="epsdImg"><img src="<?=$root?>/skin/images/temp/masterwatch_500x500.jpg" alt="상품이미지" /></div>
-				<div class="epsdTitle"><span>명품시계</span></div>
-				<div class="epsdNum"><span>1</span>회</div>
-				<div class="epsdProbability"><div class="proba1">77</div><div class="proba2">9999</div></div>
-				<div class="epsdDate">730원~</div>
-				<div class="epsdDesc">1일 경과</div>
-				<div class="epsdBtns"><a href="<?=$root?>/goods/goods_detail.html" class="btnS1 whtBtn">참여하기</a></div>
-			</div>
-		</li>
-	</ul>
-	<!--
 	<ul class="otherGoodsWrap">
 		<li>
 			<a href="<?=$root?>/goods/ing_goods_2.html">
@@ -107,5 +55,4 @@
 			</a>
 		</li>
 	</ul>
-	-->
 </section>

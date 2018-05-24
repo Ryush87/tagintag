@@ -1,19 +1,15 @@
 //common funtion
 function viewport() { //meta viewport 분기
-	var isMobile = false; //initiate as false
-	if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent) || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(navigator.userAgent.substr(0,4))) { isMobile = true }
 	var win_w = $(window).width();
 	var win_w=window.innerWidth;
-	if(!isMobile){
-		if (win_w <= 1024 && win_w >= 769) {
-			$("meta[name=viewport]").attr("content", "width=device-width, initial-scale=0.6, maximum-scale=1.0, minimum-scale=0.6, user-scalable=yes, target-densitydpi=medium-dpi");
-		} else if (win_w <= 768 && win_w >= 451) {
-			$("meta[name=viewport]").attr("content", "width=device-width, initial-scale=0.5, maximum-scale=1.0, minimum-scale=0.5, user-scalable=yes, target-densitydpi=medium-dpi");
-		} else if (win_w <= 450) {
-			$("meta[name=viewport]").attr("content", "width=device-width, initial-scale=0.3, maximum-scale=1.0, minimum-scale=0.3, user-scalable=yes, target-densitydpi=medium-dpi");
-		} else {
-			$("meta[name=viewport]").attr("content", "width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi");
-		}
+	if (win_w <= 1024 && win_w >= 769) {
+		$("meta[name=viewport]").attr("content", "width=device-width, initial-scale=0.6, maximum-scale=1.0, minimum-scale=0.6, user-scalable=yes, target-densitydpi=medium-dpi");
+	} else if (win_w <= 768 && win_w >= 451) {
+		$("meta[name=viewport]").attr("content", "width=device-width, initial-scale=0.5, maximum-scale=1.0, minimum-scale=0.5, user-scalable=yes, target-densitydpi=medium-dpi");
+	} else if (win_w <= 450) {
+		$("meta[name=viewport]").attr("content", "width=device-width, initial-scale=0.3, maximum-scale=1.0, minimum-scale=0.3, user-scalable=yes, target-densitydpi=medium-dpi");
+	} else {
+		$("meta[name=viewport]").attr("content", "width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi");
 	}
 }
 function newWin(url,nw,nh){ //새창열기
@@ -44,17 +40,13 @@ function scrollMove(obj,addH){ //페이지 내 특정 obj 위치 스크롤이동
 	}else{
 		var tempPosition=$(obj).offset().top;
 	}
-	$('html, body').stop().animate({scrollTop:tempPosition},300,'swing');
+	$('html, body').stop().animate({scrollTop:tempPosition},500,'linear');
 	return false;
 }
 function changeLocation(lnb_1d,snb_1d,snb_2d){ //location에 현재 페이지 변경
 	var currentLnb=$('.snbTitle > div').html();
 	var currentSnb1=$('.snb_1d > li.actOn > a').html();
 	var currentSnb2=$('.snb_2d > li.actOn > a').html();
-	if(currentSnb2!=null){
-		var arrayCurrentSnb2=currentSnb2.split("<span");
-		currentSnb2=arrayCurrentSnb2[0];
-	}
 	if(lnb_1d!=undefined){
 		$('#locationBox ul').append('<li>'+currentLnb+'</li>');
 		if(snb_1d!=undefined){
@@ -128,14 +120,6 @@ function callPopup2(obj){ //divpopup2 보이기
 	objShow($(obj));
 	actFadeEff($(obj));
 }
-function hidePopupAll(){ //divpopup 모두 숨기기
-	console.log("d");
-	$('body').removeClass('actPop');
-	resetFadeEff($(".divPopupBox"));
-	divPopBg_hide();
-	divPopBg2_hide();
-	objHide($(".divPopupBox"));
-}
 function hidePopup(obj){ //divpopup 숨기기
 	$('body').removeClass('actPop');
 	resetFadeEff(obj);
@@ -148,10 +132,6 @@ function hidePopup2(obj){ //divpopup2 숨기기
 	divPopBg2_hide();
 	objHide($(obj));
 }
-function hidePopup3(obj){ //divpopup3 숨기기
-	resetFadeEff(obj);
-	objHide($(obj));
-}
 function nextPopup(pObj,nObj){ //nextdivpopup 보이기
 	var closeObj=pObj.parents('.divPopupBox');
 	resetFadeEff(closeObj);
@@ -160,20 +140,18 @@ function nextPopup(pObj,nObj){ //nextdivpopup 보이기
 	objShow($(nObj));
 	actFadeEff($(nObj));
 }
-var quickY=310; //quickMenu 초기 위치
-//var quickY=710;//quickMenu position
+var quickY=255; //quickMenu 초기 위치
 function quick_menu_act(qy){ //quickMenu 활성화
 	var quick=$('#quickMenuBox');
 	var quickPY=qy;
 	var winPY=$(window).scrollTop();
-	//console.log(winPY+"___"+quickPY);
 	if(winPY>quickPY){
 		quick.stop().animate({'top':winPY+100+'px'},500);
 	}else{
 		quick.stop().animate({'top':quickPY+'px'},500);
 	}
 }
-function top_btn_act(){ //topBtn 활성화
+function top_btn_act(qy){ //topBtn 활성화
 	var topBtn=$('#contentsTopBtn');
 	var topBtnParentPY=topBtn.parent().offset().top;
 	var winPY=$(window).scrollTop();
@@ -194,26 +172,7 @@ function top_btn_act(){ //topBtn 활성화
 		topBtn.stop().animate({'opacity':'0'},500);
 	}
 }
-function top_btn_act2(){ //topBtn2 활성화
-	var topBtn=$('#contentsTopBtn2');
-	var topBtnParentPY=topBtn.parent().offset().top;
-	var winPY=$(window).scrollTop();
-	var screenH=$(window).height();
-	var topBtnFinalPY=(winPY-topBtnParentPY)+screenH-topBtn.height();
-	var topBtnParentMaxH=topBtn.parent().height()-topBtn.height();
-	if(winPY>topBtnParentPY){
-		if(topBtnFinalPY>topBtnParentMaxH){
-			//topBtn.css({'opacity':'1'});
-			topBtn.stop().animate({'right':0+'px'},200);
-		}else{
-			//topBtn.css({'opacity':'1'});
-			topBtn.stop().animate({'right':20+'px'},200);
-		}
-	}else{
-		topBtn.stop().animate({'right':'-50px'},200);
-	}
-}
-//숫자 카운트-v1
+//숫자 카운트
 var total_time=0;
 var hour=total_time/3600;
 var minute=(total_time/60)%60;
@@ -233,27 +192,30 @@ function time_count(){
 	total_time=60;
 	clearInterval(timeCount);
 	timeCount=setInterval(function(){count_down();},1000);
+	
 }
-//숫자 카운트-v2
-function count_down2(obj){
-	total_time--;
-	hour=total_time/3600;
-	minute=(total_time/60)%60;
-	second=total_time%60;
-	obj.html(parseInt(total_time));
-	if(total_time<=0){
-		clearInterval(timeCount);
-		obj.html(parseInt(0));
-	}
+function tagKeepBoxAct(){ //상단 택보관 박스 활성화
+	$('.tagKeepBoxWrap').slideDown();
+	bigTagToggle();
+	time_count();
 }
-function time_count2(obj){
-	var sec=obj.html();
-	if(sec==null){
-		total_time=60;
-	}
-	total_time=sec;
-	clearInterval(timeCount);
-	timeCount=setInterval(function(){count_down2(obj);},1000);
+function bigTagToggle(){ //상단 택보관 박스의 세로로 있는 택 Toggle
+	var bigTag=$('.bigTagBox');
+		var tempWrapH=bigTag.height()-90;
+		var currentY=bigTag.position().top;
+		if(currentY>0){
+			//접기
+			bigTag.animate({"top":-(tempWrapH)+"px"},500,'linear');
+			bigTag.find('.bgtStatus').removeClass('bgtSttClose').addClass('bgtSttOpen')
+			objShow($('.tkTimeCon1'));
+			objHide($('.tkTimeCon2'));
+		}else{
+			//열기
+			bigTag.animate({"top":80+"px"},500,'linear');
+			bigTag.find('.bgtStatus').removeClass('bgtSttOpen').addClass('bgtSttClose');
+			objHide($('.tkTimeCon1'));
+			objShow($('.tkTimeCon2'));
+		}
 }
 function setDatePick(obj){ //calender 셋팅
 	jQuery('.blt_calendar').click(function(){
@@ -340,9 +302,6 @@ $(function($){
 	$('#gnb').mouseover(function(){
 		hideLnb();
 	});
-	$('#mainCaruselBox').mouseover(function(){
-		hideLnb();
-	});
 	$('#headBox').mouseover(function(){
 		hideLnb();
 	});
@@ -355,7 +314,6 @@ $(function($){
 	//lnb UI e-----------------
 
 	//snb UI s-----------------
-	/*
 	$('.snb_1d > li > a').click(function(){
 		var totalIndex=$('.snb_1d > li').length;
 		var tempIndex=$('.snb_1d > li').index($(this).parent());
@@ -376,13 +334,10 @@ $(function($){
 			}
 		});
 	});
-	*/
 	//snb UI e-----------------
 
 	//slideList UI s-----------------
-
 	$('.slideListBox .titleLine a').click(function(){
-		//console.log("===> slideList 클릭 ");
 		var totalIndex=$('.slideListBody > li').length;
 		var tempIndex=$('.slideListBody > li').index($(this).parent().parent().parent());
 		for(i=0;i<totalIndex;i++){
@@ -402,7 +357,6 @@ $(function($){
 			}
 		});
 	});
-
 	$('.slideListBox .titleLine').hover(function(){
 		$(this).parent().addClass('actOn');
 	},function(){
@@ -413,12 +367,6 @@ $(function($){
 		$(this).parent().parent().parent().find('a.slideBtn').removeClass('slideUpBtn').addClass('slideDownBtn');
 		$(this).parent().parent().parent().find('.conLine').slideUp();
 	});
-
-
-
-
-
-
 	//slideList UI e-----------------
 
 	//goodsOption_slide s-----------------
@@ -475,44 +423,12 @@ $(function($){
 	//스크롤되는 게시판(메인) e---------------
 
 	//subPage s---------------
-	$('#findIdPwBox .pageTab li a').on('click',function(){ //아이디찾기
-		var targetObj=$(this).attr("tab-href");
-		$(this).parents('.pageTab').find('li').removeClass('actOn');
-		$('.findKindInput').hide();
-		$(this).parent().addClass('actOn');
-		$(targetObj).show();
-	});
-	$("#chck_all").on('change',function(){ //전체체크박스
-		if($(this).prop('checked')){
-			$(this).parent().parent().find('.allCheckChild input[type="checkbox"]').prop("checked",true);
-		}else{
-			$(this).parent().parent().find('.allCheckChild input[type="checkbox"]').prop("checked",false);
-		}
-	});
 	$(".pageTab a").click(function(){ //pageTab 클릭시 스크롤 이동
 		var targetObj=$(this).attr('href');
-		if(targetObj!="#none"){
-			scrollMove($(targetObj));
-		}
-	});
-	$('.pageListTab li').click(function(){ //pageListTab 클릭시 활성화
-		$('.pageListTab li').removeClass('actOn');
-		$(this).addClass('actOn');
+		scrollMove($(targetObj));
 	});
 	$(".infoPopBtn").hover(function(){ //mypage 느낌표 아이콘
 		$(this).next().slideToggle();
-	});
-	$(".termCon .miniBtn").click(function(){ //mypage 주문내역 기간버튼
-		$('.miniBtn').removeClass('actOn');
-		$(this).addClass('actOn');
-	});
-	$(".shareFtBtns").on('click',function(){ //공유버튼
-		$(this).find('ul').fadeToggle();
-		if(Number($(this).find('ul').css('opacity'))<1){
-			$(this).addClass("actOn");
-		}else{
-			$(this).removeClass("actOn");
-		}
 	});
 	$(".serviceIndexBox li a").on('click',function(){ //택인택이란 > 서비스 소개
 		$('.serviceIndexBox li').removeClass('actOn');
@@ -534,36 +450,14 @@ $(function($){
 		var targetObj=$(this).attr('href');
 		scrollMove($(targetObj));
 	});
-	$("#contentsTopBtn2 a").click(function(){ //topBtn2 클릭시 스크롤 이동
-		var targetObj=$(this).attr('href');
-		scrollMove($(targetObj));
-	});
 	//subPage e---------------
 
 	//divPop s---------------
 	$(".divPopupBox .closePopBtn").click(function(){
 		hidePopup($(this).parents('.divPopupBox'));
 	});
-	$(".divPopupBox .closePopBtn2").click(function(){
-		hidePopup2($(this).parents('.divPopupBox'));
-	});
 	//divPop e---------------
 	
-	//clipboard s-------------------
-	var clipboard=new Clipboard('.clipboardBtn');
-	clipboard.on('success', function(e) { //copy URL
-		//console.info('Action:', e.action);
-		//console.info('Text:', e.text);
-		//console.info('Trigger:', e.trigger);
-		alert('선택하신 상품의 고유주소(URL)가 클립보드에 복사되었습니다.\n\Ctrl + V 또는 붙여넣기를 선택하여 이용하시기 바랍니다.');
-		e.clearSelection();
-	});
-	clipboard.on('error', function(e) {
-		console.error('Action:', e.action);
-		console.error('Trigger:', e.trigger);
-	});
-	//clipboard e-------------------
-
 	//BtnAction UI e-----------------
 
 	//window load after s ------------
@@ -586,21 +480,114 @@ $(window).on("orientationchange",function(){ //화면 회전
 	}
 });
 
+
 /******************************** 택관련 함수 ************************************/
-function tagKeepBoxAct(bigTStatus){ //상단 택보관 박스 활성화
-	if(bigTStatus){
-		$('.tagKeepBoxWrap').slideDown();
-		// bigTagToggle(); //20171109 삭제
-	}else{
-		$('.tagKeepBoxWrap').slideDown();
-	}
-	//time_count2($('.leftTimeTag')); //시간 카운트
+
+
+// 결제금액 계산
+function get_tag_price( row ){
+	var tag_price = Math.ceil( parseInt( row.ta_price ) - ( parseInt( row.ta_price ) * parseInt( row.ti_percent ) /  100 ) );
+	return tag_price;
 }
-function bigTagClose(){ // 택보관 닫기
+
+// 0으로 채우기  padDigits(10, 4); // "0010"
+function padDigits(number, digits) {
+    return Array(Math.max(digits - String(number).length + 1, 0)).join(0) + number;
+}
+
+// 랜덤함수, min (포함) 과 max (포함) 사이의 임의 정수를 반환
+function getRandomIntInclusive(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+// 책갈피 html 셋팅
+function tagKeepHtmlSet( row ){
+	console.log( "=====> ### 주문 대기중 택 ###: "+ JSON.stringify(row) );
+	if( row != null ){
+		// 주문 남은 시간, 크론차이 7초
+		var sub_sec = parseInt(row.lock_date_sec) - 10;
+		// 주문시간 없다면, 오픈시간 대입
+		if( sub_sec < 1 ){
+			sub_sec = parseInt(row.regdate_sec);	
+			// 크론과 시간차, 2초 빼줌
+			sub_sec = sub_sec - 2;
+			if( sub_sec > TAG_TIME.open ) sub_sec = TAG_TIME.open;	// 60초 제한
+		}
+		if( sub_sec > 0 ){
+			G_TAG.row = row;
+			G_TAG.ta_id = row.ta_id;
+			G_PARM.getCnt = row.seq;
+			G_TIMER.openCnt = sub_sec;
+			console.log( "===> 남은시간: "+ G_TIMER.openCnt );
+			// 책갈피 html 셋팅
+			var price = get_tag_price( row );
+			// 제품명
+			$(".tagKeepBoxWrap .tkGoodsName").html( row.gd_name );
+			// 상단 바 금액	
+			$(".tagKeepBoxWrap .cancelLine").html( setComma(row.ta_price)+"원" );
+			$(".tagKeepBoxWrap .tkPrice").html( " : "+setComma(price)+"원 / "+row.ti_percent+"% OFF" );
+			// 상단 책갈피
+			$(".tagKeepBoxWrap #bgtRate_str").html( row.ti_percent+"%" );
+			$(".tagKeepBoxWrap #bgtPrice_str").html( setComma(price) );	
+			// 상단바 내리기
+			$('.tagKeepBoxWrap').slideDown();
+			// 타이머 가동
+			timerOpenLauncher();
+		}
+	}
+
+}
+
+// 책갈피 오픈 타이머
+function timerOpenLauncher(){
+	console.log( "=====> 타이머 시작" );
+	$('.tagKeepBoxWrap').slideDown();	
+	timerOpenStart();
+}
+function timerOpenStart(){
+	clearInterval(G_TIMER.openTimer);
+	G_TIMER.openTimer = setInterval(function(){ timerOpenLoop(); },1000);	
+}
+function timerOpenLoop(){
+	G_TIMER.openCnt --;
+	console.log( "===> timerOpenLoop() " );
+	$('.tagKeepBoxWrap .leftTimeTag').html(parseInt(G_TIMER.openCnt));
+	if(G_TIMER.openCnt === 0){
+		clearInterval(G_TIMER.openTimer);		
+		// 링크 막기
+		G_PARM.getCnt = 0;
+	}
+}
+
+// 주문 , 양도
+function orderTag( linkUrl ){
+	console.log("===> 양도/주문 링크이동: "+G_PARM.getCnt);
+	clearInterval(G_TIMER.openTimer);
+	if( linkUrl == "onMore" ){	// 한번더
+		onMoreStart();
+	}else{
+		if( G_PARM.getCnt > 0 ){
+			// 오픈 처리
+			var param = "is_percent=y&ta_id="+G_TAG.ta_id+"&seq="+G_PARM.getCnt;	
+			location.href = "/goods/"+ linkUrl+"?"+param;
+		}else{
+			alert('마감 시간이 지났습니다 다시 시도해 주세요');
+			return;
+		}
+	}
+}
+
+// 책갈피 닫기
+function bigTagClose(){	
 	console.log("====> bigTagClose() 책갈피 닫기  ");
+	//clearInterval(G_TIMER.openTimer); //for_pub
 	$(".tagKeepBoxWrap").slideUp()
 }
-function bigTagToggle( open ){ // 택보관 토글
+
+
+
+// 책갈피 토글
+function bigTagToggle( open ){	
 	var bigTag=$('.bigTagBox');
 	var tempWrapH = bigTag.height()-90;
 	var currentY = bigTag.position().top;
@@ -609,23 +596,41 @@ function bigTagToggle( open ){ // 택보관 토글
 		//접기
 		bigTag.animate({"top":-(tempWrapH)+"px"},500,'linear');
 		bigTag.find('.bgtStatus').removeClass('bgtSttClose').addClass('bgtSttOpen');	// 접어놓기
-		objShow($('.tkTimeCon1')); // 접은경우 시간
-		objHide($('.tkTimeCon2')); // 접은경우 문구
+		objShow($('.tkTimeCon1'));		// 접은경우 시간
+		objHide($('.tkTimeCon2'));		// 접은경우 문구		
 	}else{
 		console.log( "===> 토글 내리기 " );
 		//열기
 		bigTag.animate({"top":80+"px"},500,'linear');
 		bigTag.find('.bgtStatus').removeClass('bgtSttOpen').addClass('bgtSttClose');	// 접어놓기
-		objHide($('.tkTimeCon1')); // 접은경우 시간
-		objShow($('.tkTimeCon2')); // 접은경우 문구
+		objHide($('.tkTimeCon1'));		// 접은경우 시간
+		objShow($('.tkTimeCon2'));		// 접은경우 문구
 	}
 }
-$(function(){ // 온로드시
-	$(".tagKeepBoxWrap .tagKeepBoxClose").click(function(){ // 택보관 - X버튼
+
+
+// 제품 바로가기
+function goGoodsLink(){
+	location.href = '/goods/ing_goods.html?gd_no='+G_TAG.row.gd_no;
+}
+
+
+
+
+// 온로드시
+$(function(){
+
+	// 책갈피 - X버튼
+	$(".tagKeepBoxWrap .tagKeepBoxClose").click(function(){
 		bigTagClose();
 	});
-	$(".bigTagBox .bgtStatus").click(function(){ // 접어놓기 버튼
-		// bigTagToggle(); //20171109 삭제
+
+	// 접어놓기 버튼
+	$(".bigTagBox .bgtStatus").click(function(){
+		bigTagToggle();
 	});
-});
+
+});		//  $(function(){
+
+
 /******************************** 택관련 함수 ************************************/

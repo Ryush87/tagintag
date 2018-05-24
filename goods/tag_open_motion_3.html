@@ -1,0 +1,64 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/goods.css">
+<script type="text/javascript" src="<?=$root?>/skin/plugin/fireworks/fireworks.js"></script> <!--  by jang -->
+<script type="text/javascript" src="<?=$root?>/skin/js/goods_v2.js"></script>
+</head>
+<body>
+	<div class="divPopupBg2"></div>
+
+	<div id="bigTagOpenBox" class="divPopupBox fadeEff slide-rt">
+		<div class="divPopWrap">
+			<div id="bigTagWrap">
+				<!-- v1 s -->
+				<!--
+				<div class="bigTagFront slideHover">
+					<div class="btfPrice"><span class="btfPriceNum">298</span>번 <br />Tag을 받으셨습니다. <br /><div class="btfPoint">(50포인트 사용)</div></div>
+					<div class="hoverHand hoverEff2"><img src="<?=$root?>/skin/images/divpop/big_tag_front_hand.png" alt="클릭" /></div>
+				</div>
+				<div class="bigTagBack bigTagBack4">
+					<div class="btbSale">97%↓SALE</div>
+					<div class="btbPrice"><span class="btbPriceNum">150</span> 원</div>
+				</div>
+				<div class="bigTagBack_after">
+					<div class="celebrationBox actBefore"><span>축하</span>합니다!</div>
+					<div class="btbaDescTxt actBefore">고객님은 본 상품의 <span>97% 할인</span> Tag를 받았습니다.</div>
+				</div>
+				<div class="celebrationBg">
+					<div class="celebrationBg2">
+						<canvas id="celebrationCvs"></canvas>
+					</div>
+				</div>
+				-->
+				<!-- v1 e -->
+
+				<!-- v2 s : by jang -->
+				<div class="bigTagFront" style="user-select:none;">
+					<div class="btfPrice"><span class="btfPriceNum">298</span>번 <br />Tag을 받으셨습니다. <br /><div class="btfPoint">(50포인트 사용)</div></div>
+					<div class="hoverHand hoverEff2"><img src="<?=$root?>/skin/images/divpop/big_tag_front_hand.png" style="user-select:none; user-drag: none;" alt="클릭" /></div>
+				</div>
+
+				<div class="bigTagBack bigTagBack4">
+					<div class="btbSale">97%↓SALE</div>
+					<div class="btbPrice"><span class="btbPriceNum">150</span> 원</div>
+				</div>
+				<div class="bigTagBack_after">
+					<div class="celebrationBox actBefore"><span>축하</span>합니다!</div>
+					<div class="btbaDescTxt actBefore">고객님은 본 상품의 <span>97% 할인</span> Tag를 받았습니다.</div>
+				</div>
+
+				<!-- 폭죽 -->
+				<div class="celebrationBg" style="z-index:1;">
+					<div class="celebrationBg2">
+						<!-- by jang  -->
+						<div id="canvas-container" style="width:1020px; height:798px;"></div>
+					</div>
+				</div>
+				<!-- v2 e -->
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		callPopup('#bigTagOpenBox'); //택까기-결과1
+	</script>
+</body>
+</html>

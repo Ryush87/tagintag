@@ -9,14 +9,7 @@
 */
 
 /* ing_goods */
-.ingGoodsWrap {}
-	#ingGoodsBox {float:left;width:100%;}
-
-.episodeListTabBox {}
-.episodeListTabBox.pageTab {}
-	.episodeListTabBox.pageTab li {width:33.33%;}
-
-#mainGoodsBox {position:relative;float:left;width:100%;background:#45403a;}
+#mainGoodsBox {float:left;width:100%;}
 	.mainGoodsImgBox {position:relative;float:left;width:100%;height:475px;}
 	.mainGoods_no_img {background:url(../images/sub_goods/no_img_2000_475.jpg) no-repeat 50% 0;}
 	.mainGoods_01 {background:url(../images/temp/buger_2000x475.jpg) no-repeat 50% 0;}
@@ -26,20 +19,7 @@
 	.mainGoods_05 {background:url(../images/temp/temp_main_goods_05.jpg) no-repeat 50% 0;}
 	.mainGoods_06 {background:url(../images/temp/temp_main_goods_06.jpg) no-repeat 50% 0;}
 	.mainGoods_07 {background:url(../images/temp/temp_main_goods_07.jpg) no-repeat 50% 0;}
-		.mainEpisodLabel {position:absolute;top:110px;left:50%;margin-left:-450px;width:150px;height:50px;line-height:50px;font-weight:normal;color:#a26e49;font-size:3.6em;text-align:center;z-index:1;}
-			.mainEpisodLabel .epil1,
-			.mainEpisodLabel .epil2 {margin:0 auto;width:50%;text-align:center;}
-			.mainEpisodLabel .epil2 {font-weight:500;font-size:0.75em;border-top:2px solid #a26e49;}
-		.mainEpisodProbability {position:absolute;top:110px;left:50%;margin-left:-450px;width:150px;height:50px;line-height:50px;font-weight:normal;color:#a26e49;font-size:3.6em;text-align:center;z-index:1;}
-			.mainEpisodProbability .proba1,
-			.mainEpisodProbability .proba2 {margin:0 auto;width:50%;text-align:center;}
-			.mainEpisodProbability .proba2 {border-top:2px solid #a26e49;}
-		/*.takeOffBtn {position:absolute;top:150px;left:50%;margin-left:280px;width:193px;height:475px;z-index:1;}*/
-		.mainEpisodGoodsInfo {position:absolute;top:152px;left:50%;margin-left:-105px;min-width:300px;max-width:340px;overflow:hidden;}
-			.megiT1 {margin-bottom:20px;padding-bottom:17px;font-size:3.6em;color:#aaa18f;/*letter-spacing:0.1em;*/white-space:nowrap;border-bottom:1px solid #787165;}
-			.megiT2 {font-weight:500;font-size:3.6em;color:#efc400;line-height:1.1em;letter-spacing:-0.062em;white-space:nowrap;}
-			.megiT3 {margin-top:20px;font-weight:700;font-size:7em;color:#ff6633;line-height:1.05em;letter-spacing:-0.05em;white-space:nowrap;}
-		.takeOffBtn {position:absolute;top:0;left:50%;margin-left:280px;width:193px;height:475px;z-index:1;}
+		.takeOffBtn {position:absolute;top:150px;left:50%;margin-left:280px;width:193px;height:475px;z-index:1;}
 			.takeOff_A {display:block;width:193px;height:475px;background:url(../images/sub_goods/tag_open_bg.png) no-repeat 0 0;}
 			.takeOff_A {
 						-webkit-animation:actOff 0.8s steps(6) infinite alternate;
@@ -138,30 +118,16 @@
 			50% {transform: rotate(1.75deg);}
 			100% {transform: rotate(-1.75deg);}
 		}
-	/*.layerPop {position:absolute;top:165px;left:0;width:100%;height:70px;text-align:center;z-index:2;}*/
-	.layerPop {position:absolute;top:0;left:0;width:100%;height:70px;text-align:center;z-index:2;}
+	.layerPop {position:absolute;top:165px;left:0;width:100%;height:70px;text-align:center;z-index:2;}
 		.layerPopUl {display:block;width:100%;}
 			.layerPopTxt {display:block;width:100%;font:bold 2.8em / 70px "Noto Sans KR";color:#fff;}
 		.layerPopBg {position:absolute;top:0;left:0;width:100%;height:70px;background:rgba(0,0,0,0.4);}
 
-#copyUrlBtn {float:right;}
-	#copyUrlBtn a {display:block;padding-left:30px;height:25px;line-height:25px;font-size:14px;color:#333;background:url(../images/common/icon_url_btn.png) no-repeat 0 0;}
-
 #snsShareBtn {float:right;}
 	#snsShareBtn a {display:block;padding-left:30px;height:25px;line-height:25px;font-size:14px;color:#333;background:url(../images/common/icon_sns_btn.png) no-repeat 0 0;}
 
-#luckyShareBtn {float:right;}
-	#luckyShareBtn a {display:block;padding-left:30px;height:25px;line-height:25px;font-size:14px;color:#333;background:url(../images/common/icon_sns_btn.png) no-repeat 0 0;}
-
-.shareFtBtns {float:right;position:relative;width:25px;height:25px;cursor:pointer;background:url(../images/common/icon_sns_btn.png) no-repeat 0 0;}
-	.shareFtBtns.actOn {background:url(../images/common/icon_url_btn.png) no-repeat 0 0;}
-		.shareFtBtns ul {position:absolute;right:35px;display:block;width:180px;}
-			.shareFtBtns ul li {float:left;margin-left:10px;width:25px;height:25px;}
-				.shareFtBtns ul li a {display:block;width:100%;height:100%;}
-			.shft_facebook {cursor:pointer;background:url(../images/common/icon_url_btn.png) no-repeat 0 0;}
-
 #tagGraphBox {float:left;width:100%;}
-	#tagGraphBox #snsShareBtn {margin-right:20px;}
+	#tagGraphBox #snsShareBtn {margin-right:180px;}
 	.tagGraphWrap {position:relative;float:left;width:100%;border:1px solid #e1e1e1;}
 		.eventGoodsBox {float:left;width:100%;}
 		.tagGraphWrap .gridL {float:left;padding-left:20px;width:70%;background:#f7f7f7;}
@@ -247,43 +213,6 @@
 			
 
 #sideGoodsBox {float:left;width:100%;}
-	#sideGoodsBox .episodeBoxWrap {float:left;margin-bottom:40px;width:100%;border:1px solid #ddd;}
-		#sideGoodsBox .episodeBoxWrap li {float:left;padding:0 0px;width:100%;}
-			.goodsOtherEpisode {margin:0 auto;margin-bottom:0;padding-top:0;width:100%;height:56px;background:#d26666;}
-				.goodsOtherEpisode span {display:block;width:100%;height:100%;line-height:56px;font-weight:500;font-size:1.8em;color:#fff;text-align:center;/*background:url(../images/common/list_label_bg.png) no-repeat 50% 100%;background-size:cover;*/}
-			#sideGoodsBox .epsdItem {position:relative;float:left;padding:20px 10px 20px 10px;width:100%;text-align:center;border-top:1px solid #ddd;/*background:url(../images/common/line_w_dot2.png) repeat-x 0 0;*/}
-			#sideGoodsBox .episodeBoxWrap li:first-child .epsdItem,
-			#sideGoodsBox .episodeBoxWrap li:nth-child(2) .epsdItem {border-top:0;background:none;}
-				#sideGoodsBox .epsdLabel {position:absolute;top:0;right:10px;padding-top:13px;width:60px;height:57px;}
-					#sideGoodsBox .epsdLabel span {display:block;width:100%;height:100%;font-weight:500;font-size:1.5em;color:#fff;text-align:center;background:url(../images/common/list_label_bg.png) no-repeat 50% 100%;}
-				#sideGoodsBox .epsdLabel1 {background:#70b986;}
-				#sideGoodsBox .epsdLabel2 {background:#d26666;}
-				#sideGoodsBox .epsdLabel3 {background:#bac0c4;}
-				#sideGoodsBox .epsdKindLabel {position:absolute;top:10px;left:10px;width:42px;height:49px;}
-					#sideGoodsBox .epsdKindLabel span {display:block;padding-top:17px;width:100%;height:100%;font-weight:600;font-size:11px;letter-spacing:-0.025em;text-align:center;background:url(../images/common/icon_tag_kind_bg.png) no-repeat;}
-				#sideGoodsBox .epsdKindLabel1 {color:#e40075;}
-				#sideGoodsBox .epsdKindLabel2 {color:#00a7b0;}
-				#sideGoodsBox .epsdKindLabel3 {color:#663b93;}
-				#sideGoodsBox .epsdProbability {position:absolute;top:10px;right:10px;padding-top:4px;width:50px;height:50px;background:#2b343a;border-radius:25px;}
-					#sideGoodsBox .epsdProbability .proba1,
-					#sideGoodsBox .epsdProbability .proba2 {margin:0 auto;width:60%;height:19px;line-height:19px;font-size:12px;text-align:center;color:#fff;}
-					#sideGoodsBox .epsdProbability .proba2 {line-height:15px;border-top:1px solid #fff;}
-				#sideGoodsBox .epsdTitle {margin-top:10px;width:100%;font-weight:bold;font-size:18px;color:#c6a370;white-space:nowrap;overflow:hidden;}
-					#sideGoodsBox .epsdTitle span {}
-				#sideGoodsBox .epsdNum {font-weight:bold;font-size:28px;color:#091b25;}
-				#sideGoodsBox .epsdDate {margin-top:15px;font-size:2em;color:#333;}
-				#sideGoodsBox .epsdDesc {margin-top:10px;font-size:1.6em;color:#a3aeb7;}
-				#sideGoodsBox .epsdBtns {margin-top:20px;}
-					#sideGoodsBox .epsdBtns .btnS1 {margin-left:0;padding-right:10px;padding-left:10px;width:100%;height:38px;line-height:38px;font-size:14px;}
-				/*
-				#sideGoodsBox .epsdTitle {font-weight:bold;font-size:30px;color:#2b343a;}
-					#sideGoodsBox .epsdTitle span {font-size:36px;}
-				#sideGoodsBox .epsdDate {margin-top:40px;font-size:2em;color:#333;}
-				#sideGoodsBox .epsdDesc {margin-top:10px;font-size:1.6em;color:#a3aeb7;}
-				#sideGoodsBox .epsdBtns {margin-top:20px;}
-					#sideGoodsBox .epsdBtns .btnS1 {margin-left:0;padding-right:15px;padding-left:15px;}
-				*/
-
 	.otherGoodsWrap {float:left;width:100%;border:1px solid #ddd;}
 		.otherGoodsWrap li {float:left;padding:0 10px;width:100%;}
 			.othItem {float:left;width:100%;text-align:center;background:url(../images/common/line_w_dot2.png) repeat-x 0 0;}
@@ -295,7 +224,7 @@
 					.othiPrice span {font-family:'Arial';font-weight:800;}
 
 #goodsInfoBox {float:left;width:100%;overflow-x:hidden;}
-		.detailInfoBox {float:left;width:100%;padding-bottom:50px;/*text-align:center;*/}
+		.detailInfoBox {float:left;width:100%;padding:50px 0;/*text-align:center;*/}
 			.detailInfoBox img {width:100%;}
 	
 	#goodsQnaBox {float:left;width:100%;}
@@ -362,10 +291,7 @@
 			.pTagOpenGoodsInfo ul {float:left;width:100%;}
 				.pTagOpenGoodsInfo ul li {padding:10px 0;line-height:18px;font-size:1.4em;font-family:"dotum";color:#333;}
 				.pTagOpenGoodsInfo ul li .fR {width:230px;}
-		.pTagOpenHistoryListTabBox {float:left;margin-top:40px;margin-bottom:20px;}
-			.pTagOpenHistoryListTabBox.pageTab {}
-				.pTagOpenHistoryListTabBox.pageTab li {width:33.33%;}
-		.tagGraphSlideBar {float:left;margin-top:0px;width:100%;border:1px solid #e1e1e1;}
+		.tagGraphSlideBar {float:left;margin-top:20px;width:100%;border:1px solid #e1e1e1;}
 			.tagGraphSlideTit {float:left;padding:11px 30px;width:100%;font-weight:500;font-size:1.6em;color:#555;background:#faf5eb;}
 			.tagGraphSlideTit a {float:left;width:100%;}
 			.tagGraphSlideBar .tagGraphSlideTit a {background:url(../images/common/blt_arrow_down_black.png) no-repeat 100% 50%;background-size:14px;}
@@ -376,7 +302,6 @@
 		#pTagOpenHistoryBox .listTable th:first-child,
 		#pTagOpenHistoryBox .listTable td:first-child {border-left:0;}
 		#pTagOpenHistoryBox .listTable tr.pointTr td {background:#f2edd1;}
-		#pTagOpenHistoryBox form {float:left;width:100%;}
 
 /* comming_goods*/
 .commingGoodsWrap {}
@@ -467,9 +392,8 @@
 		#goodsInfoConfilmBox .viewTable th,
 		#goodsInfoConfilmBox .viewTable td {text-align:center;vertical-align:middle;}
 		#goodsInfoConfilmBox .viewTable td {padding:5px 20px;}
-			#goodsInfoConfilmBox .imgbox {float:left;width:102px;/*height:70px;*/overflow:hidden;}
+			#goodsInfoConfilmBox .imgbox {float:left;width:102px;height:70px;overflow:hidden;}
 			#goodsInfoConfilmBox .goodsName {float:left;margin-left:20px;padding-top:20px;width:60%;height:70px;vertical-align:middle;}
-				#goodsInfoConfilmBox .goodsName .smBtn {margin-left:10px;}
 	#oGoodsOptionBox {float:left;margin-top:50px;width:100%;}
 		#oGoodsOptionBox .goodsOptionWrap {float:left;padding:20px 30px;width:100%;font-family:'dotum';font-size:1.2em;color:#666;border:1px solid #dedede;}
 			#oGoodsOptionBox .goodsOptionWrap .gridL {background:url(../images/common/line_h_dot2.png) repeat-y 100% 0;}
@@ -606,10 +530,10 @@
 			#trGoodsOptionBox .goodsOptionWrap .gridR {}
 				#trGoodsOptionBox .goodsOptionWrap .gridR li:first-child {margin-bottom:10px;padding-bottom:10px;background:url(../images/common/line_w_dot2.png) repeat-x 0 100%;}
 	#trPriceInfoBox {float:left;margin-top:50px;width:100%;}
-		.priceInfoDesc {clear:both;padding:20px 40px;width:100%;line-height:24px;font-size:1.4em;color:#222;background:#f7f7f7;}
-			.priceInfoDesc p {padding-top:0px;padding-left:150px;width:100%;height:100%;background:url(../images/sub_goods/icon_priceInfo_desc.png) no-repeat 0 50%;background-size:contain;}
+		.priceInfoDesc {clear:both;padding:20px 40px;width:100%;height:130px;line-height:24px;font-size:1.4em;color:#222;background:#f7f7f7;}
+			.priceInfoDesc p {padding-top:20px;padding-left:150px;width:100%;height:100%;background:url(../images/sub_goods/icon_priceInfo_desc.png) no-repeat 0 50%;}
 		#trPriceInfoBox .brownDotLi {}
-			#trPriceInfoBox .brownDotLi > li {line-height:24px;}
+			#trPriceInfoBox .brownDotLi li {line-height:24px;}
 			li.tagMoneyLi {padding-left:0;width:100%;background:none;}
 				.tagMoneyBox {display:inline-block;margin-bottom:10px;padding:20px 40px;width:100%;font-size:14px;color:#333;font-weight:bold;border:5px solid #dedede;}
 					.tagMoneyBox div {line-height:40px;}
@@ -618,36 +542,14 @@
 						.tmItem1,
 						.tmItem2,
 						.tmItem3 {display:inline-block;}
-						.tmItem1 {/*width:160px;*/width:200px;}
+						.tmItem1 {width:160px;}
 						.tmItem2 {width:200px;}
 						.tmItem3 {float:right;}
-						#trPriceInfoBox .num {display:inline-block;width:180px;font-size:24px;font-family:'Arial';text-align:right;}
-						#trPriceInfoBox .smBtn {line-height:20px;}
-						#trPriceInfoBox label {font-weight:bold;}
+						.tagMoneyBox .num {display:inline-block;width:180px;font-size:24px;font-family:'Arial';text-align:right;}
+						.tagMoneyBox .smBtn {line-height:20px;}
+						.tagMoneyBox label {font-weight:bold;}
 						.tagMoneyBox input[type="text"] {margin-right:10px;margin-left:20px;width:200px;font-size:12px;font-weight:normal;text-align:right;}
-				.tagMoneyBox2 {display:inline-block;padding:0 25px;width:465px;height:180px;font-size:12px;color:#333;font-weight:normal;border:5px solid #dedede;}
-					.tagMoneyBox2 > div {line-height:80px;}
-						.tagMoneyBox2 .tmItem1 {width:120px;}
-						.tagMoneyBox2 .tmItem2 {width:180px;}
-						#trPriceInfoBox .tagMoneyBox2 .num {width:150px;font-size:12px}
-				.tagMoneyBox3 {display:inline-block;padding-left:20px;width:550px;height:180px;}
-					.tagMoneyBox3 .paySummaryBox > li {background:none;f}
-					.tagMoneyBox3 input[type="text"] {margin-right:10px;font-size:12px;font-weight:normal;text-align:right;}
-					#trPriceInfoBox li.paysmmryLi2 {font-size:12px;}
-				.tagMoneyBox4 {display:inline-block;margin-bottom:10px;padding:20px 40px;width:100%;font-size:12px;color:#333;font-weight:bold;border:5px solid #dedede;}
-					.tagMoneyBox4 ul {margin-top:20px;padding-top:20px;border-top:1px solid #ddd;}
-						.tagMoneyBox4 li {float:left;margin-top:0;padding:0 30px;width:25%;line-height:30px;font-size:12px;color:#333;background:url(../images/common/line_h_dot2.png) no-repeat 100% 0;}
-						.tagMoneyBox4 li:first-child {padding-left:0;width:35%;}
-						.tagMoneyBox4 li:last-child {padding-right:0;width:40%;background:none;}
-							.tagMoneyBox4 input[type="text"] {margin-right:10px;width:150px;text-align:right;}
-
-							#trPriceInfoBox .tagMoneyBox4 .num {font-size:24px}
-						
-
 		.transferPolicyUl {margin-top:15px;padding-top:15px;background:url(../images/common/line_w_dot2.png) no-repeat 0 0;}
 			.transferPolicyUl li {color:#222;background:url(../images/common/blt_orange_dot.gif) no-repeat 0 7px;}
 			#transferPolicyBox {float:left;width:720px;height:130px;border:1px solid #dedede;}
-			.transferPolicyUl .pageBtnBox {/*margin-top:65px;*/margin-top:20px;font-family:"Noto Sans KR";}
-
-/* transfer_request_complete */
-.transferRequestCompleteWrap {}
+			.transferPolicyUl .pageBtnBox {margin-top:65px;font-family:"Noto Sans KR";}

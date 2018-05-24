@@ -19,7 +19,7 @@
 							<li><a href="charge_money.html">택머니 충전</a></li>
 						</ul>
 						<h5>택포인트란?</h5>
-						<div class="pointInfoDesc"><p>택포인트(Tag point)는 상품의 구매전 할인율을 미리 보기 위한 포인트로, 택오픈(Tag open)시 사용되는 비용의 단위입니다. 즉, “까보기”때 필요한 포인트로 택오픈 용도로만 사용이 가능하며 무료포인트 충전, 신용/체크카드, 실시간 계좌이체 등으로 충전이 가능합니다.<br/><span class="pointC5">※ 택포인트는 수수료(10%) 공제 후 환불이 가능합니다.</span><br/><span class="pointC5">※ 직접결제(카드결제/계좌이체 등)외 회원가입, 리워드 등 무료로 적립된 포인트는 환불되지 않습니다.</span></p></div>
+						<div class="pointInfoDesc"><p>택포인트(Tag point)는 상품의 구매전 할인율을 미리 보기 위한 포인트로, 택오픈(Tag open)시 사용되는 비용의 단위입니다. 즉, “까보기”때 필요한 포인트로 택오픈 용도로만 사용이 가능하며 무료포인트 충전, 신용/체크카드, 실시간 계좌이체 등으로 충전이 가능합니다. <br/><span class="pointC5">※ 택포인트는 환불이 불가능합니다.</span></p></div>
 						<!-- 20170406 s -->
 						<!--
 						<div class="grid100 mt20 pt20">
@@ -35,9 +35,6 @@
 						-->
 						<!-- 20170406 e -->
 						<div class="grid100">
-							<ul class="costSummaryBox">
-								<li class="balaceP">보유 택포인트<span class="pointC3">20,000원</span></li>
-							</ul>
 							<table class="listTable mt10">
 								<caption>충전금액 선택</caption>
 								<colgroup><col /></colgroup>
@@ -153,7 +150,7 @@
 						</div>
 						<div class="pageBtnBox taR">
 							<div class="checkBoxWrap">
-								<input type="checkbox" id="chck_policy"/><label for="chck_policy">결제하실 금액, 유의사항 등을 확인하였으며, 구매에 동의합니다.</label>
+								<input type="checkbox" id="chck_policy"/><label for="chck_policy">주문하실 상품, 가격, 유의사항 등을 확인하였으며, 구매에 동의하시겠습니까?</label>
 							</div>
 							<a href="#none" class="btnS1 blckBtn" onclick="callPopup('#tPointChargeDonePopBox'); return false;">결제</a>
 						</div>
@@ -165,7 +162,7 @@
 		<? include '../include/div_popup.php' ?> <!-- divPopup -->
 	</div>
 	<script type="text/javascript">
-		currentLocation(99,5,2) //현재페이지 위치
+		currentLocation(99,3,1) //현재페이지 위치
 	</script>
 </body>
 </html>

@@ -91,11 +91,8 @@
 					<li>상담가능시간 : 09:00 ~ 18:00 (토, 일 공휴일 휴무)</li>
 					<li>점심시간 : 12:00 ~ 13:30</li>
 					<li>Tel : 02-313-3310 / Fax : 02-2088-3340</li>
-					<li>Mail : info@tagintag.com / KakaoID : <a href="https://pf.kakao.com/_ivZGxl" target="_blank">@tagintag</a></li>
-					<li>
-						<a href="<?=$root?>/customer/inquiry_write.html" class="boxBtn">1:1 문의</a>
-						<a href="https://pf.kakao.com/_ivZGxl" target="_blank" class="boxBtn">카카오플러스친구</a>
-					</li>
+					<li>Mail : info@tagintag.com</li>
+					<li><a href="<?=$root?>/customer/inquiry_write.html" class="boxBtn">1:1 문의</a></li>
 				</ul>
 			</div>
 			<!-- csCenter e -->

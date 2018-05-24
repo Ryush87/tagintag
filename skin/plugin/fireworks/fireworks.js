@@ -9,29 +9,8 @@ var Fireworks = function( inWidth, inHeight ){
 	var self = this;
 	var rand = function(rMi, rMa){return ~~((Math.random()*(rMa-rMi+1))+rMi);}
 	var hitTest = function(x1, y1, w1, h1, x2, y2, w2, h2){return !(x1 + w1 < x2 || x2 + w2 < x1 || y1 + h1 < y2 || y2 + h2 < y1);};
-
-	var requestId = null
-	window.requestAnimFrame = function(){
-		return window.requestAnimationFrame||
-			window.webkitRequestAnimationFrame||
-			window.mozRequestAnimationFrame||
-			window.oRequestAnimationFrame||
-			window.msRequestAnimationFrame||
-			function(a){
-				window.setTimeout(a,1E3/60)
-			}
-	}();
+	window.requestAnimFrame=function(){return window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||function(a){window.setTimeout(a,1E3/60)}}();
 	
-	window.cancelAFrame = function () {
-		return window.cancelAnimationFrame ||
-			window.webkitCancelAnimationFrame ||
-			window.mozCancelAnimationFrame ||
-			window.oCancelAnimationFrame ||
-			function (id) {
-				window.clearTimeout(id);
-			};
-	}();
-
 	/*=============================================================================*/	
 	/* Initialize
 	/*=============================================================================*/
@@ -77,7 +56,7 @@ var Fireworks = function( inWidth, inHeight ){
 		self.ctx.lineCap = 'round';
 		self.ctx.lineJoin = 'round';		
 		self.bindEvents();			
-		//self.canvasLoop();
+		self.canvasLoop();
 		
 		self.canvas.onselectstart = function() {
 			return false;
@@ -362,9 +341,9 @@ var Fireworks = function( inWidth, inHeight ){
 	/* Main Loop
 	/*=============================================================================*/
 	self.canvasLoop = function(){
-		//console.log("===> canvasLoop()");
-		requestId = requestAnimFrame(self.canvasLoop, self.canvas);
-		self.updateDelta();
+		//console.log("===> canvasLoop() :"+self.canvas.width);
+		requestAnimFrame(self.canvasLoop, self.canvas);
+    self.updateDelta();
 		self.ctx.globalCompositeOperation = 'destination-out';
 		self.ctx.fillStyle = 'rgba(0,0,0,'+self.clearAlpha/100+')';
 		self.ctx.fillRect(0,0,self.cw,self.ch);
@@ -374,11 +353,6 @@ var Fireworks = function( inWidth, inHeight ){
 		//self.drawFireworks();			
 		self.drawParticles();			
 	};	
-
-	self.stopLoop = function(){
-		//console.log("===> Fireworks stopLoop() 종료 ");
-		cancelAFrame(requestId);
-	};
 
 	
 	/*=============================================================================*/	
