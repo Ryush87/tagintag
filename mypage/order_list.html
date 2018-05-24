@@ -1,28 +1,28 @@
-<? include '../include/top.php' ?> <!-- top -->
+<? include '../include/top.php' ?>
 <link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+<link rel="stylesheet" href="<?=$root?>/skin/css/goods.css">
 </head>
 <body>
-	<? include '../include/top_notice.php' ?> <!-- topBoard  -->
 	<div id="wrap">
-		<? include '../include/header.php' ?> <!-- header  -->
+		<? include '../include/header.php' ?>
 		<div id="contents" class="myOrderListWrap">
-			<? include '../include/location_box.php' ?> <!-- location  -->
+			<? include '../include/location_box.php' ?>
 			<div class="wWrap">
 				<div class="subPageGridL">
-					<? include '../include/snb_mypage.php' ?> <!-- snb  -->
+					<? include '../include/snb_mypage.php' ?>
 				</div>
 				<div class="subPageGridR">
 					<section id="myOrderListBox">
 						<h2>주문 내역</h2>
 						<h5>상품 주문 상태</h5>
-						<table class="viewTable" summary="주문완료,배송대기,배송중,구매확인">
+						<table class="viewTable" summary="주문완료,배송중,배송완료,구매결정">
 							<caption>상품주문상태</caption>
 							<colgroup><col /></colgroup>
 							<tr>
 								<th scope="col">주문완료</th>
-								<th scope="col">배송대기</th>
 								<th scope="col">배송중</th>
-								<th scope="col">구매확인</th>
+								<th scope="col">배송완료</th>
+								<th scope="col">구매결정</th>
 							</tr>
 							<tr>
 								<td>2</td>
@@ -86,7 +86,7 @@
 								<col width="70px"/>
 							</colgroup>
 							<tr>
-								<th scope="col">주문일/주문번호</th>
+								<th scope="col">주문일/주분번호</th>
 								<th scope="col">주문상품정보</th>
 								<th scope="col">오픈택<br/>(결제금액)</th>
 								<th scope="col">실결제금액<br/>(수량)</th>
@@ -94,33 +94,29 @@
 								<th scope="col">거래구분</th>
 							</tr>
 							<tr>
-								<td>2016-11-30<br/><a href="order_view.html" class="ogdOrderNum">26979931</a></td>
+								<td>2016-11-30<br/><a href="#none" class="ogdOrderNum">26979931</a></td>
 								<td colspan="5">
 									<ul class="ogdItemUl">
 										<li class="ogdItem1">
-											<a href="#none" class="listSubject">
-												<div class="ogoodsImg"><img src="<?=$root?>/skin/images/temp/bug_480_330.jpg" alt="상품이미지" /></div>
+											<a href="order_view.html" class="listSubject">
+												<div class="ogoodsImg"><img src="https://goo.gl/5o4gBn" alt="상품이미지" /></div>
 												<div class="ogoodsName">[센시] HD LED 40in FULL 스탠드형 CL-40LNF10 무결점 TV</div>
 												<div class="ogoodsOption">블랙헤일로5</div>
 											</a>
 										</li>
 										<li class="ogdItem2"><span class="fwB">-70%</span><br />(3,500)</li>
 										<li class="ogdItem3"><span class="fwB">3,500</span><br />(1개)</li>
-										<li class="ogdItem4">
-											배송완료<br />
-											<a href="return_change.html" class="smBtn">반품/교환</a>
-											<a href="#none" class="smBtn" onclick="callPopup('#buyFixPopBox'); return false;">구매확인</a>
-										</li>
+										<li class="ogdItem4">배송중<br /><a href="#none" class="smBtn">배송조회</a></li>
 										<li class="ogdItem5">구매</li>
 									</ul>
 								</td>
 							</tr>
 							<tr>
-								<td>2016-11-30<br/><a href="order_view.html" class="ogdOrderNum">26979931</a></td>
+								<td>2016-11-30<br/><a href="#none" class="ogdOrderNum">26979931</a></td>
 								<td colspan="5">
 									<ul class="ogdItemUl">
 										<li class="ogdItem1">
-											<a href="#none" class="listSubject">
+											<a href="order_view.html" class="listSubject">
 												<div class="ogoodsImg"><img src="https://goo.gl/QXN8Gk" alt="상품이미지" /></div>
 												<div class="ogoodsName">[센시] HD LED 40in FULL 스탠드형 CL-40LNF10 무결점 TV</div>
 												<div class="ogoodsOption">블랙헤일로5</div>
@@ -128,12 +124,12 @@
 										</li>
 										<li class="ogdItem2"><span class="fwB">-70%</span><br />(3,500)</li>
 										<li class="ogdItem3"><span class="fwB">3,500</span><br />(1개)</li>
-										<li class="ogdItem4">주문완료<br /><a href="#none" class="smBtn" onclick="callPopup('#orderCancelPopBox'); return false;">주문취소</a></li>
+										<li class="ogdItem4">배송중<br /><a href="#none" class="smBtn">배송조회</a></li>
 										<li class="ogdItem5">구매</li>
 									</ul>
 									<ul class="ogdItemUl">
 										<li class="ogdItem1">
-											<a href="#none" class="listSubject">
+											<a href="order_view.html" class="listSubject">
 												<div class="ogoodsImg"><img src="https://goo.gl/lMrGKy" alt="상품이미지" /></div>
 												<div class="ogoodsName">[센시] HD LED 40in FULL 스탠드형 CL-40LNF10 무결점 TV</div>
 												<div class="ogoodsOption">블랙헤일로5</div>
@@ -141,17 +137,17 @@
 										</li>
 										<li class="ogdItem2"><span class="fwB">-70%</span><br />(3,500)</li>
 										<li class="ogdItem3"><span class="fwB">3,500</span><br />(1개)</li>
-										<li class="ogdItem4">배송완료<br /><a href="#none" class="smBtn">배송조회</a></li>
-										<li class="ogdItem5">양수</li>
+										<li class="ogdItem4">배송중<br /><a href="#none" class="smBtn">배송조회</a></li>
+										<li class="ogdItem5">구매</li>
 									</ul>
 								</td>
 							</tr>
 							<tr>
-								<td>2016-11-30<br/><a href="order_view.html" class="ogdOrderNum">26979931</a></td>
+								<td>2016-11-30<br/><a href="#none" class="ogdOrderNum">26979931</a></td>
 								<td colspan="5">
 									<ul class="ogdItemUl">
 										<li class="ogdItem1">
-											<a href="#none" class="listSubject">
+											<a href="order_view.html" class="listSubject">
 												<div class="ogoodsImg"><img src="https://goo.gl/QXN8Gk" alt="상품이미지" /></div>
 												<div class="ogoodsName">[센시] HD LED 40in FULL 스탠드형 CL-40LNF10 무결점 TV</div>
 												<div class="ogoodsOption">블랙헤일로5</div>
@@ -159,15 +155,12 @@
 										</li>
 										<li class="ogdItem2"><span class="fwB">-70%</span><br />(3,500)</li>
 										<li class="ogdItem3"><span class="fwB">3,500</span><br />(1개)</li>
-										<li class="ogdItem4">
-											배송완료<br />
-											<a href="#none" class="smBtn" onclick="callPopup('#buyFixPopBox'); return false;">구매확인</a>
-										</li>
+										<li class="ogdItem4">배송중<br /><a href="#none" class="smBtn">배송조회</a></li>
 										<li class="ogdItem5">구매</li>
 									</ul>
 									<ul class="ogdItemUl">
 										<li class="ogdItem1">
-											<a href="#none" class="listSubject">
+											<a href="order_view.html" class="listSubject">
 												<div class="ogoodsImg"><img src="https://goo.gl/lMrGKy" alt="상품이미지" /></div>
 												<div class="ogoodsName">[센시] HD LED 40in FULL 스탠드형 CL-40LNF10 무결점 TV</div>
 												<div class="ogoodsOption">블랙헤일로5</div>
@@ -186,11 +179,10 @@
 				</div>
 			</div>
 		</div>
-		<? include '../include/footer.php' ?> <!-- footer -->
-		<? include '../include/div_popup.php' ?> <!-- divPopup -->
+		<? include '../include/footer.php' ?>
 	</div>
 	<script type="text/javascript">
-		currentLocation(99,1) //현재페이지 위치
+		currentLocation(99,1)
 	</script>
 </body>
 </html>

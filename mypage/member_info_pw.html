@@ -1,22 +1,21 @@
-<? include '../include/top.php' ?> <!-- top -->
+<? include '../include/top.php' ?>
 <link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
 <link rel="stylesheet" href="<?=$root?>/skin/css/goods.css">
 </head>
 <body>
-	<? include '../include/top_notice.php' ?> <!-- topBoard  -->
 	<div id="wrap">
-		<? include '../include/header.php' ?> <!-- header  -->
+		<? include '../include/header.php' ?>
 		<div id="contents" class="myMemberInfoPwWrap">
-			<? include '../include/location_box.php' ?> <!-- location  -->
+			<? include '../include/location_box.php' ?>
 			<div class="wWrap">
 				<div class="subPageGridL">
-					<? include '../include/snb_mypage.php' ?> <!-- snb  -->
+					<? include '../include/snb_mypage.php' ?>
 				</div>
 				<div class="subPageGridR">
 					<section id="myMemberInfoPwBox">
 						<h2>회원정보수정</h2>
 						<div class="borderBox_ddd3px">
-							<h5 class="subtitle_red">비밀번호 확인</h5>
+							<h5>비밀번호 확인</h5>
 							<div class="txtBox mb50">고객님의 개인정보보호와 보다 안전한 서비스를 위하여 비밀번호를 확인합니다.</div>
 							<input type="password" id="pwConfilm" style="width:300px;" />
 							<a href="member_info.html" class="btnS2 blckBtn">확인</a>
@@ -25,10 +24,10 @@
 				</div>
 			</div>
 		</div>
-		<? include '../include/footer.php' ?> <!-- footer -->
+		<? include '../include/footer.php' ?>
 	</div>
 	<script type="text/javascript">
-		currentLocation(99,7) //현재페이지 위치
+		currentLocation(99,4,0)
 	</script>
 </body>
 </html>

@@ -1,256 +1,336 @@
 <? include 'include/top.php' ?>
-<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
-<!-- 상품페이지 이동 s -->
-<!--<meta http-equiv="refresh" content="0;url='<?=$root?>/goods/ing_goods_1.html'">-->
-<!-- 상품페이지 이동 e -->
+<!-- owlPlugin s -->
+<link rel="stylesheet" href="<?=$root?>/skin/plugin/owl-carousel/owl.carousel.css">
+<link rel="stylesheet" href="<?=$root?>/skin/plugin/owl-carousel/owl.theme.css">
+<link rel="stylesheet" href="<?=$root?>/skin/plugin/owl-carousel/owl.transitions.css">
+<script src="<?=$root?>/skin/plugin/owl-carousel/owl.carousel.js"></script>
+<!-- owlPlugin e -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/main.css">
 </head>
 <body>
-	<? include 'include/goods_tag_keep.php' ?> <!-- 택보관  -->
 	<div id="wrap">
-		<? include 'include/header.php' ?> <!-- header  -->
-		<section id="mainCaruselBox" style="background:#4a2849;">
+		<? include 'include/header.php' ?>
+		<section id="mainCarousel">
+			<h2 class="blind">메인배너</h2>
 			<div class="wWrap">
-				<div id="mCaruselWrap">
-					<div class="mCaruselItem" data-bgc="#4a2849">
-						<a href="#none"><img src="<?=$root?>/skin/images/temp/temp_main_goods_v2_10.jpg" alt="배너" /></a>
-					</div>
-					<div class="mCaruselItem" data-bgc="#2b1811">
-						<a href="#none"><img src="<?=$root?>/skin/images/temp/temp_main_goods_v2_09.jpg" alt="배너" /></a>
-					</div>
-					<div class="mCaruselItem" data-bgc="#b8cfcd">
-						<a href="<?=$root?>/goods/ing_goods.html"><img src="<?=$root?>/skin/images/temp/temp_main_goods_v2_06.jpg" alt="배너" /></a>
-					</div>
-					<div class="mCaruselItem" data-bgc="#3e434a">
-						<a href="<?=$root?>/event/event_view_detail_review.html"><img src="<?=$root?>/skin/images/temp/temp_main_goods_v2_05.jpg" alt="배너" /></a>
-					</div>
-					<div class="mCaruselItem" data-bgc="#000">
-						<a href="<?=$root?>/event/event_view_detail_luxury.html"><img src="<?=$root?>/skin/images/temp/temp_main_goods_v2_04_ing.jpg" alt="배너" /></a>
-					</div>
-					<div class="mCaruselItem" data-bgc="#92d3e5">
-						<a href="#none" onclick="callPopup('#ingGoodsListPopBox'); return false;"><img src="<?=$root?>/skin/images/temp/temp_main_goods_v2_07.jpg" alt="배너" /></a>
-					</div>
-					<div class="mCaruselItem" data-bgc="#eacb5f">
-						<a href="#none" onclick="callPopup('#freeExperiencePopBox'); return false;"><img src="<?=$root?>/skin/images/temp/temp_main_goods_v2_08.jpg" alt="배너" /></a>
-					</div>
-					<div class="mCaruselItem" data-bgc="#f2dcde">
-						<a href="#none" onclick="callPopup('#freeExperiencePopBox'); return false;"><img src="<?=$root?>/skin/images/temp/temp_main_goods_v2_03.jpg" alt="배너" /></a>
-					</div>
+				<div id="mainVisual" class="owl-carousel">
+					<div class="item"><img src="<?=$root?>/skin/images/temp/temp_main_banner_01.jpg" itemBgColor="#b52235" alt="TagInTag 확률 앞에 평등하다!" /></div>
+					<div class="item"><img src="<?=$root?>/skin/images/temp/temp_main_banner_02.jpg" itemBgColor="#6f89ac" alt="TagInTag 확률 앞에 평등하다!" /></div>
+					<div class="item"><img src="<?=$root?>/skin/images/temp/temp_main_banner_01.jpg" itemBgColor="#b52235" alt="TagInTag 확률 앞에 평등하다!" /></div>
+					<div class="item"><img src="<?=$root?>/skin/images/temp/temp_main_banner_02.jpg" itemBgColor="#6f89ac" alt="TagInTag 확률 앞에 평등하다!" /></div>
 				</div>
 			</div>
+			<div class="mainCarouselBg"></div>
+			<div class="mainCarouselBg"></div>
+			<div class="mainCarouselBg"></div>
+			<div class="mainCarouselBg"></div>
 		</section>
-		<? include 'include/top_notice_new.php' ?> <!-- topBoard  -->
 		<div id="contents">
-			<div class="wWrap">
-				<ul class="episodeBoxWrap">
-					<li>
-						<div class="epsdItem">
-							<div class="epsdLabel epsdLabel3"><span>마감</span></div>
-							<div class="epsdKindLabel epsdKindLabel3"><span>EVENT</span></div>
-							<div class="epsdImg"><img src="<?=$root?>/skin/images/temp/masterbag_100x100.jpg" alt="상품이미지" /></div>
-							<div class="epsdNum"><span>999</span>회</div>
-							<div class="epsdTitle"><span>명품백</span></div>
-							<div class="epsdDate">4일 4시 04분</div>
-							<div class="epsdDesc">22일 17:35 ~ 25일 12:39</div>
-							<div class="epsdBtns"><a href="<?=$root?>/goods/pop_win_goods_tag_info.html?uid=30" onclick="newWin(this.href,1080,805); return false;" class="btnS1 whtBtn">오픈이력</a></div>
+			<section id="proposalBox">
+				<h2 class="blind">제안상품</h2>
+				<div class="wWrap">
+					<ul>
+						<li>
+							<a href="<?=$root?>/goods/goods_view.html">
+								<div class="pItem">
+									<div class="imgB"><img src="<?=$root?>/skin/images/temp/temp_proposal_item_01.jpg" alt="상품이미지" /></div>
+									<div class="infoB">
+										<p class="gdsName">[몽블랑]몽블랑 어반스피릿 서류가방 라지</p>
+										<p class="gdsPrice">
+											<span class="orgP">1,740,000원</span>
+											<span class="discP">17,400원 ~</span>
+										</p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="<?=$root?>/goods/goods_view.html">
+								<div class="pItem">
+									<div class="imgB"><img src="<?=$root?>/skin/images/temp/temp_proposal_item_02.jpg" alt="상품이미지" /></div>
+									<div class="infoB">
+										<p class="gdsName">[몽블랑]몽블랑 어반스피릿 서류가방 라지</p>
+										<p class="gdsPrice">
+											<span class="orgP">1,740,000원</span>
+											<span class="discP">17,400원 ~</span>
+										</p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="<?=$root?>/goods/goods_view.html">
+								<div class="pItem">
+									<div class="imgB"><img src="<?=$root?>/skin/images/temp/temp_proposal_item_03.jpg" alt="상품이미지" /></div>
+									<div class="infoB">
+										<p class="gdsName">[몽블랑]몽블랑 어반스피릿 서류가방 라지</p>
+										<p class="gdsPrice">
+											<span class="orgP">1,740,000원</span>
+											<span class="discP">17,400원 ~</span>
+										</p>
+									</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section id="specialBox">
+				<div class="wWrap">
+					<h2><img src="<?=$root?>/skin/images/main/today_special_title.jpg" alt="Today Special" /></h2>
+					<div class="largeItem">
+						<img src="<?=$root?>/skin/images/temp/temp_special_large_item_01.jpg" alt="라지아이템" />
+					</div>
+					<ul>
+						<li>
+							<a href="#none">
+								<div class="sItem">
+									<div class="imgS"><img src="<?=$root?>/skin/images/temp/temp_special_item_01.jpg" alt="상품이미지" /></div>
+									<div class="infoS">
+										<p class="gdsName">[LG DIOS] 김치톡톡 김치냉장고 <br />K416SW11/샤이니화이트405L</p>
+										<p class="gdsPrice">
+											<span class="orgP">1,530,570원</span>
+											<span class="discP">15,306원 ~</span>
+										</p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#none">
+								<div class="sItem">
+									<div class="imgS"><img src="<?=$root?>/skin/images/temp/temp_special_item_02.jpg" alt="상품이미지" /></div>
+									<div class="infoS">
+										<p class="gdsName">[삼성전자] 스마트 UHD TV <br />UN49KS8000FXKR 스탠드형/DB</p>
+										<p class="gdsPrice">
+											<span class="orgP">1,138,000원</span>
+											<span class="discP">11,380원 ~</span>
+										</p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#none">
+								<div class="sItem">
+									<div class="imgS"><img src="<?=$root?>/skin/images/temp/temp_special_item_03.jpg" alt="상품이미지" /></div>
+									<div class="infoS">
+										<p class="gdsName">ASUS] 지포스GTX1060<br />게이밍노트북 G752VM-GC008T</p>
+										<p class="gdsPrice">
+											<span class="orgP">1,748,000원</span>
+											<span class="discP">17,480원 ~</span>
+										</p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#none">
+								<div class="sItem">
+									<div class="imgS"><img src="<?=$root?>/skin/images/temp/temp_special_item_04.jpg" alt="상품이미지" /></div>
+									<div class="infoS">
+										<p class="gdsName">[내셔널지오그래픽] 여행용 캐리어 26형 <br />NG S6502S/NFC로 더욱 스마트해진 캐리어</p>
+										<p class="gdsPrice">
+											<span class="orgP">234,837원 </span>
+											<span class="discP">2,348원 ~</span>
+										</p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#none">
+								<div class="sItem">
+									<div class="imgS"><img src="<?=$root?>/skin/images/temp/temp_special_item_05.jpg" alt="상품이미지" /></div>
+									<div class="infoS">
+										<p class="gdsName">[버거킹] 버거킹 콰트로치즈  와퍼<br />1,000개 수량 한정판매중</p>
+										<p class="gdsPrice">
+											<span class="orgP">7,900원</span>
+											<span class="discP">79원 ~</span>
+										</p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#none">
+								<div class="sItem">
+									<div class="imgS"><img src="<?=$root?>/skin/images/temp/temp_special_item_06.jpg" alt="상품이미지" /></div>
+									<div class="infoS">
+										<p class="gdsName">[SK] SK주유상품권 10만원권<br />전국 SK주유소/충전소에서 사용가능</p>
+										<p class="gdsPrice">
+											<span class="orgP">99,000원</span>
+											<span class="discP">990원 ~</span>
+										</p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#none">
+								<div class="sItem">
+									<div class="imgS"><img src="<?=$root?>/skin/images/temp/temp_special_item_07.jpg" alt="상품이미지" /></div>
+									<div class="infoS">
+										<p class="gdsName">[화웨이] 메이트8 국내A/S 3년 보장<br />한글 기본지원 100% 정품보증</p>
+										<p class="gdsPrice">
+											<span class="orgP">485,000원</span>
+											<span class="discP">4,850원 ~</span>
+										</p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#none">
+								<div class="sItem">
+									<div class="imgS"><img src="<?=$root?>/skin/images/temp/temp_special_item_08.jpg" alt="상품이미지" /></div>
+									<div class="infoS">
+										<p class="gdsName">[조이] 스테이지스LX ISOFIX 카시트<br />색상선택/신생아 ~ 25kg(7세)</p>
+										<p class="gdsPrice">
+											<span class="orgP">398,000원</span>
+											<span class="discP">3,980원 ~</span>
+										</p>
+									</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section id="reviewBox">
+				<div class="wWrap">
+					<h2 class="blind">이용후기</h2>
+					<div class="reivewWrap">
+						<div class="socialB">
+							<div><a href="#none" class="facebookBtn"><span class="blind">Facebook</span></a></div>
+							<div><a href="#none" class="twiterBtn"><span class="blind">Twiter</span></a></div>
 						</div>
-					</li>
-					<li>
-						<div class="epsdItem epsdItemPrepare">
-							<div class="epsdImg"><img src="<?=$root?>/skin/images/common/icon_preparing.png" alt="상품준비중" /></div>
-							<div class="epsdTitle">
-								다음 회차 <br>
-								상품이 준비중이오니 <br>
-								조금만 기다려주세요.
-							</div>
-							<div class="epsdDate">&nbsp;</div>
-							<div class="epsdDesc">&nbsp;</div>
-							<div class="epsdBtns">
-								<a href="#none" class="btnS1 whtBtn">&nbsp;</a>
-							</div>
+						<div class="reviewList">
+							<ul>
+								<li>
+									<a href="#none">
+										<div class="reviewItem">
+											<img src="<?=$root?>/skin/images/common/profile_photo_draft.jpg" alt="프로필사진" class="rvwImg"/>
+											<div class="rvwTxt">
+												<p>홍길동</p>
+												<p>대박~맥북 프로 1% 터졌다! 15900원!!</p>
+												<p>#극한할인 #tagintag #택인택 #맥북15900원</p>
+											</div>
+											<div class="rvwStar rvwS4"><span class="blind">4점</span></div>
+										</div>
+									</a>
+									<a href="#none">
+										<div class="reviewItem">
+											<img src="<?=$root?>/skin/images/common/profile_photo_draft.jpg" alt="프로필사진" class="rvwImg"/>
+											<div class="rvwTxt">
+												<p>홍길동</p>
+												<p>대박~맥북 프로 1% 터졌다! 15900원!!</p>
+												<p>#극한할인 #tagintag #택인택 #맥북15900원</p>
+											</div>
+											<div class="rvwStar rvwS4"><span class="blind">4점</span></div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#none">
+										<div class="reviewItem">
+											<img src="<?=$root?>/skin/images/common/profile_photo_draft.jpg" alt="프로필사진" class="rvwImg"/>
+											<div class="rvwTxt">
+												<p>홍길동</p>
+												<p>대박~맥북 프로 1% 터졌다! 15900원!!</p>
+												<p>#극한할인 #tagintag #택인택 #맥북15900원</p>
+											</div>
+											<div class="rvwStar rvwS4"><span class="blind">4점</span></div>
+										</div>
+									</a>
+									<a href="#none">
+										<div class="reviewItem">
+											<img src="<?=$root?>/skin/images/common/profile_photo_draft.jpg" alt="프로필사진" class="rvwImg"/>
+											<div class="rvwTxt">
+												<p>홍길동</p>
+												<p>대박~맥북 프로 1% 터졌다! 15900원!!</p>
+												<p>#극한할인 #tagintag #택인택 #맥북15900원</p>
+											</div>
+											<div class="rvwStar rvwS4"><span class="blind">4점</span></div>
+										</div>
+									</a>
+								</li>
+							</ul>
 						</div>
-					</li>
-					<li>
-						<div class="epsdItem">
-							<div class="epsdLabel epsdLabel1"><span>오픈전</span></div>
-							<div class="epsdKindLabel epsdKindLabel1"><span>SALE</span></div>
-							<div class="epsdImg"><img src="<?=$root?>/skin/images/temp/goldbar1g_100x100.jpg" alt="상품이미지" /></div>
-							<div class="epsdNum"><span>32</span>회</div>
-							<div class="epsdProbability"><div class="proba1">77</div><div class="proba2">9999</div></div>
-							<div class="epsdTitle">24K골드바</div>
-							<div class="epsdDate">2017.09.26</div>
-							<div class="epsdDesc">오픈(판매)예정</div>
-							<div class="epsdBtns">
-								<a href="#none" onclick="callPopup('#smsAlarmPopBox'); return false;" class="btnS1 whtBtn">문자알림</a>
-							</div>
+						<div class="scrollBox">
+							<a href="#none" class="scrlUp"><span class="blind">위로</span></a>
+							<a href="#none" class="scrlDown"><span class="blind">아래로</span></a>
 						</div>
-					</li>
-					<li>
-						<div class="epsdItem">
-							<div class="epsdLabel epsdLabel2"><span>진행중</span></div>
-							<div class="epsdKindLabel epsdKindLabel2"><span>FREE</span></div>
-							<div class="epsdImg"><img src="<?=$root?>/skin/images/temp/masterwatch_100x100.jpg" alt="상품이미지" /></div>
-							<div class="epsdNum"><span>1</span>회</div>
-							<div class="epsdTitle"><span>명품시계</span></div>
-							<div class="epsdDate">730원~</div>
-							<div class="epsdDesc">무료 오픈택 : 999개</div>
-							<div class="epsdBtns"><a href="<?=$root?>/goods/goods_detail.html?uid=31" class="btnS1 whtBtn">참여하기</a></div>
-						</div>
-					</li>
-					<li>
-						<div class="epsdItem">
-							<div class="epsdLabel epsdLabel1"><span>오픈전</span></div>
-							<div class="epsdKindLabel epsdKindLabel1"><span>SALE</span></div>
-							<div class="epsdImg"><img src="<?=$root?>/skin/images/temp/goldbar1g_100x100.jpg" alt="상품이미지" /></div>
-							<div class="epsdNum"><span>32</span>회</div>
-							<div class="epsdProbability"><div class="proba1">77</div><div class="proba2">9999</div></div>
-							<div class="epsdTitle">24K골드바</div>
-							<div class="epsdDate">2017.09.26</div>
-							<div class="epsdDesc">오픈(판매)예정</div>
-							<div class="epsdBtns">
-								<a href="#none" onclick="callPopup('#smsAlarmPopBox'); return false;" class="btnS1 whtBtn">문자알림</a>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="epsdItem">
-							<div class="epsdLabel epsdLabel2"><span>진행중</span></div>
-							<div class="epsdKindLabel epsdKindLabel2"><span>FREE</span></div>
-							<div class="epsdImg"><img src="<?=$root?>/skin/images/temp/masterwatch_100x100.jpg" alt="상품이미지" /></div>
-							<div class="epsdNum"><span>1</span>회</div>
-							<div class="epsdTitle"><span>명품시계</span></div>
-							<div class="epsdDate">730원~</div>
-							<div class="epsdDesc">무료 오픈택 : 999개</div>
-							<div class="epsdBtns"><a href="<?=$root?>/goods/goods_detail.html?uid=31" class="btnS1 whtBtn">참여하기</a></div>
-						</div>
-					</li>
-					<li>
-						<div class="epsdItem">
-							<div class="epsdLabel epsdLabel3"><span>마감</span></div>
-							<div class="epsdKindLabel epsdKindLabel2"><span>FREE</span></div>
-							<div class="epsdImg"><img src="<?=$root?>/skin/images/temp/masterbag_100x100.jpg" alt="상품이미지" /></div>
-							<div class="epsdNum"><span>999</span>회</div>
-							<div class="epsdTitle"><span>명품백</span></div>
-							<div class="epsdDate">4일 4시 04분</div>
-							<div class="epsdDesc">무료 오픈택 : 999개</div>
-							<div class="epsdBtns"><a href="/goods/pop_win_goods_tag_info.html?uid=30" onclick="newWin(this.href,1080,805); return false;" class="btnS1 whtBtn">오픈이력</a></div>
-						</div>
-					</li>
-					<li>
-						<div class="epsdItem">
-							<div class="epsdLabel epsdLabel2"><span>진행중</span></div>
-							<div class="epsdKindLabel epsdKindLabel2"><span>FREE</span></div>
-							<div class="epsdImg"><img src="<?=$root?>/skin/images/temp/masterwatch_100x100.jpg" alt="상품이미지" /></div>
-							<div class="epsdNum"><span>1</span>회</div>
-							<div class="epsdTitle"><span>명품시계</span></div>
-							<div class="epsdDate">730원~</div>
-							<div class="epsdDesc">무료 오픈택 : 999개</div>
-							<div class="epsdBtns"><a href="<?=$root?>/goods/goods_detail.html?uid=31" class="btnS1 whtBtn">참여하기</a></div>
-						</div>
-					</li>
-				</ul>
-				<!--
-				<ul class="episodeDescBoxWrap">
-					<li>
-						<div class="epsdscItem epsdscItem1">
-							<div class="epsdscTitle">진행중 회차</div>
-							<div class="epsdscCon">지금 바로 1% 가격으로도<br>구매가 가능합니다.<br><br>단1%의 가격이 적힌 할인 택을<br>차지하는 행운이 함께 하시길<br>기원합니다.</div>
-							<div class="epsdscBtns"><a href="<?=$root?>/goods/goods_list.html?section=N" class="btnS1 whtBtn">전체보기</a></div>
-						</div>
-					</li>
-					<li>
-						<div class="epsdscItem epsdscItem2">
-							<div class="epsdscTitle">마감된 회차</div>
-							<div class="epsdscCon">수 분만에 SOLD OUT 되어버린<br>택 오픈 이력들을 확인할 수 있습니다.<br><br>택인택은 정직한 운영과 공정한<br>기회제공을 위하여 택을 까본 이력을 <br>100% 오픈하고 있습니다.</div>
-							<div class="epsdscBtns"><a href="<?=$root?>/goods/goods_list.html?section=E" class="btnS1 whtBtn">전체보기</a></div>
-						</div>
-					</li>
-					<li>
-						<div class="epsdscItem epsdscItem3">
-							<div class="epsdscTitle">다가올 회차</div>
-							<div class="epsdscCon">다가올 회차에 대한 정보를 확인할 수 있습니다.<br><br>※ 문자 알림 신청시 오픈(판매개시)<br>1시간 이내에 문자메시지로<br>알려드립니다.</div>
-							<div class="epsdscBtns"><a href="<?=$root?>/goods/goods_list.html?section=I" class="btnS1 whtBtn">전체보기</a></div>
-						</div>
-					</li>
-				</ul>
-				-->
-				<ul class="episodeDescBoxWrap">
-					<li>
-						<div class="epsdscItem epsdscItem1">
-							<div class="epsdscTitle">이중할인</div>
-							<div class="epsdscCon">
-								모든 SALE 상품은<br>
-								<br>
-								인터넷최저가 또는,<br>
-								99.9%할인가로 구매가 가능합니다.<br>
-								<br>
-								밑져봐야 인터넷 최저가!!!
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="epsdscItem epsdscItem2">
-							<div class="epsdscTitle">24시간 자동OPEN</div>
-							<div class="epsdscCon">
-								각각의 상품은<br>
-								24시간 상시 오픈 및 판매됩니다.<br>
-								<br>
-								상품별 99.9% 할인택이<br>
-								모두 판매되고 1개가 남으면<br>
-								자동마감 및 신규회차 오픈(재생성)
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="epsdscItem epsdscItem3">
-							<div class="epsdscTitle">OPEN 방식</div>
-							<div class="epsdscCon">
-								오픈한 택은 자동으로 소멸되어 나중에<br>
-								참여를 해도 조건은 동일합니다.<br>
-								<br>
-								까볼 때 마다 99.9% 할인택이<br>
-								존재하며, 까보기에 대한 횟수제한은<br>
-								없습니다. (※ 검정색원 = 확률정보)<br>
-							</div>
-						</div>
-					</li>
-				</ul>
-			</div>
+						<div class="mainMoreBtn"><a href="#none"><span class="blind">더보기</span></a></div>
+					</div>
+				</div>
+			</section>
+			<section id="tagInfoBox">
+				<div class="wWrap">
+					<h2 class="blind">택인택이용정보</h2>
+					<div class="tiB tiB1">
+						<h4><span>1%의 가격</span>으로 쇼핑하는 방법</h4>
+						<div class="tiMovie"></div>
+					</div>
+					<div class="tiB tiB2">
+						<h4><span>처음</span>이신가요?</h4>
+						<ul>
+							<li class="tiLink1"><a href="#none">편리하고 빠른 이용을 위한 <br /><span>포인트 충전</span></a></li>
+							<li class="tiLink2"><a href="#none">극한의 할인! 미리 체험하기 <br /><span>온라인 튜토리얼</span></a></li>
+							<li class="tiLink3"><a href="#none">행운을 나누는 <br /><span>Tag 장터</span></a></li>
+						</ul>
+					</div>
+					<div class="tiB tiB3">
+						<h4><span>Tag</span> 오픈</h4>
+						<div class="tiOpen">고객여러분은 <span>Tag오픈 과정을 통해 99%의 할인</span>에 도전 할 수 있습니다.<br/>도전에 실패해도 실망 마세요.<br/>인터넷 최저가가 택인택에서는 최고가니까요!</div>
+						<div class="mainMoreBtn"><a href="#none"><span class="blind">더보기</span></a></div>
+					</div>
+				</div>
+			</section>
+			<section id="bannerBox">
+				<div class="wWrap">
+					<h2 class="blind">배너</h2>
+					<ul>
+						<li><a href="#none"><img src="<?=$root?>/skin/images/temp/temp_b_banner_img_1.jpg" alt="1300K X PAYCO" /></a></li>
+						<li><a href="#none"><img src="<?=$root?>/skin/images/temp/temp_b_banner_img_2.jpg" alt="감성힐링 캘리그라피" /></a></li>
+						<li><a href="#none"><img src="<?=$root?>/skin/images/temp/temp_b_banner_img_3.jpg" alt="Sale 락앤락" /></a></li>
+					</ul>
+				</div>
+			</section>
 		</div>
-		<? include 'include/footer.php' ?> <!-- footer -->
-		<? include 'include/popup.php' ?> <!-- popup -->
-		<? include 'include/div_popup.php' ?> <!-- divPopup -->
+		<? include 'include/footer.php' ?>
+		<? include 'include/popup.php' ?>
 	</div>
 	<script type="text/javascript">
-		quickY=710;//quickMenu position
 		$(document).ready(function() {
-			$("#mCaruselWrap").slick({
-				arrows:true,
-				dots:true,
-				autoplay:true,
-				autoplaySpeed:5000,
-				infinite : true,
-				speed : 0,
-				fade:true,
-				cssEase:'linear',
-				slidesToShow:1,
-				adaptiveHeight:true
-			});
-			$("#mCaruselWrap").on('beforeChange',function(event,slick,currentSlide,nextSlide){
-				var currentE=$(slick.$slides[nextSlide]);
-				var acingItem=currentE.attr('class');
-				var bgc=currentE.attr('data-bgc');
-				/*
-				if(acingItem=='item acting slick-slide slick-current slick-active'){
-					actAnim(currentE.parents('#mainCaruselBox'),"swing");
+			//callPopup('#mainPopupBox');
+			$("#mainVisual").owlCarousel({
+				transitionStyle : 'fade',
+				items:1,
+				singleItem : true,
+				loop : true,
+				autoPlay : true,
+				stopOnHover : true,
+				navigation : true,
+				autoHeight : true,
+				slideSpeed : 1000,
+				navigationText:["<div class='mainVisualBtn_left'><span class='blind'></span></div>","<div class='mainVisualBtn_right'><span class='blind'></span></div>"],
+				afterInit : function(){
+					$('#mainCarousel').css('opacity',0)
+					$('.mainCarouselBg').eq(0).css('background-color',$('#mainCarousel').find('.item').eq(0).find('img').attr('itemBgColor'));
+					$('#mainCarousel').addClass('owl-fade-in')
+				},
+				afterAction : function(elem){
+					var currentE=this.currentItem;
+					var itemBgColor=elem.find('.item').eq(currentE).find('img').attr('itemBgColor');
+					$('.mainCarouselBg').removeClass('owl-fade-in');
+					$('.mainCarouselBg').addClass('owl-fade-out');
+					$('.mainCarouselBg').eq(currentE).css('background-color',itemBgColor);
+					$('.mainCarouselBg').eq(currentE).addClass('owl-fade-in');
+					$('.mainCarouselBg').eq(currentE).removeClass('owl-fade-out');
 				}
-				*/
-				//console.log(bgc)
-				currentE.parents('#mainCaruselBox').css('background',bgc);
-				//currentE.parents('#mainCaruselBox').animate({"background-color":bgc},100);
 			});
 		});
-		//무료택안내
-		//callPopup("#freeTagOpenCouponPopBox");
 	</script>
 </body>
 </html>

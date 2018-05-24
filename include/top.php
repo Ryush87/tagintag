@@ -1,6 +1,6 @@
 <!-- 절대경로 : 추후 삭제 필요-->
-<? $root = "http://".$_SERVER['SERVER_NAME']."/task/trunk/tagintag"; ?>
-<? $d_root = $_SERVER['DOCUMENT_ROOT']."/task/trunk/tagintag"; ?>
+<? $root = "http://".$_SERVER['SERVER_NAME']."/task/trunk/tagintag_demo_v1"; ?>
+<? $d_root = $_SERVER['DOCUMENT_ROOT']."/task/trunk/tagintag_demo_v1"; ?>
 <!-- 절대경로 : 추후 삭제 필요-->
 
 <!DOCTYPE HTML>
@@ -13,38 +13,25 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
-	<title>돈버는 쇼핑몰 - 택인택 TagInTag</title>
-	<meta name="description" content="세상에 없던 가격 TagInTag">
-	<link rel="canonical" href="http://www.tagintag.com">
-	<link rel="shortcut icon" href="<?=$root?>/skin/images/common/favicon_tagintag.png">
-	<link rel="stylesheet" href="<?=$root?>/skin/css/bootstrap.min.css">
-	<link rel="stylesheet" href="<?=$root?>/skin/css/jquery-ui.css">
-	<link rel="stylesheet" href="<?=$root?>/skin/plugin/animation/animate.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no,target-densitydpi=medium-dpi" />
+	<title>TagInTag</title>
+	<link rel="shortcut icon" href="skin/images/common/">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 	<link rel="stylesheet" href="<?=$root?>/skin/plugin/select_or_die/selectordie.css">
-	<!-- slickSlide s -->
-	<link rel="stylesheet" href="<?=$root?>/skin/plugin/slick_slide/slick.css">
-	<link rel="stylesheet" href="<?=$root?>/skin/plugin/slick_slide/slick-theme.css">
-	<!-- slickSlide e -->
-	<link rel="stylesheet" href="<?=$root?>/skin/css/wrap.css">
+	<link rel="stylesheet" href="<?=$root?>/skin/css/common.css">
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
-		<script src="<?=$root?>/skin/js/html5shiv.min.js"></script>
-		<script src="<?=$root?>/skin/js/html5shiv-printshiv.min.js"></script>
-		<script src="<?=$root?>/skin/js/respond.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
-	<script src="<?=$root?>/skin/js/jquery.min.js"></script>
-	<script src="<?=$root?>/skin/js/jquery-ui.min.js"></script>
-	<script src="<?=$root?>/skin/js/bootstrap.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 	<!--[if lt IE 9]>
-		<script src="<?=$root?>/skin/js/selectivizr.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
 	<![endif]-->
 	<script type="text/javascript" src="<?=$root?>/skin/plugin/select_or_die/selectordie.js"></script>
-	<script type="text/javascript" src="<?=$root?>/skin/plugin/innerfade/jquery.innerfade.js"></script>
-	<!-- slickSlide s -->
-	<script src="<?=$root?>/skin/plugin/slick_slide/slick.js"></script>
-	<!-- slickSlide e -->
-	<!-- clipboard s -->
-	<script src="<?=$root?>/skin/plugin/clipboard/clipboard.min.js"></script>
-	<!-- clipboard e -->
 	<script type="text/javascript" src="<?=$root?>/skin/js/common.js"></script>
+

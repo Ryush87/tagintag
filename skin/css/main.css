@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+/*
+===============================================================================================
+1.	버    전 : main.css
+2.	작 성 자 : Ryu
+3.	참    고 : Main
+===============================================================================================
+*/
+#mainCarousel {position:relative;float:left;width:100%;height:400px;background:#b42235;}
+	.mainCarouselBg {position:absolute;top:0;left:0;width:100%;height:100%;z-index:-1;}
+	.owl-fade-in-first {
+		-webkit-animation: fadeIn .1s both ease;
+		-moz-animation: fadeIn .1s both ease;
+		animation: fadeIn .1s both ease;
+	}
+	#mainVisual.owl-theme .owl-wrapper-outer {display:inline-block;}
+	#mainVisual.owl-theme .owl-controls {margin-top:0;}
+		#mainVisual.owl-theme .owl-controls .owl-pagination {position:absolute;left:50%;margin-top:-50px;margin-left:-88px;z-index:3;}
+			#mainVisual.owl-theme .owl-controls .owl-page span {width:10px;height:10px;margin:5px 7px;filter:Alpha(Opacity=100);/*IE7 fix*/opacity:1;-webkit-border-radius: 0;-moz-border-radius: 0;border-radius: 0;background:url(../images/main/blt_main_banner_nav.png) no-repeat;opacity:0.6;}
+			#mainVisual.owl-theme .owl-controls .owl-page.active span {width:30px;background:url(../images/main/blt_main_banner_nav_on.png) no-repeat;}
+			#mainVisual.owl-theme .owl-controls.clickable .owl-page:hover span {opacity:1;}
+
+			#mainVisual.owl-theme .owl-buttons {position:absolute;top:50%;left:50%;margin-top:-10px;margin-left:-510px;width:1020px;}
+				#mainVisual.owl-theme .owl-buttons div {margin:0;padding:0;-webkit-border-radius:0;-mo-border-radius:0;border-radius:0;background:none;opacity: 1;}
+				#mainVisual.owl-theme .owl-buttons .owl-prev {float:left;}
+				#mainVisual.owl-theme .owl-buttons .owl-next {float:right;}
+					#mainVisual.owl-theme .owl-buttons .owl-prev .mainVisualBtn_left,
+					#mainVisual.owl-theme .owl-buttons .owl-next .mainVisualBtn_right {width:50px;height:50px;}
+					#mainVisual.owl-theme .owl-buttons .owl-prev .mainVisualBtn_left {background:url(../images/main/btn_main_banner_left.png) no-repeat;}
+					#mainVisual.owl-theme .owl-buttons .owl-next .mainVisualBtn_right {background:url(../images/main/btn_main_banner_right.png) no-repeat;}
+					#mainVisual.owl-theme .owl-buttons .owl-prev .mainVisualBtn_left:hover {background:url(../images/main/btn_main_banner_left_on.png) no-repeat;}
+					#mainVisual.owl-theme .owl-buttons .owl-next .mainVisualBtn_right:hover {background:url(../images/main/btn_main_banner_right_on.png) no-repeat;}
+
+#proposalBox {float:left;margin-top:20px;width:100%;}
+	#proposalBox li {float:left;margin-left:1.1%;width:32.6%;}
+	#proposalBox li:first-child {margin-left:0;}
+		#proposalBox li a {}
+			.pItem {border:1px solid #e1e1e1;}
+				.imgB {}
+				.infoB {padding:15px;border-top:1px solid #e1e1e1;}
+					.infoB .gdsName {font-size:1.4em;letter-spacing:-0.025em;color:#252525;}
+					.infoB .gdsPrice {margin-top:10px;font-size:1.2em;letter-spacing:-0.025em;color:#252525;}
+						.infoB .orgP {text-decoration:line-through;}
+						.infoB .discP {color:#ff4100;font-weight:700;}
+
+#specialBox {float:left;width:100%;}
+	#specialBox h2 {margin:30px 0 20px 0;}
+	#specialBox .largeItem {border:1px solid #e1e1e1;border-bottom:0;}
+	#specialBox ul {float:left;border-bottom:1px solid #e1e1e1;border-right:1px solid #e1e1e1;}
+		#specialBox li {float:left;width:25%;}
+			#specialBox li a {}
+				.sItem {border-top:1px solid #e1e1e1;border-left:1px solid #e1e1e1;}
+					.imgS {}
+					.infoS {padding:15px;}
+						.infoS .gdsName {font-size:1.2em;letter-spacing:-0.025em;color:#252525;}
+						.infoS .gdsPrice {margin-top:10px;font-size:1.2em;letter-spacing:-0.025em;color:#252525;}
+							.infoS .orgP {text-decoration:line-through;}
+							.infoS .discP {color:#ff4100;font-weight:700;}
+
+#reviewBox {float:left;margin-top:30px;width:100%;}
+	.reivewWrap {position:relative;float:left;width:100%;border:1px solid #e1e1e1;}
+		.socialB {float:left;margin-top:30px;width:15%;text-align:center;}
+			.socialB div {display:inline-block;width:32px;}
+				.facebookBtn {display:inline-block;width:32px;height:32px;background:url(../images/common/icon_social_facebook.png) no-repeat 0 0;}
+				.facebookBtn:hover {background:url(../images/common/icon_social_facebook_on.png) no-repeat 0 0;}
+				.twiterBtn {display:inline-block;width:32px;height:32px;background:url(../images/common/icon_social_twiter.png) no-repeat 0 0;}
+				.twiterBtn:hover {background:url(../images/common/icon_social_twiter_on.png) no-repeat 0 0;}
+			.socialB li:first-child {margin-right:10px;}
+		.reviewList {position:relative;float:left;margin-top:20px;margin-bottom:20px;width:82%;height:50px;overflow:hidden;}
+			.reviewList ul {position:absolute;top:0;float:left;width:95%;}
+				.reviewList li {float:left;width:100%;}
+					.reviewList li a {float:left;width:50%;}
+						.reviewItem {position:relative;}
+							.rvwImg {float:left;width:50px;}
+							.rvwTxt {float:left;margin:0 20px;line-height:17px;font-size:1.1em;color:#555;}
+								.rvwTxt p:first-child {color:#000;}
+							.rvwStar {position:absolute;top:0;right:20px;width:68px;height:11px;}
+							.rvwStar.rvwS4 {background:url(../images/common/blt_star_4.png) no-repeat 0 0;}
+		#reviewBox .scrollBox {position:absolute;width:20px;top:20px;right:50px;}
+			#reviewBox .scrollBox a {float:left;width:20px;height:20px;}
+				#reviewBox .scrollBox .scrlUp {background:url(../images/common/scroll_up.gif) no-repeat;}
+				#reviewBox .scrollBox .scrlDown {margin-top:10px;background:url(../images/common/scroll_down.gif) no-repeat;}
+		#reviewBox .mainMoreBtn {position:relative;float:left;width:3%;}
+			#reviewBox .mainMoreBtn a {position:absolute;top:20px;right:15px;display:block;width:15px;height:15px;background:url(../images/common/btn_more_plus.png) no-repeat 0 0;}
+
+#tagInfoBox {float:left;margin-top:30px;width:100%;}
+	.tiB {float:left;width:33.3%;background:url(../images/common/line_h_dot.png) no-repeat 100% 0;}
+	.tiB1 {padding-right:20px;}
+	.tiB2 {}
+	.tiB3 {position:relative;background:none;}
+		.tiB h4 {margin-bottom:20px;padding-bottom:20px;font-size:2em;color:#909a9b;text-align:center;background:url(../images/common/line_w_95.gif) no-repeat 50% 100%;}
+			.tiB h4 span {color:#333;}
+		.tiMovie {width:313px;height:220px;background:url(../images/main/ti_movie_bg.jpg) no-repeat 50%;}
+		.tiB2 li {margin:0 auto;margin-top:20px;width:78%;}
+		.tiB2 li:first-child {margin-top:0;}
+			.tiB2 li a {display:block;padding-top:7px;padding-left:90px;height:60px;line-height:22px;font-size:1.5em;color:#777;}
+				.tiB2 li a span {font-size:18px;color:#252525;font-weight:700;}
+		.tiLink1 {background:url(../images/main/ti_link_1_bg.png) no-repeat;}
+		.tiLink2 {background:url(../images/main/ti_link_2_bg.png) no-repeat;}
+		.tiLink3 {background:url(../images/main/ti_link_3_bg.png) no-repeat;}
+		.tiOpen {margin:0 auto;padding-top:130px;width:78%;line-height:22px;font-size:1.4em;color:#777;background:url(../images/main/ti_open_bg.png) no-repeat 50% 0;}
+			.tiOpen span {color:#252525;font-weight:700;}
+		.tiB .mainMoreBtn {position:absolute;top:0;right:15px;display:block;width:15px;height:15px;background:url(../images/common/btn_more_plus.png) no-repeat 0 0;}
+
+#bannerBox {float:left;margin-top:20px;width:100%;}
+	#bannerBox ul {float:left;padding:20px 0;width:100%;border-top:1px solid #e1e1e1;}
+		#bannerBox li {float:left;margin-left:2.45%;width:31.7%;}
+		#bannerBox li:first-child {margin-left:0;}
+			#bannerBox li a {}

@@ -1,23 +1,22 @@
-<? include '../include/top.php' ?> <!-- top -->
+<? include '../include/top.php' ?>
 <link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
 <link rel="stylesheet" href="<?=$root?>/skin/css/goods.css">
 </head>
 <body>
-	<? include '../include/top_notice.php' ?> <!-- topBoard  -->
 	<div id="wrap">
-		<? include '../include/header.php' ?> <!-- header  -->
+		<? include '../include/header.php' ?>
 		<div id="contents" class="myMemberInfoWrap">
-			<? include '../include/location_box.php' ?> <!-- location  -->
+			<? include '../include/location_box.php' ?>
 			<div class="wWrap">
 				<div class="subPageGridL">
-					<? include '../include/snb_mypage.php' ?> <!-- snb  -->
+					<? include '../include/snb_mypage.php' ?>
 				</div>
 				<div class="subPageGridR">
 					<section id="myMemberInfoBox">
 						<h2>회원정보수정</h2>
 						<h5>기본정보</h5>
 						<div class="txtBox fR mt10"><span class="star">★</span> 필수입력</div>
-						<table class="writeTable2 mb10">
+						<table class="viewTable mb30">
 							<caption>기본정보</caption>
 							<colgroup><col width="160px"/><col /></colgroup>
 							<tr>
@@ -25,51 +24,70 @@
 								<td><span class="fwB">musthave</span></td>
 							</tr>
 							<tr>
-								<th scope="row"><label for="mName">이름</label></th>
-								<td><span class="fwB">홍길동</span></td>
+								<th scope="row"><label for="mName">이름<span class="star">★</span></label></th>
+								<td><input type="text" value="홍길동" id="mName" style="width:130px;"/></td>
 							</tr>
 							<tr>
 								<th scope="row">비밀번호 변경<span class="star">★</span></th>
 								<td>
 									<ul class="inputPwBox">
-										<li><label for="mPw2">비밀번호</label><input type="password" placeholder="영문/숫자 혼합 8~20자" id="mPw2"/></li>
-										<li><label for="mPw3">비밀번호 확인</label><input type="password" placeholder="영문/숫자 혼합 8~20자" id="mPw3"/></li>
+										<li><label for="mPw1">기존 비밀번호</label><input type="text" value="띄어쓰기 없이 영문 대소문자/숫자/특수문자 혼합 8 ~ 20자" id="mPw1"/></li>
+										<li><label for="mPw2">새 비밀번호</label><input type="text" value="띄어쓰기 없이 영문 대소문자/숫자/특수문자 혼합 8 ~ 20자" id="mPw2"/></li>
+										<li><label for="mPw3">비밀번호 확인</label><input type="text" value="띄어쓰기 없이 영문 대소문자/숫자/특수문자 혼합 8 ~ 20자" id="mPw3"/></li>
 									</ul>
 								</td>
 							</tr>
 							<tr>
-								<th scope="row"><label for="mEmail">이메일</label><span class="star">★</span></th>
-								<td><input type="email" id="mEmail" style="width:220px"/></td>
+								<th scope="row"><label for="mEmail">이메일<span class="star">★</span></label></th>
+								<td>
+									<div class="inputMailBox">
+										<input type="text" id="mEmail"/>
+										<span class="divi">@</span>
+										<input type="text" id="mDomain1"/><label for="mDomain1" class="blind">메일도메인</label>
+										<select name="" id="mDomain2" data-custom-id="mDomain2" data-custom-class="mDomainSlt">
+											<option value="">직접입력</option>
+											<option value="">naver.com</option>
+										</select>
+										<label for="mDomain2" class="blind">메일도메인선택</label>
+									</div>
+								</td>
 							</tr>
 							<tr>
-								<th scope="row"><label for="mPhon">휴대폰번호</label></th>
+								<th scope="row"><label for="mPhon">휴대전화<span class="star">★</span></label></th>
 								<td>
-									<div class="mPhonEditBox1">
-										<span class="fwB">010-1234-5678</span>
-										<a href="#none" onclick="$('.mPhonEditBox2').show();" class="smBtn ml10">수정</a>
+									<div class="inputTelBox">
+										<select name="" id="mPhon" data-custom-id="mPhon" data-custom-class="mPhonSlt">
+											<option value="">010</option>
+											<option value="">010</option>
+											<option value="">011</option>
+										</select>
+										<span class="divi">-</span>
+										<input type="text" id="mPhon2"/><label for="mPhon2" class="blind">중간번호</label>
+										<span class="divi">-</span>
+										<input type="text" id="mPhon3"/><label for="mPhon3" class="blind">마지막번호</label>
 									</div>
-									<div class="mPhonEditBox2">
-										<ul>
-											<li class="mb5">
-												<input type="text" placeholder="휴대폰번호" style="width:220px"/>
-												<a href="#none" class="smBtn">인증번호발송</a>
-											</li>
-											<li>
-												<input type="text" placeholder="인증번호입력" class="certiNum" style="width:220px"/>
-												<a href="#none" onclick="$('.mPhonEditBox2').hide();$('.mPhonEditBox1').show();" class="smBtn">확인</a>
-											</li>
-										</ul>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="mTel">일반전화</label></th>
+								<td>
+									<div class="inputTelBox">
+										<select name="" id="mTel" data-custom-id="mTel" data-custom-class="mTelSlt">
+											<option value="">02</option>
+											<option value="">031</option>
+											<option value="">032</option>
+										</select>
+										<span class="divi">-</span>
+										<input type="text" id="mTel2"/><label for="mTel2" class="blind">중간번호</label>
+										<span class="divi">-</span>
+										<input type="text" id="mTel3"/><label for="mTel3" class="blind">마지막번호</label>
 									</div>
 								</td>
 							</tr>
 						</table>
-						<div class="pageBtnBox taR mt0 mb30">
-							<a href="<?=$root?>/mypage/member_leave.html" class="smBtn gryBtn fs12x" onclick="callPopup('#mbmLeaveNoticePopBox'); return false;">회원탈퇴</a>
-						</div>
-						<!--
 						<h5>배송지 정보</h5>
 						<a href="#none" class="smBtn fR mt5">배송지추가</a>
-						<table class="writeTable2 mb30">
+						<table class="viewTable mb30">
 							<caption>배송지정보</caption>
 							<colgroup><col width="160px"/><col /></colgroup>
 							<tr>
@@ -84,7 +102,7 @@
 										<li>
 											<label for="mdPhon">연락처</label>
 											<div class="inputTelBox">
-												<select name="" id="mdPhon" class="mPhonSlt" data-custom-id="mdPhon" data-custom-class="mPhonSlt">
+												<select name="" id="mdPhon" data-custom-id="mdPhon" data-custom-class="mPhonSlt">
 													<option value="">010</option>
 													<option value="">010</option>
 													<option value="">011</option>
@@ -118,7 +136,7 @@
 										<li>
 											<label for="mdPhon">연락처</label>
 											<div class="inputTelBox">
-												<select name="" id="mdPhon" class="mPhonSlt" data-custom-id="mdPhon" data-custom-class="mPhonSlt">
+												<select name="" id="mdPhon" data-custom-id="mdPhon" data-custom-class="mPhonSlt">
 													<option value="">010</option>
 													<option value="">010</option>
 													<option value="">011</option>
@@ -152,7 +170,7 @@
 										<li>
 											<label for="mdPhon">연락처</label>
 											<div class="inputTelBox">
-												<select name="" id="mdPhon" class="mPhonSlt" data-custom-id="mdPhon" data-custom-class="mPhonSlt">
+												<select name="" id="mdPhon" data-custom-id="mdPhon" data-custom-class="mPhonSlt">
 													<option value="">010</option>
 													<option value="">010</option>
 													<option value="">011</option>
@@ -175,47 +193,22 @@
 								</td>
 							</tr>
 						</table>
-						-->
-						<h5>부가정보</h5>
-						<!--<div class="txtBox fR mt10">- 마케팅 정보를 입력하여 주시면 회원의 등급이 상향되어 더 높은 포인트 보상을 받으실 수 있습니다.</div>-->
-						<table class="writeTable2">
-							<caption>부가정보</caption>
+						<h5>마케팅 정보</h5>
+						<div class="txtBox fR mt10">- 마케팅 정보를 입력하여 주시면 회원의 등급이 상향되어 더 높은 포인트 보상을 받으실 수 있습니다.</div>
+						<table class="viewTable">
+							<caption>마케팅정보</caption>
 							<colgroup><col width="160px"/><col /></colgroup>
-							<tr>
-								<th scope="row">생년월일(6자리)</th>
-								<td><input type="text" id="" style="width:200px;"/></td>
-							</tr>
-							<tr>
-								<th scope="row">성별</th>
-								<td>
-									<div class="radioBoxWrap">
-										<input type="radio" id="rSex1" name="rSex" /><label for="rSex1">남자</label>
-										<input type="radio" id="rSex2" name="rSex" /><label for="rSex2">여자</label>
-									</div>
-								</td>
-							</tr>
 							<tr>
 								<th scope="row">거주지역</th>
 								<td>
-									<select name="" id="mLive" class="mMarketingSlt" data-custom-id="mLive" data-custom-class="mMarketingSlt">
+									<select name="" id="mLive" data-custom-id="mLive" data-custom-class="mMarketingSlt">
 										<option value="">제주특별자치도</option>
 										<option value="">서울특별시</option>
 									</select>
-									<!--
 									<div class="sltDesc">배송지에서 선택</div>
-									<select name="" id="mDeli" class="mMarketingSlt" data-custom-id="mDeli" data-custom-class="mMarketingSlt">
+									<select name="" id="mDeli" data-custom-id="mDeli" data-custom-class="mMarketingSlt">
 										<option value="">배송지 1 - 우리집</option>
 										<option value="">배송지 2 - 회사</option>
-									</select>
-									-->
-								</td>
-							</tr>
-							<tr>
-								<th scope="row">직업</th>
-								<td>
-									<select name="" id="mJop" class="mMarketingSlt" data-custom-id="mLive" data-custom-class="mMarketingSlt">
-										<option value="">회사원</option>
-										<option value="">자영업</option>
 									</select>
 								</td>
 							</tr>
@@ -229,24 +222,14 @@
 								</td>
 							</tr>
 							<tr>
-								<th scope="row">이메일 수신</th>
+								<th scope="row">직업</th>
 								<td>
-									<div class="radioBoxWrap">
-										<input type="radio" id="rMarketEmail1" name="rMarketEmail" /><label for="rMarketEmail1">거부</label>
-										<input type="radio" id="rMarketEmail2" name="rMarketEmail" /><label for="rMarketEmail2">수신(이벤트/쇼핑정보 메일 수신)</label>
-									</div>
+									<select name="" id="mJop" data-custom-id="mLive" data-custom-class="mMarketingSlt">
+										<option value="">회사원</option>
+										<option value="">자영업</option>
+									</select>
 								</td>
 							</tr>
-							<tr>
-								<th scope="row">SMS 수신</th>
-								<td>
-									<div class="radioBoxWrap">
-										<input type="radio" id="rMarketSms1" name="rMarketSms" /><label for="rMarketSms1">거부</label>
-										<input type="radio" id="rMarketSms2" name="rMarketSms" /><label for="rMarketSms2">수신(이벤트/쇼핑정보 SMS 수신)</label>
-									</div>
-								</td>
-							</tr>
-							<!--
 							<tr>
 								<th scope="row">사용중인 SNS<br/>(한 가지만 선택)</th>
 								<td>
@@ -265,22 +248,15 @@
 									</div>
 								</td>
 							</tr>
-							-->
 						</table>
-						<div class="pageBtnBox taC">
-							<a href="<?=$root?>/mypage/member_leave.html" class="fL ml0 btnS1 gryBtn2">회원탈퇴</a>
-							<!-- <a href="#none" class="btnS1 gryBtn">취소</a> -->
-							<a href="#none" class="btnS1 blckBtn">회원정보수정</a>
-						</div>
 					</section>
 				</div>
 			</div>
 		</div>
-		<? include '../include/footer.php' ?> <!-- footer -->
-		<? include '../include/div_popup.php' ?> <!-- divPopup -->
+		<? include '../include/footer.php' ?>
 	</div>
 	<script type="text/javascript">
-		currentLocation(99,7) //현재페이지 위치
+		currentLocation(99,4,0)
 	</script>
 </body>
 </html>

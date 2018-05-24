@@ -8,6 +8,6 @@
 		<li class="numBtn"><a href="#none">4</a></li>
 		<li class="numBtn"><a href="#none">5</a></li>
 		<li class="angleBtn abR"><a href="#none"><img src="<?=$root?>/skin/images/common/blt_arrow_right.gif" alt="다음" /></a></li>
-		<li class="angleBtn abRR"><a href="#none"><img src="<?=$root?>/skin/images/common/blt_arrow_right2.gif" alt="끝" /></a></li>
+		<li class="angleBtn abRR"><a href="#none"><img src="<?=$root?>/skin/images/common/blt_arrow_right2.gif" alt="끝" /></i></a></li>
 	</ul>
 </div>

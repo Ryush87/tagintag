@@ -1,15 +1,15 @@
-<? include '../include/top.php' ?> <!-- top -->
+<? include '../include/top.php' ?>
 <link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+<link rel="stylesheet" href="<?=$root?>/skin/css/goods.css">
 </head>
 <body>
-	<? include '../include/top_notice.php' ?> <!-- topBoard  -->
 	<div id="wrap">
-		<? include '../include/header.php' ?> <!-- header  -->
+		<? include '../include/header.php' ?>
 		<div id="contents" class="myOrderViewWrap">
-			<? include '../include/location_box.php' ?> <!-- location  -->
+			<? include '../include/location_box.php' ?>
 			<div class="wWrap">
 				<div class="subPageGridL">
-					<? include '../include/snb_mypage.php' ?> <!-- snb  -->
+					<? include '../include/snb_mypage.php' ?>
 				</div>
 				<div class="subPageGridR">
 					<section id="myOrderViewBox">
@@ -18,7 +18,7 @@
 							<span class="fwB">2016-11-30</span> 에 주문하신 <span class="ogdOrderNum fwB">26979931</span> 에 대한 주문 상세 내역입니다.
 						</div>
 						<h5>상품정보</h5>
-						<a href="#none" class="fR smBtn" onClick="newWin('../include/buy_receipt.html',640,830); return false;">영수증 인쇄</a>
+						<a href="#none" class="fR smBtn">영수증 인쇄</a>
 						<img src="<?=$root?>/skin/images/common/icon_question.png" alt="도움말" class="balloonTip" data-toggle="popover" data-placement="bottom" data-content="이 영수증은 법적 효력을 가지지<br/>않으며 세금계산서 등 증빙서류로<br/>사용할 수 없습니다."/>
 						<table class="viewTable goodsInfoBox mb40">
 							<caption>상품정보</caption>
@@ -91,22 +91,14 @@
 								</td>
 							</tr>
 						</table>
-						<div class="pageBtnBox taC">
-							<a href="order_list.html" class="btnS1 blckBtn">목록</a>
-							<a href="#none" class="btnS1 blckBtn" onclick="callPopup('#orderCancelPopBox'); return false;">주문취소</a>
-							<a href="#none" class="btnS1 blckBtn" onclick="callPopup('#buyFixPopBox'); return false;">구매확인</a>
-							<a href="return_change.html" class="btnS1 blckBtn">반품/교환</a>
-							<a href="#none" class="btnS1 blckBtn" onclick="callPopup('#csCenterPopBox'); return false;">고객센터</a>
-						</div>
 					</section>
 				</div>
 			</div>
 		</div>
-		<? include '../include/footer.php' ?> <!-- footer -->
-		<? include '../include/div_popup.php' ?> <!-- divPopup -->
+		<? include '../include/footer.php' ?>
 	</div>
 	<script type="text/javascript">
-		currentLocation(99,1) //현재페이지 위치
+		currentLocation(99,1)
 	</script>
 </body>
 </html>
