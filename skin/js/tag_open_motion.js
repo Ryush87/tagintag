@@ -13,7 +13,7 @@ function chkWinStepPosition(){ //각 스텝의 위치 체크
 	var tmStepBox = $('.tmStepBox');
 	var win_bottom = (win_top + win_h);
 	totalStep=tmStepBox.length;
-	/*console.log("totalStep="+totalStep);*/
+	//console.log("totalStep="+totalStep);
 	tmStepBox.each(function(index){ //각 스텝의 위치 셋팅
 		$(this).attr("data-index",win_h*index);
 	});

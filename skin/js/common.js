@@ -128,14 +128,6 @@ function callPopup2(obj){ //divpopup2 보이기
 	objShow($(obj));
 	actFadeEff($(obj));
 }
-function hidePopupAll(){ //divpopup 모두 숨기기
-	console.log("d");
-	$('body').removeClass('actPop');
-	resetFadeEff($(".divPopupBox"));
-	divPopBg_hide();
-	divPopBg2_hide();
-	objHide($(".divPopupBox"));
-}
 function hidePopup(obj){ //divpopup 숨기기
 	$('body').removeClass('actPop');
 	resetFadeEff(obj);
@@ -148,10 +140,6 @@ function hidePopup2(obj){ //divpopup2 숨기기
 	divPopBg2_hide();
 	objHide($(obj));
 }
-function hidePopup3(obj){ //divpopup3 숨기기
-	resetFadeEff(obj);
-	objHide($(obj));
-}
 function nextPopup(pObj,nObj){ //nextdivpopup 보이기
 	var closeObj=pObj.parents('.divPopupBox');
 	resetFadeEff(closeObj);
@@ -160,13 +148,11 @@ function nextPopup(pObj,nObj){ //nextdivpopup 보이기
 	objShow($(nObj));
 	actFadeEff($(nObj));
 }
-var quickY=310; //quickMenu 초기 위치
-//var quickY=710;//quickMenu position
+var quickY=255; //quickMenu 초기 위치
 function quick_menu_act(qy){ //quickMenu 활성화
 	var quick=$('#quickMenuBox');
 	var quickPY=qy;
 	var winPY=$(window).scrollTop();
-	//console.log(winPY+"___"+quickPY);
 	if(winPY>quickPY){
 		quick.stop().animate({'top':winPY+100+'px'},500);
 	}else{
@@ -340,9 +326,6 @@ $(function($){
 	$('#gnb').mouseover(function(){
 		hideLnb();
 	});
-	$('#mainCaruselBox').mouseover(function(){
-		hideLnb();
-	});
 	$('#headBox').mouseover(function(){
 		hideLnb();
 	});
@@ -380,9 +363,7 @@ $(function($){
 	//snb UI e-----------------
 
 	//slideList UI s-----------------
-
 	$('.slideListBox .titleLine a').click(function(){
-		//console.log("===> slideList 클릭 ");
 		var totalIndex=$('.slideListBody > li').length;
 		var tempIndex=$('.slideListBody > li').index($(this).parent().parent().parent());
 		for(i=0;i<totalIndex;i++){
@@ -402,7 +383,6 @@ $(function($){
 			}
 		});
 	});
-
 	$('.slideListBox .titleLine').hover(function(){
 		$(this).parent().addClass('actOn');
 	},function(){
@@ -413,6 +393,10 @@ $(function($){
 		$(this).parent().parent().parent().find('a.slideBtn').removeClass('slideUpBtn').addClass('slideDownBtn');
 		$(this).parent().parent().parent().find('.conLine').slideUp();
 	});
+
+
+
+
 
 
 
@@ -475,44 +459,12 @@ $(function($){
 	//스크롤되는 게시판(메인) e---------------
 
 	//subPage s---------------
-	$('#findIdPwBox .pageTab li a').on('click',function(){ //아이디찾기
-		var targetObj=$(this).attr("tab-href");
-		$(this).parents('.pageTab').find('li').removeClass('actOn');
-		$('.findKindInput').hide();
-		$(this).parent().addClass('actOn');
-		$(targetObj).show();
-	});
-	$("#chck_all").on('change',function(){ //전체체크박스
-		if($(this).prop('checked')){
-			$(this).parent().parent().find('.allCheckChild input[type="checkbox"]').prop("checked",true);
-		}else{
-			$(this).parent().parent().find('.allCheckChild input[type="checkbox"]').prop("checked",false);
-		}
-	});
 	$(".pageTab a").click(function(){ //pageTab 클릭시 스크롤 이동
 		var targetObj=$(this).attr('href');
-		if(targetObj!="#none"){
-			scrollMove($(targetObj));
-		}
-	});
-	$('.pageListTab li').click(function(){ //pageListTab 클릭시 활성화
-		$('.pageListTab li').removeClass('actOn');
-		$(this).addClass('actOn');
+		scrollMove($(targetObj));
 	});
 	$(".infoPopBtn").hover(function(){ //mypage 느낌표 아이콘
 		$(this).next().slideToggle();
-	});
-	$(".termCon .miniBtn").click(function(){ //mypage 주문내역 기간버튼
-		$('.miniBtn').removeClass('actOn');
-		$(this).addClass('actOn');
-	});
-	$(".shareFtBtns").on('click',function(){ //공유버튼
-		$(this).find('ul').fadeToggle();
-		if(Number($(this).find('ul').css('opacity'))<1){
-			$(this).addClass("actOn");
-		}else{
-			$(this).removeClass("actOn");
-		}
 	});
 	$(".serviceIndexBox li a").on('click',function(){ //택인택이란 > 서비스 소개
 		$('.serviceIndexBox li').removeClass('actOn');
@@ -544,26 +496,8 @@ $(function($){
 	$(".divPopupBox .closePopBtn").click(function(){
 		hidePopup($(this).parents('.divPopupBox'));
 	});
-	$(".divPopupBox .closePopBtn2").click(function(){
-		hidePopup2($(this).parents('.divPopupBox'));
-	});
 	//divPop e---------------
 	
-	//clipboard s-------------------
-	var clipboard=new Clipboard('.clipboardBtn');
-	clipboard.on('success', function(e) { //copy URL
-		//console.info('Action:', e.action);
-		//console.info('Text:', e.text);
-		//console.info('Trigger:', e.trigger);
-		alert('선택하신 상품의 고유주소(URL)가 클립보드에 복사되었습니다.\n\Ctrl + V 또는 붙여넣기를 선택하여 이용하시기 바랍니다.');
-		e.clearSelection();
-	});
-	clipboard.on('error', function(e) {
-		console.error('Action:', e.action);
-		console.error('Trigger:', e.trigger);
-	});
-	//clipboard e-------------------
-
 	//BtnAction UI e-----------------
 
 	//window load after s ------------
@@ -590,11 +524,11 @@ $(window).on("orientationchange",function(){ //화면 회전
 function tagKeepBoxAct(bigTStatus){ //상단 택보관 박스 활성화
 	if(bigTStatus){
 		$('.tagKeepBoxWrap').slideDown();
-		// bigTagToggle(); //20171109 삭제
+		bigTagToggle();
 	}else{
 		$('.tagKeepBoxWrap').slideDown();
 	}
-	//time_count2($('.leftTimeTag')); //시간 카운트
+	time_count2($('.leftTimeTag')); //시간 카운트
 }
 function bigTagClose(){ // 택보관 닫기
 	console.log("====> bigTagClose() 책갈피 닫기  ");
@@ -625,7 +559,7 @@ $(function(){ // 온로드시
 		bigTagClose();
 	});
 	$(".bigTagBox .bgtStatus").click(function(){ // 접어놓기 버튼
-		// bigTagToggle(); //20171109 삭제
+		bigTagToggle();
 	});
 });
 /******************************** 택관련 함수 ************************************/

@@ -1,6 +1,4 @@
-
-
-//var quickY=670;//quickMenu position
+var quickY=670;//quickMenu position
 
 //graph s-----------------
 var barArray=new Array();
@@ -45,9 +43,8 @@ function drwaGraph(maxVal){
 
 //pageTabAct s-----------------
 function pageTabAct(){//상세페이지 pageTab 활성화
-	$('#contents .wWrapL .pageTab').each(function(){
+	$('.pageTab').each(function(){
 		indexLi=$('.pageTab').index(this);
-		console.log(indexLi);
 		$(this).find('li').eq(indexLi).addClass('actOn');
 	});
 }
@@ -109,8 +106,7 @@ $(function($){
 			if(global_tag_num>0){
 				objHide($(this).parents('.divPopupBox'));
 				$('#slotMachineBox .sltmReelCount .countN').html(global_tag_num);
-				//linkUrl="tag_open_scroll_motion.html";
-				linkUrl="tag_open_scroll_motion_v2.html";
+				linkUrl="tag_open_scroll_motion.html";
 				location.href = linkUrl+"?"+global_tag_num;
 			}else{
 				alert("0보다 큰 숫자를 입력해주세요");
@@ -135,5 +131,5 @@ $(document).ready(function(){
 	});
 	loadGraph();
 	pageTabAct();
-	// tagKeepBoxAct();// 택보관 활성화
+	tagKeepBoxAct();// 택보관 활성화
 });

@@ -13,12 +13,8 @@
 				</div>
 				<div class="subPageGridR">
 					<section id="myRefundBox">
-						<? $section="point";$view_section="포인트" ?>
-						<h2>택<?=$view_section?> 환불요청</h2>
-						<ul class="pageTab mt0">
-							<li<?=($section=='point')?' class="actOn"':null?>><a href="refund.html?section=point">택포인트 환불요청</a></li>
-							<li<?=($section=='money')?' class="actOn"':null?>><a href="refund.html?section=money">택머니 환불요청</a></li>
-						</ul>
+						<h2>환불요청</h2>
+						<h5>택포인트 환불요청</h5>
 						<table class="writeTable2">
 							<caption>택포인트환불요청</caption>
 							<colgroup><col width="160px"/><col /></colgroup>
@@ -132,7 +128,7 @@
 		<? include '../include/footer.php' ?> <!-- footer -->
 	</div>
 	<script type="text/javascript">
-		currentLocation(99,5,4) //현재페이지 위치
+		currentLocation(99,5,2) //현재페이지 위치
 	</script>
 </body>
 </html>

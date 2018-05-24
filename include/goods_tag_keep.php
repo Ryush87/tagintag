@@ -7,8 +7,7 @@
 			<div class="tkTitle"><img src="<?=$root?>/skin/images/sub_goods/tag_keep_title.png" alt="보관중인 Tag" /></div>
 			<div class="tkGoodsBox">
 				<p class="tkGoodsName">버거킹 와퍼</p>
-				<!-- <a href="#none" class="smBtn tagGoodsView">바로가기</a> -->
-				<a href="#none" class="circleBtn tagGoodsView">GO</a>
+				<a href="#none" class="smBtn tagGoodsView">바로가기</a>
 			</div>
 			<div class="tkPriceBox">
 				<dl>
@@ -20,34 +19,21 @@
 			</div>
 			<div class="tkTimeBox">
 				<div class="tkTimeCon1">
-					<!--
 					<dl>
 						<dt>남은 보관시간</dt>
 						<dd class="tkTime"><div class="leftTimeTag"></div>초</dd>
 					</dl>
 					<a href="<?=$root?>/goods/transfer.html" class="smBtn tagKeepUse">양도하기</a>
 					<a href="<?=$root?>/goods/order.html" class="smBtn tagKeepUse mt5">주문하기</a>
-					-->
-					<ul>
-						<li><a href="<?=$root?>/goods/transfer.html"  class="smBtn tagKeepUse">양도하기</a></li>
-						<li><a href="<?=$root?>/goods/order.html" class="smBtn tagKeepUse">주문하기</a></li>
-						<li><a href="#none" class="smBtn tagKeepCancle">보관취소</a></li>
-					</ul>
 				</div>
-				<!--
 				<div class="tkTimeCon2">
 					<dl>
 						<dt></dt>
 						<dd>제한시간내에 본 상품을<br />주문/판매하거나 새로운 Tag을<br />뽑지 않으면 본 혜택은 소멸됩니다.</dd>
 					</dl>
 				</div>
-				-->
 			</div>
 		</div>
-
-		<!-- 책갈피 -->
-		<?
-		/*
 		<div class="bigTagBox">
 			<div class="bgtInfo">
 				<div class="bgtRate"><span>97%</span> OFF</div>
@@ -60,7 +46,5 @@
 			</div>
 			<div class="bgtStatus bgtSttOpen"><a href="#none"><span class="blind">택버튼</span></a></div>
 		</div>
-		*/
-		?>
 	</div>
 </div>

@@ -8,99 +8,6 @@
 ===============================================================================================
 */
 
-/* main */
-#mainCaruselBox {float:left;width:100%;height:475px;overflow:hidden;background:#ececec;}
-	#mCaruselWrap {float:left;width:100%;}
-		.mSliderLeft {border:1px solid red;}
-			.slick-dotted.slick-slider {margin-bottom:0 !important;}
-		.slick-prev,
-		.slick-next {width:50px;height:50px;/*z-index:899;*/z-index:49;}
-		.slick-prev {left:0% !important;}
-		.slick-next {right:0% !important;}
-		.slick-dots {bottom:20px !important;}
-			.slick-dots li button:before {opacity:1;color:#fff;font-size:12px;}
-			.slick-dots li.slick-active button:before {color:#333;}
-		#mCaruselWrap .slick-prev, #mCaruselWrap .slick-next {text-indent:-9999px;}
-		#mCaruselWrap .slick-prev,
-		#mCaruselWrap .slick-prev:hover,
-		#mCaruselWrap .slick-prev:focus {background:url(../images/common/crs_arrow_left.png) no-repeat 0 50%;}
-		#mCaruselWrap .slick-next,
-		#mCaruselWrap .slick-next:hover,
-		#mCaruselWrap .slick-next:focus {background:url(../images/common/crs_arrow_right.png) no-repeat 100% 50%;}
-		.mCaruselItem {}
-
-	#mainTotalDiscountBox {float:left;width:100%;}
-		.mtdTextBox {float:left;width:100%;height:50px;line-height:40px;font-weight:500;font-size:15px;color:#222;text-align:center;border:5px solid #e8e8e8;}
-	#ingGoodsBox {}
-		.mainPageWrap .ingGoodsList .igiTagPrice {margin-top:0;}
-	#mainBannerBox {float:left;width:100%;}
-	#mainBoardBox {float:left;width:100%;}
-		.mbbWrap {float:left;width:100%;}
-			.mbbWrap .mbbBox {float:left;padding:5px 0;width:100%;}
-			#mbbWin {border-bottom:1px solid #eee;}
-			#mbbReturn {}
-				.mbbLiItem {float:left;width:100%;}
-					.mbCate {float:left;margin-left:5%;line-height:36px;font-size:13px;color:#666;}
-					.mbbDis {float:left;margin-left:5%;width:36px;height:36px;line-height:36px;text-align:center;font-weight:bold;font-size:13px;color:#fff;letter-spacing:-0.05em;border-radius:18px;}
-						.mbbDis1 {background:#58b4c3;}
-						.mbbDis2 {background:#c8a240;}
-						.mbbDis3 {background:#a3aeb7;}
-						.mbbDis4 {background:#c97d54;}
-					.mbbCon {float:left;padding-left:5px;width:45%;line-height:36px;font-size:13px;color:#666;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;}
-					.mbbUser {float:left;line-height:36px;font-size:13px;color:#666;}
-					#mbbReturn .mbbUser {margin-left:10px;color:#555;}
-					.mbbPrice {float:right;margin-right:5%;line-height:36px;font-size:13px;color:#555;}
-						.mbbPrice span {font-weight:bold;}
-.episodeBoxWrap {float:left;margin-bottom:40px;width:100%;}
-	.episodeBoxWrap li {float:left;margin-top:30px;width:25%;}
-		.epsdItem {position:relative;float:left;padding:30px;width:94%;/*height:332px;*/border:1px solid #ddd;}
-		.episodeBoxWrap li:nth-child(4n+2) .epsdItem {margin-left:2%;}
-		.episodeBoxWrap li:nth-child(4n+3) .epsdItem {margin-left:4%;}
-		.episodeBoxWrap li:nth-child(4n+4) .epsdItem {float:right;}
-			.epsdLabel {position:absolute;top:0;right:20px;padding-top:13px;width:60px;height:57px;}
-				.epsdLabel span {display:block;width:100%;height:100%;font-weight:500;font-size:1.5em;color:#fff;text-align:center;background:url(../images/common/list_label_bg.png) no-repeat 50% 100%;}
-			.epsdLabel1 {background:#70b986;}
-			.epsdLabel2 {background:#d26666;}
-			.epsdLabel3 {background:#bac0c4;}
-			.epsdKindLabel {position:absolute;top:10px;left:10px;width:42px;height:49px;}
-				.epsdKindLabel span {display:block;padding-top:17px;width:100%;height:100%;font-weight:600;font-size:11px;letter-spacing:-0.025em;text-align:center;background:url(../images/common/icon_tag_kind_bg.png) no-repeat;}
-			.epsdKindLabel1 {color:#e40075;}
-			.epsdKindLabel2 {color:#00a7b0;}
-			.epsdKindLabel3 {color:#663b93;}
-			.epsdImg {width:100px;min-height:100px;}
-			.epsdTitle {margin-top:20px;width:100%;height:52px;font-weight:500;font-size:18px;color:#c6a370;/*white-space:nowrap;*/}
-				.epsdTitle span {}
-			.epsdProbability {position:absolute;top:95px;right:25px;padding-top:4px;width:50px;height:50px;background:#2b343a;border-radius:25px;}
-				.epsdProbability .proba1,
-				.epsdProbability .proba2 {margin:0 auto;width:60%;height:19px;line-height:19px;font-size:12px;text-align:center;color:#fff;}
-				.epsdProbability .proba2 {line-height:15px;border-top:1px solid #fff;}
-			/*.epsdNum {font-weight:bold;font-size:28px;color:#091b25;}*/
-			.epsdNum {position:absolute;top:60px;right:20px;width:60px;font-weight:bold;font-size:20px;text-align:center;color:#091b25;}
-			/*.epsdDate {margin-top:25px;font-size:2em;color:#333;}*/
-			.epsdDate {margin-top:15px;font-size:2em;color:#333;}
-			.epsdDesc {margin-top:10px;font-size:1.6em;color:#a3aeb7;}
-			/*.epsdBtns {position:absolute;top:70px;right:20px;margin-top:20px;}
-				.epsdBtns .btnS1 {margin-left:0;padding-right:0;padding-left:0;width:60px;height:38px;line-height:38px;font-size:14px;}*/
-			.epsdBtns {margin-top:20px;}
-				.epsdBtns .btnS1 {margin-left:0;padding-right:0;padding-left:0;width:100%;height:38px;line-height:38px;font-size:14px;}
-		.epsdItem.epsdItemPrepare {}
-			.epsdItem.epsdItemPrepare .epsdImg {margin:0 auto;}
-			.epsdItem.epsdItemPrepare .epsdTitle {text-align:center;line-height:38px;}
-			.epsdItem.epsdItemPrepare .epsdDate,
-			.epsdItem.epsdItemPrepare .epsdDesc,
-			.epsdItem.epsdItemPrepare .epsdBtns {visibility:hidden;}
-.episodeDescBoxWrap {float:left;margin-bottom:100px;width:100%;}
-	.episodeDescBoxWrap li {float:left;margin-left:30px;width:320px;}
-	.episodeDescBoxWrap li:first-child {margin-left:0;}
-		.epsdscItem {}
-		.epsdscTitle {font-weight:500;font-size:1.8em;color:#333;}
-		.epsdscCon {margin-top:20px;padding:30px;40px;width:100%;height:180px;line-height:20px;font-size:1.6em;color:#fff;}
-		.epsdscItem1 .epsdscCon {background:url(../images/common/main_desc_bg_01.jpg) no-repeat;}
-		.epsdscItem2 .epsdscCon {background:url(../images/common/main_desc_bg_02.jpg) no-repeat;}
-		.epsdscItem3 .epsdscCon {background:url(../images/common/main_desc_bg_03.jpg) no-repeat;}
-		.epsdscBtns {margin-top:10px;}
-			.epsdscBtns .btnS1 {margin-left:0;padding-right:15px;padding-left:15px;}
-
 /* login */
 .loginWrap {}
 	#loginBox {float:left;width:100%;}
@@ -116,9 +23,7 @@
 						.lgnInput .gridL .checkBoxWrap label {font:normal 12px "dotum";color:#666;}
 				.lgnInput .gridR {float:right;margin-top:15px;padding-top:15px;width:100%;background:url(../images/common/line_w_dot2.png) repeat-x 0 0;}
 					.lgnInput .gridR ul {margin-top:0px;}
-						/*.lgnInput .gridR ul li {float:left;margin-right:5px;}*/
-						.lgnInput .gridR ul li {float:left;padding:0 2px;width:33.33%;}
-							.lgnInput .gridR ul li .smBtn {width:100%;text-align:center;}
+						.lgnInput .gridR ul li {float:left;margin-right:5px;}
 		.restorationWrap {padding:20px 75px 50px 75px;}
 			.restorationBox {padding:20px 0;font-size:1.8em;color:#666;letter-spacing:-0.025em;}
 			.restorationBox2 {display:inline-block;width:100%;}
@@ -130,64 +35,29 @@
 .findIdPwWrap {}
 	#contents h4.borderBtm_ddd3px {float:left;margin-bottom:20px;padding-bottom:15px;width:100%;font-weight:500;font-size:1.8em;}
 	#findIdPwBox {float:left;width:100%;}
-		/*
 		.findIdPwInfo {float:left;padding:30px 0;width:100%;}
-			.findIdPwInfo .gridL {float:left;margin-top:20px;padding-left:80px;width:50%;background:url(../images/common/line_h_dot2.png) repeat-y 100% 0;}
-				.findKind_phon {}
-					.findKind_phon .btnS1{padding-right:20px;padding-left:20px;}
-					.findIdPwInfo .smBtn{margin-top:5px;margin-left:0px;background:#f5f5f5;}
-			.findIdPwInfo .gridR {float:left;margin-top:20px;padding-left:80px;width:50%;}
+			.findIdPwInfo .gridL {float:left;margin-top:20px;padding-left:80px;width:42%;background:url(../images/common/line_h_dot2.png) repeat-y 100% 0;}
+				.findKind_phon {background:url(../images/sub_login/find_box_tel_bg.png) no-repeat 35% 45%;}
+					.findKind_phon .btnS1{margin-top:170px;padding-right:20px;padding-left:20px;}
+			.findIdPwInfo .gridR {float:left;margin-top:20px;padding-left:80px;width:58%;}
 				.findKind_email {}
-				.findIdPwInfo ul {float:left;width:100%;}
-					.findIdPwInfo ul li {float:left;margin-bottom:15px;width:100%;}
-						.findIdPwInfo input {margin-right:10px;width:180px;height:40px;font:normal 12px / 40px "dotum";color:#999;}
-						.findIdPwInfo input.certiNum {width:180px;height:30px;line-height:30px;}
+				.findIdPwInfo .gridR ul {float:left;width:100%;}
+					.findIdPwInfo .gridR ul li {float:left;margin-bottom:15px;width:100%;}
+						.findIdPwInfo input {width:250px;height:40px;font:normal 12px / 40px "dotum";color:#999;}
+						.findIdPwInfo input.certiNum {width:100px;height:30px;line-height:30px;}
 						.findIdPwInfo input:focus {color:#333;}
 						.findIdPwInfo input[type="submit"] {font:400 16px "Noto Sans KR";color:#fff;}
 						.leftTime {font:normal 12px / 30px "dotum";color:#333;}
 						.findIdPwInfo .btnS1 {margin-left:0;width:170px;}
-			.idInputBox {margin:0 auto;margin-bottom:30px;width:180px;}
+			.idInputBox {margin:0 auto;margin-bottom:30px;width:250px;}
 				.idInputBox input {color:#333;border:1px solid #cc5222;}
 			.findResultBox {float:left;width:100%;}
 				.findResultBox .grayBgBox {padding:45px 0;text-align:center;}
 					.frTxt1 {font-weight:500;font-size:2.2em;color:#555;}
 					.frTxt2 {margin-top:30px;font-weight:400;font-size:1.3em;color:#888;}
-					#findIdPwBox .btnS1 {padding:0;width:180px;}
+					#findIdPwBox .btnS1 {padding:0;width:170px;}
 			.resetPwBox {float:left;width:100%;}
 				.resetPwBox .grayBgBox {padding:30px 0;text-align:center;}
-					.resetPwBox .grayBgBox ul {margin:0 auto;width:380px;}
-						.resetPwBox .grayBgBox ul li {width:100%;text-align:left;}
-							.resetPwBox .grayBgBox input {margin-bottom:15px;width:380px;height:40px;line-height:40px;font-family:"dotum";font-size:12px;}
-		
-							.resetPwBox .grayBgBox .pointC5 {font-size:1.3em;}
-		*/
-		.findIdPwInfo {float:left;padding:30px 0;width:100%;}
-			#findIdPwBox .pageTab {margin-top:0;}
-				#findIdPwBox .pageTab li {width:50%;}
-				.findKindInput {float:left;padding-left:50%;width:100%;}
-				#findKind_phon {display:block;background:url(../images/sub_login/find_box_tel_bg.png) no-repeat 25% 50%;}
-				#findKind_email {display:none;background:url(../images/sub_login/find_box_mail_bg.png) no-repeat 25% 43%;}
-					#findIdPwBox .grayBgBox {float:left;margin-bottom:10px;padding:10px 20px;width:100%;font-weight:500;font-size:1.4em;color:#888;text-align:center;letter-spacing:-0.05em;}
-						#findIdPwBox .grayBgBox span {color:#333;}
-				.findIdPwInfo ul {float:left;width:100%;}
-					.findIdPwInfo ul li {float:left;margin-bottom:15px;width:100%;}
-						.findIdPwInfo input {margin-right:10px;width:180px;height:40px;font:normal 12px / 40px "dotum";color:#999;}
-						.findIdPwInfo input.certiNum {width:180px;height:40px;line-height:40px;}
-						.findIdPwInfo input:focus {color:#333;}
-						.findIdPwInfo input[type="submit"] {font:400 16px "Noto Sans KR";color:#fff;}
-						.leftTime {font:normal 12px / 30px "dotum";color:#333;}
-						.findIdPwInfo .btnS1 {margin-left:0;width:170px;}
-						.findIdPwInfo .smBtn{margin-top:5px;margin-left:0px;width:90px;text-align:center;background:#f5f5f5;}
-			.idInputBox {margin:0 auto;margin-bottom:0px;margin-left:38%;width:380px;}
-				.idInputBox input {float:left;color:#333;border:1px solid #cc5222;}
-				 .idInputBox .smBtn {}
-			.findResultBox {float:left;width:100%;}
-				#findIdPwBox .findResultBox .grayBgBox {padding:45px 0;font-size:1.2em;text-align:center;}
-					.frTxt1 {font-weight:500;font-size:2.2em;color:#555;}
-					.frTxt2 {margin-top:30px;font-weight:400;font-size:1.3em;color:#888;}
-					#findIdPwBox .btnS1 {padding:0;width:180px;}
-			.resetPwBox {float:left;width:100%;}
-				#findIdPwBox .resetPwBox .grayBgBox {padding:30px 0;font-size:1.2em;text-align:center;}
 					.resetPwBox .grayBgBox ul {margin:0 auto;width:380px;}
 						.resetPwBox .grayBgBox ul li {width:100%;text-align:left;}
 							.resetPwBox .grayBgBox input {margin-bottom:15px;width:380px;height:40px;line-height:40px;font-family:"dotum";font-size:12px;}
@@ -197,7 +67,7 @@
 .mbJoinWrap {}
 	#mbJoinBox {float:left;width:100%;}
 		#mbJoinBox h4.borderBtm_ddd3px {float:left;margin-top:50px;margin-bottom:20px;padding-bottom:15px;width:100%;font-weight:500;}
-		#mbJoinBox .grayBgBox {float:left;padding:20px;width:100%;font:normal 12px "dotum";color:#666;backgroun}
+		#mbJoinBox .grayBgBox {float:left;padding:20px;width:100%;font:normal 12px "dotum";color:#666;}
 		#mbJoinBox h3 {float:left;width:100%;font-size:1.4em;color:#333;font-weight:500;}
 		#mbJoinBox .pageBtnBox .btnS1 {width:170px;}
 		.mbJoinStepBox {float:left;width:100%;}
@@ -206,19 +76,14 @@
 			li.mbjSplit {width:26px;height:50px;background:url(../images/sub_member/join_step_split_2.gif) no-repeat;}
 			li.mbjSplit.actOn1 {background:url(../images/sub_member/join_step_split_1.gif) no-repeat;}
 			li.mbjSplit.actOn3 {background:url(../images/sub_member/join_step_split_3.gif) no-repeat;}
-			/*
 			li.mbjStep1 {width:199px;}
 			li.mbjStep2 {width:174px;}
 			li.mbjStep3 {width:174px;}
 			li.mbjStep4 {width:175px;}
-			*/
-			li.mbjStep1 {width:265px;}
-			li.mbjStep3 {width:242px;}
-			li.mbjStep4 {width:241px;}
 		.mbPolicyBox {float:left;margin-top:20px;width:100%;}
 			.mbPolicyBox .gridL {float:left;width:50%;}
-				.mbPolicyBox ul {float:left;margin-top:15px;width:100%;}
-				.mbPolicyBox ul li {float:left;margin:4px 0;padding-left:20px;width:90%;font:normal 1.2em "dotum";}
+				.mbPolicyBox ul {float:left;margin-top:15px;}
+				.mbPolicyBox ul li {float:left;margin:4px 0;padding-left:20px;width:70%;font:normal 1.2em "dotum";}
 					.mbPolicyBox ul li label {line-height:20px;}
 					.mbPolicyBox ul li .smBtn {float:right;}
 			.mbPolicyBox .gridR {float:right;width:50%;}
@@ -231,20 +96,15 @@
 				.mbNecePolicyBox ul li {float:left;width:100%;font:normal 1.2em / 20px "dotum";color:#666;}
 					.mbNecePolicyBox ul li span {float:left;width:13px;}
 					.mbNecePolicyBox ul li p {float:left;width:90%;}
-		#mbJoinBox .mbCertiDescBox{padding:25px 0;background:url(../images/sub_login/find_box_tel_bg.png) no-repeat 75px 50%;}
-			#mbJoinBox .mbCertiDescBox .mbCertiDescTit {padding-left:240px;font-weight:500;font-size:24px;font-family:"Noto Sans KR";}
-			#mbJoinBox .mbCertiDescBox ul {padding-left:240px;}
-		.mbCertiBox {clear:both;margin:0 auto;width:100%;text-align:center;}
-			.mbCertiBox .writeTable2 input {float:left;}
-			.mbCertiBox .writeTable2 .whtBtn {background:#f5f5f5;}
-			.mbCertiBox .btnS1{margin-top:0px;margin-left:0px;padding-right:20px;padding-left:20px;width:170px;}
+		.mbCertiBox {clear:both;margin:0 auto;width:100%;text-align:center;background:url(../images/sub_login/find_box_tel_bg.png) no-repeat 50% 40%;}
+			.mbCertiBox .btnS1{margin-top:250px;margin-left:10px;padding-right:20px;padding-left:20px;width:170px;}
 			.mbCertiBox .btnS1:first-child {margin-left:0;}
 		.mbInfoInputBox {}
 		.mbJoinCompleteBox {text-align:center;}
 			#mbJoinBox .mbJoinCompleteBox .grayBgBox {padding:50px;}
 				.mbCmpText,
 				.mbComId {font:500 22px "Noto Sans KR";color:#555;}
-				.mbComId {margin-top:30px;margin-bottom:30px;}
+				.mbComId {margin-top:30px;}
 					.mbComId span {color:#cc5222;}
 
 /* mypage */
@@ -257,17 +117,13 @@
 	.mypageHomeWrap #myCounselListBox {float:left;width:100%;}
 		.mypageHomeWrap #myCounselListBox .smBtn {float:right;margin-top:10px;}
 	.mypageHomeWrap #myPointMoneyBox {float:left;width:100%;}
-		.mypageHomeWrap #myPointMoneyBox .gridL {float:left;margin-right:5%;width:380px;}
+		.mypageHomeWrap #myPointMoneyBox .gridL {float:left;width:380px;}
 		.mypageHomeWrap #myPointMoneyBox .gridR {float:right;width:380px;}
-		.mypageHomeWrap #myPointMoneyBox .grid30 {width:30%;}
 			.mypageHomeWrap #myPointMoneyBox .viewTable th {padding:0;line-height:30px;font-weight:bold;font-size:1.4em;text-align:center;}
-			.mypageHomeWrap #myPointMoneyBox .gridL .viewTable th > a > span {display:block;padding:10px 20px;width:100%;height:51px;color:#333;border-bottom:1px solid #ddd;}
+			.mypageHomeWrap #myPointMoneyBox .gridL .viewTable th > a > span {display:block;padding:10px 20px;width:100%;height:51px;color:#333;background:url(../images/common/icon_exclamation1.png) no-repeat 20px 50%;border-bottom:1px solid #ddd;}
 			.mypageHomeWrap #myPointMoneyBox .gridL .viewTable td {padding:20px 20px;font:bold 3em "Arial";color:#333;text-align:center;}
-			.mypageHomeWrap #myPointMoneyBox .gridR .viewTable th > a > span {display:block;padding:10px 20px;width:100%;height:51px;color:#333;border-bottom:1px solid #ddd;}
+			.mypageHomeWrap #myPointMoneyBox .gridR .viewTable th > a > span {display:block;padding:10px 20px;width:100%;height:51px;color:#333;background:url(../images/common/icon_exclamation2.png) no-repeat 20px 50%;border-bottom:1px solid #ddd;}
 			.mypageHomeWrap #myPointMoneyBox .gridR .viewTable td {padding:20px 20px;font:bold 3em "Arial";color:#333;text-align:center;}
-			.mypageHomeWrap #myPointMoneyBox .gridL.gridN1 .viewTable th > a > span {/*background:url(../images/common/icon_exclamation1.png) no-repeat 20px 50%;*/}
-			.mypageHomeWrap #myPointMoneyBox .gridL.gridN2 .viewTable th > a > span {/*background:url(../images/common/icon_exclamation2.png) no-repeat 20px 50%;*/}
-			.mypageHomeWrap #myPointMoneyBox .gridR.gridN3 .viewTable th > a > span {/*background:url(../images/common/icon_exclamation3.png) no-repeat 20px 50%;*/}
 				.infoPopBtn {}
 				.infoPop {display:none;position:absolute;top:50px;left:0;padding:20px;width:100%;font:normal 12px "dotum";text-align:left;background:#fff;border:1px solid #ddd;}
 
@@ -303,7 +159,7 @@
 				.ogdItem4 {width:70px;}
 					.ogdItem4 .smBtn {margin-top:5px;width:70px;}
 				.ogdItem5 {width:70px;}
-					.ogoodsImg {float:left;width:102px;/*height:70px;*/line-height:70px;background:none;}
+					.ogoodsImg {float:left;width:102px;height:70px;line-height:70px;background:none;}
 						.ogoodsImg img {/*width:auto;*/height:100%;}
 					.ogoodsName {float:left;padding-left:15px;width:270px;color:#666;text-align:left;}
 					.ogoodsOption {float:left;margin-top:5px;padding-left:15px;color:#999;}
@@ -333,12 +189,10 @@
 
 .myInstantBuyListWrap {}
 	#myInstantBuyListBox {width:100%;}
-		#myInstantBuyListBox .grayBgBox {float:left;margin-bottom:30px;width:100%;height:70px;font:500 3em / 70px "Noto Sans KR";color:#333;text-align:center;}
-		#myInstantBuyListBox .grayBgBox span {font-weight:bold;font-family:"Arial";}
 		#myInstantBuyListBox .listTable2 th {padding:15px 0;}
 		#myInstantBuyListBox .mthGoodsImg {float:left;width:102px;height:70px;line-height:70px;background:none;overflow:hidden;}
 			#myInstantBuyListBox .mthGoodsImg img {width:auto;height:100%;}
-		#myInstantBuyListBox .mthGoodsName {float:left;padding-left:10px;width:100%;color:#666;text-align:left;}
+		#myInstantBuyListBox .mthGoodsName {float:left;padding-left:10px;width:70%;color:#666;text-align:left;}
 		#myInstantBuyListBox .mthGoodsOption {float:left;margin-top:10px;padding-left:10px;width:140px;color:#999;text-align:left;}
 
 .myInstantBuyViewWrap {}
@@ -370,7 +224,7 @@
 		#myTransferListBox .listTable2 th {padding:15px 0;}
 		#myTransferListBox .mthGoodsImg {float:left;width:102px;height:70px;line-height:70px;background:none;overflow:hidden;}
 			#myTransferListBox .mthGoodsImg img {width:auto;height:100%;}
-		#myTransferListBox .mthGoodsName {float:left;padding-left:10px;width:100%;color:#666;text-align:left;}
+		#myTransferListBox .mthGoodsName {float:left;padding-left:10px;width:65%;color:#666;text-align:left;}
 		#myTransferListBox .mthGoodsOption {float:left;margin-top:10px;padding-left:10px;width:140px;color:#999;text-align:left;}
 
 .myTransferViewWrap {}
@@ -402,7 +256,7 @@
 .myTagOpenHistoryListWrap {}
 	#myTagOpenHistoryListBox {width:100%;}
 		#myTagOpenHistoryListBox .mthGoodsImg {float:left;width:102px;height:70px;line-height:70px;background:none;}
-		#myTagOpenHistoryListBox .mthGoodsName {float:left;padding-left:10px;width:100%;color:#666;text-align:left;}
+		#myTagOpenHistoryListBox .mthGoodsName {float:left;padding-left:10px;width:250px;color:#666;text-align:left;}
 			#myTagOpenHistoryListBox .mthGoodsImg img {width:auto;height:100%;}
 		#myTagOpenHistoryListBox .mthGoodsOption {float:left;margin-top:10px;padding-left:10px;width:250px;color:#999;text-align:left;}
 		#myTagOpenHistoryListBox.listTable td {padding:10px 15px;}
@@ -411,10 +265,6 @@
 			.mmaTagRating2 {color:#c8a240;}
 			.mmaTagRating3 {color:#a3aeb7;}
 			.mmaTagRating4 {color:#c97d54;}
-			.tStts1 {color:#663b93;}
-			.tStts2 {color:#c82358;}
-			.tStts3 {color:#aaa;}
-			.tStts4 {color:#480000;}
 
 .mySnsHistoryListWrap {}
 	#mySnsHistoryListBox {width:100%;}
@@ -447,12 +297,6 @@
 		#myTagPointMoneyBox .viewTable th {padding:10px 20px;line-height:30px;font-weight:bold;font-size:1.4em;text-align:center;}
 		#myTagPointMoneyBox .viewTable td {padding:25px 20px;font:bold 3em "Arial";color:#333;text-align:center;border-bottom:1px solid #ddd;}
 		
-			#myTagPointMoneyBox .listTable .listCate {display:inline-block;width:36px;height:36px;line-height:36px;font-family:"Noto Sans KR";text-align:center;color:#fff;border-radius:18px;}
-				.ct1 {background:#d7b252;}
-				.ct2 {background:#f09774;}
-				.ct3 {background:#f07474;}
-				.ct4 {background:#60add4;}
-
 		.myTagPointMoneyWrap #myTagPointMoneyBox .viewTable th {padding:0;line-height:30px;font-weight:bold;font-size:1.4em;text-align:center;}
 		.myTagPointMoneyWrap #myTagPointMoneyBox .gridL .viewTable th > a > span {display:block;padding:10px 20px;width:100%;height:51px;color:#333;background:url(../images/common/icon_exclamation1.png) no-repeat 20px 50%;border-bottom:1px solid #ddd;}
 		.myTagPointMoneyWrap #myTagPointMoneyBox .gridL .viewTable td {padding:20px 20px;font:bold 3em "Arial";color:#333;text-align:center;}
@@ -545,17 +389,6 @@
 		.rfpBankSlt,
 		.rfmBankSlt {width:200px;}
 
-.myTurnoverWrap {}
-	#myTurnoverBox {width:100%;}
-		#myTurnoverBox .writeTable2 th,
-		#myTurnoverBox .writeTable2 td {padding-top:10px;padding-bottom:10px;}
-			.trnApplyInput1,
-			.trnApplyInput2 {float:left;text-align:right;font-weight:bold;font-size:14px;}
-			.trnApplyUnit {float:left;margin:0 40px 0 15px;line-height:30px;font-weight:bold;font-size:20px;color:#222;}
-			.trnDesc {float:left;line-height:30px;color:#666;}
-		#myTurnoverBox .writeTable2 .checkBoxWrap {float:left;margin-left:20px;margin-right:40px;line-height:30px;}
-		#myTurnoverBox .brownDotLi {float:left;padding:20px 0;width:100%;}
-
 .myCsCounselWrap {}
 	.listSearchBox {float:left;padding:20px 20px;width:100%;}
 		.listSearchSlt {float:left;margin-right:10px;width:80px;}
@@ -590,8 +423,6 @@
 			.inputPwBox > li:first-child {margin-top:0;}
 				.inputPwBox > li > label {width:90px;}
 				.inputPwBox > li > input {width:350px;color:#999;}
-		.mPhonEditBox1 {display:block;}
-		.mPhonEditBox2 {display:none;margin-top:10px;}
 		.inputMailBox {float:left;}
 			.inputMailBox > input {float:left;width:140px;}
 			.inputMailBox .mDomainSlt {float:left;margin-left:10px;width:200px;}
@@ -613,30 +444,20 @@
 		.sltDesc {float:left;margin-right:10px;margin-left:50px;line-height:30px;}
 
 .myMemberLeaveWrap {}
-	#myMemberLeaveBox {width:100%;}
-		/* .leaveInfoDesc {clear:both;margin-bottom:30px;padding:20px 40px;width:100%;height:130px;line-height:24px;font-size:1.4em;color:#222;background:#f7f7f7;}
-			.leaveInfoDesc p {padding-top:35px;padding-left:150px;width:100%;height:100%;background:url(../images/sub_mypage/icon_member_leave.png) no-repeat 0 50%;} */
-		.leaveInfoDesc {clear:both;float:left;margin-bottom:30px;padding:40px 40px;width:100%;line-height:24px;font-size:1.4em;color:#222;background:#f7f7f7;}
-			.leaveInfoDesc .leaveInfoIcon {float:left;padding-left:150px;width:100%;height:100%;background:url(../images/sub_mypage/icon_member_leave.png) no-repeat 0 50%;}
-				.leaveInfoDesc .leaveInfoIcon h4 {font-size:20px;}
+	#myMemberLeaveBox {}
+		.leaveInfoDesc {clear:both;margin-bottom:30px;padding:20px 40px;width:100%;height:130px;line-height:24px;font-size:1.4em;color:#222;background:#f7f7f7;}
+			.leaveInfoDesc p {padding-top:35px;padding-left:150px;width:100%;height:100%;background:url(../images/sub_mypage/icon_member_leave.png) no-repeat 0 50%;}
 		#myMemberLeaveBox .brownDotLi {float:left;padding:15px 0;width:100%;}
 		#myMemberLeaveBox .sentenceBox {float:left;width:100%;}
-		#myMemberLeaveBox .txtBox {line-height:20px;}
-		#myMemberLeaveBox .writeTable2 th,
-		#myMemberLeaveBox .writeTable2 td {padding:8px 25px;}
-			#myMemberLeaveBox .writeTable2 .txtBox {line-height:30px;}
-		/*#myMemberLeaveBox .pageBtnBox {margin-top:40px;padding-top:15px;border-top:1px solid #333;}*/
-		#myMemberLeaveBox .pageBtnBox {}
+		#myMemberLeaveBox .pageBtnBox {margin-top:40px;padding-top:15px;border-top:1px solid #333;}
 			#myMemberLeaveBox .pageBtnBox .checkBoxWrap {float:left;}
 			#myMemberLeaveBox .pageBtnBox label {font:normal 1.2em "dotum";}
 
 .myMemberLeaveCmpWrap {}
-	#myMemberLeaveCmpBox {width:100%;}
-		/* .leaveCmpInfoDesc {clear:both;margin-bottom:30px;padding:20px 40px;width:100%;height:130px;line-height:24px;font-size:2.6em;color:#222;background:#f7f7f7;} */
-		.leaveCmpInfoDesc {clear:both;margin-bottom:30px;padding:20px 40px;width:100%;height:130px;line-height:24px;font-weight:bold;font-size:2.4em;color:#222;background:#f7f7f7;}
+	#myMemberLeaveCmpBox {}
+		.leaveCmpInfoDesc {clear:both;margin-bottom:30px;padding:20px 40px;width:100%;height:130px;line-height:24px;font-size:2.6em;color:#222;background:#f7f7f7;}
 			.leaveCmpInfoDesc p {padding-top:35px;padding-left:150px;width:100%;height:100%;background:url(../images/sub_mypage/icon_member_leave_complet.png) no-repeat 0 50%;}
-		/* #myMemberLeaveCmpBox .sentenceBox {margin-bottom:50px;padding-left:190px;line-height:28px;font-weight:400;font-size:16px;font-family:"Noto Sans KR";color:#666;background:url(../images/sub_mypage/icon_member_leave_heart.png) no-repeat 20px 50%;} */
-		#myMemberLeaveCmpBox .sentenceBox {margin-bottom:40px;padding-left:190px;line-height:28px;font-weight:400;font-size:16px;font-family:"Noto Sans KR";color:#666;background:url(../images/sub_mypage/icon_member_leave_text.png) no-repeat 40px 50%;}
+		#myMemberLeaveCmpBox .sentenceBox {margin-bottom:50px;padding-left:190px;line-height:28px;font-weight:400;font-size:16px;font-family:"Noto Sans KR";color:#666;background:url(../images/sub_mypage/icon_member_leave_heart.png) no-repeat 20px 50%;}
 		#myMemberLeaveCmpBox .brownDotLi {float:left;padding:15px 0;width:100%;}
 
 .myMemberLevelWrap {}
@@ -679,19 +500,8 @@
 /* customer */
 .customerHomeWrap {}
 	.customerHomeWrap#contents h2 {float:left;}
-	.customerHomeWrap #csInfoBox {float:left;width:100%;background:url(../images/sub_customer/customer_bg.gif);}
-		.csInfoBoxWrap {float:left;padding:30px;width:100%;}
-			.csibImg {float:left;margin-right:40px;margin-left:70px;width:148px;}
-			.csibText1 {float:left;padding-top:50px;height:148px;font-weight:500;font-size:2em;color:#45403a;}
-				.csibText1 span {display:inline-block;width:130px;}
-			.csibText2 {float:left;margin-top:20px;margin-left:50px;padding:20px 40px;width:415px;height:130px;font-weight:500;font-size:1.8em;letter-spacing:-0.025em;color:#fff;border:5px solid #d3bf82;}
-			.csibBtns {float:left;margin-top:20px;margin-left:25px;}
-				.csibBtn {display:block;padding-left:15px;width:200px;height:60px;line-height:50px;font-weight:500;font-size:1.8em;letter-spacing:-0.05em;border:5px solid #fff;}
-				a.csibBtn1 {color:#fff;background:url(../images/sub_customer/customer_btn_1.jpg);}
-				a.csibBtn2 {margin-top:10px;color:#3b1e1e;background:url(../images/sub_customer/customer_btn_2.jpg);}
 	.customerHomeWrap #csNoticeBox {float:right;width:100%;}
 	.customerHomeWrap #csFaqBox {float:left;margin-top:60px;width:100%;}
-		/*
 		.customerHomeWrap #csFaqBox ul {float:left;width:100%;background:#f7f7f7;}
 			.customerHomeWrap #csFaqBox ul li {float:left;padding:20px 0;width:14.3%;font-size:1.4em;color:#666;text-align:center;background:url(../images/common/line_h_dot2.png) no-repeat 0 40%;}
 			.customerHomeWrap #csFaqBox ul li:first-child {width:14.2%;background:none;}
@@ -710,7 +520,6 @@
 				.customerHomeWrap #csFaqBox ul li:nth-child(5) a:hover {background:url(../images/sub_customer/icon_faq_05_on.png) no-repeat 50% 40%;}
 				.customerHomeWrap #csFaqBox ul li:nth-child(6) a:hover {background:url(../images/sub_customer/icon_faq_06_on.png) no-repeat 50% 40%;}
 				.customerHomeWrap #csFaqBox ul li:nth-child(7) a:hover {background:url(../images/sub_customer/icon_faq_07_on.png) no-repeat 50% 40%;}
-		*/
 	.customerHomeWrap #csInquiry {float:left;margin-top:60px;width:100%;}
 
 .csFaqWrap {}
@@ -732,7 +541,7 @@
 					#csFaqBox .conLine {display:none;float:left;padding:0;width:100%;border-top:0px;background:#f3f6f9;}
 						#csFaqBox .textBoxQ {float:left;width:100%;}
 							#csFaqBox .stl_1 {float:left;width:9%;text-align:center;}
-							#csFaqBox .stl_2 {float:left;width:85%;text-align:left;}
+							#csFaqBox .stl_2 {float:left;width:91%;text-align:left;}
 							#csFaqBox .textBoxQ .stl_1 {height:45px;background:url(../images/common/icon_q.png) no-repeat 50% 50%;}
 							#csFaqBox .textBoxQ .stl_2 {color:#45403a;}
 							#csFaqBox .slideListBody > li.openLine .textBoxQ .stl_2 {font-weight:bold;}
@@ -768,9 +577,8 @@
 			.viewPageInfo {float:left;margin-top:10px;width:100%;}
 				.viewPageDateCate {float:left;font:normal 12px / 30px "dotum";}
 		.viewPageMid {float:left;margin-top:20px;padding:30px;width:100%;border-top:3px solid #ddd;border-bottom:1px solid #ddd;}
-			.viewPageCon {float:left;width:100%;font:normal 12px "dotum";color:#666;overflow:hidden;}
+			.viewPageCon {float:left;width:100%;font:normal 12px / 20px "dotum";color:#666;overflow:hidden;}
 				.viewPageCon p {}
-				.viewPageCon img {margin-bottom:20px;width:auto;max-width:100%;cursor:pointer;}
 		.viewPageBtm {float:left;margin-top:20px;padding:20px 30px;width:100%;border:2px solid #ebebeb;}
 		.viewPageBtm2 {float:left;margin-top:20px;padding:20px 30px;width:100%;border:2px solid #e3dec8;}
 			.viewPageAnsw {font:normal 13px / 20px "dotum";color:#666;}
@@ -791,24 +599,6 @@
 .csNoticeWrap {}
 	#csNoticeListBox {width:100%;}
 	#csNoticeViewBox {width:100%;}
-
-.tBbsWrap {}
-	#tBbsListBox {width:100%;}
-	#tBbsViewBox {width:100%;}
-
-/* event */
-.eventListWrap {}
-	#eventListBox {width:100%;}
-		.eventListUl {width:100%;}
-			.eventListUl li {float:left;margin-bottom:20px;width:100%;}
-			.evntlItem {}
-
-.eventViewDetailWrap {}
-	#eventViewDetailBox {width:100%;}
-#pInviteConfilmBox .listTable2 th,
-#pInviteConfilmBox .listTable2 td {border-right:1px solid #ddd;}
-#pInviteConfilmBox .listTable2 th:last-child,
-#pInviteConfilmBox .listTable2 td:last-child {border-right:0;}
 
 /* tagintag */
 .serviceWrap {}

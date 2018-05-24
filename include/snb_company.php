@@ -6,11 +6,9 @@
 		<li>
 			<a href="<?=$root?>/footer/company_intro.html">택인택(주)</a>
 		</li>
-		<!--
 		<li>
 			<a href="<?=$root?>/footer/company_partner.html">파트너</a>
 		</li>
-		-->
 		<li>
 			<a href="<?=$root?>/footer/company_map.html">오시는 길</a>
 		</li>

@@ -27,26 +27,22 @@
 						<table class="listTable2" summary="번호,구분,일시,상품명,정가,오픈택,수수료,거래대금,실입출금액">
 							<caption>양도내역</caption>
 							<colgroup>
-								<col width="100px"/>
-								<col/>
-								<col width="100px"/>
+								<col width="90px"/>
+								<col />
 								<col width="80px"/>
-								<col width="100px"/>
-								<col width="100px"/>
-								<col width="100px"/>
+								<col width="80px"/>
+								<col width="60px"/>
+								<col width="80px"/>
+								<col width="80px"/>
 							</colgroup>
 							<tr>
-								<!-- <th scope="col">번호</th> -->
-								<th scope="col">양도일시</th>
-								<!--th scope="col">&nbsp;</th-->
+								<th scope="col">양도일</th>
 								<th scope="col">상품명</th>
-								<th scope="col">즉시구매가</th>
-								<th scope="col">택가격<br>(할인율)</th>
-								<!-- <th scope="col">구매자</th> -->
-								<!-- <th scope="col">수수료</th> -->
-								<th scope="col">양도수익</th>
-								<th scope="col">주문상태</th>
-								<th scope="col">정산</th>
+								<th scope="col">정가</th>
+								<th scope="col">택인택가<br>(할인율)</th>
+								<th scope="col">양도<br>제시가</th>
+								<th scope="col">예상수익</th>
+								<th scope="col">양도상태</th>
 							</tr>
 							<tr>
 								<td>2016-11-30<br />13:20</td>
@@ -102,7 +98,6 @@
 								</td>
 							</tr>
 						</table>
-						<div class="fL mt5 txtBox pointC4">※ 즉시구매자에게 상품이 전달 될 때까지 정산이 보류(정산대기)되며, 반품취소 시 정산이 취소됩니다.</div>
 						<? include '../include/paging_box.php' ?>
 					</section>
 				</div>
@@ -112,7 +107,7 @@
 		<? include '../include/div_popup.php' ?> <!-- divPopup -->
 	</div>
 	<script type="text/javascript">
-		currentLocation(99,4) //현재페이지 위치
+		currentLocation(99,3) //현재페이지 위치
 	</script>
 </body>
 </html>
